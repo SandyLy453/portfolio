@@ -1,0 +1,44 @@
+.container {
+    width: 330px;
+    min-height: 500px;
+    border-radius: 165px 165px 25px 25px;
+    background-color: #F9C8C2;
+    margin: 20px 0;
+    padding-bottom: 25px;
+}
+
+.thumbnail {
+    border-radius: 165px 165px 0 0;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.cardInfo {
+    padding: 0 10px;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #C69491;
+    text-wrap: wrap;
+}
+
+.description {
+    font-style: italic;
+    font-size: 16px;
+    color: #60665A;
+    padding-bottom: 10px;
+    text-wrap: wrap;
+}
+
+.date {
+    font-size: 16px;
+    color: #60665A;
+    text-align: right;
+    opacity: 80%;
+}

@@ -1,0 +1,32 @@
+.header {
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 120px;
+    background-color: #ecd6d6;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.menuOption {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: none;
+    color: #60665A;
+    
+}
