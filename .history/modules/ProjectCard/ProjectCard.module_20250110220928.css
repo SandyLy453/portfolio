@@ -1,0 +1,73 @@
+.container {
+    width: 330px;
+    min-height: 500px;
+    border-radius: 165px 165px 25px 25px;
+    background-color: var(--mauveMorn);
+    margin: 20px 0;
+    padding-bottom: 25px;
+    opacity: 0; /* Start fully hidden */
+    transform: translateY(20px); /* Start slightly shifted down */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transitions */
+}
+
+.container:hover {
+    background-color: var(--moss); /* Change to your hover background color */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: background-color 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+.container.hidden {
+    opacity: 0; /* Fully hidden */
+    transform: translateY(20px); /* Shift slightly down when hidden */
+}
+
+.thumbnail {
+    border-radius: 165px 165px 0 0;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.cardInfo {
+    padding: 0 10px;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: var(--moss);
+    text-wrap: wrap;
+}
+
+.container:hover .cardTitle {
+    color: var(--mauveMorn); 
+    transition: color 1s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.description {
+    font-style: italic;
+    font-size: 16px;
+    color: var(--maveShadow);
+    padding-bottom: 10px;
+    text-wrap: wrap;
+}
+
+.date {
+    font-size: 16px;
+    color: var(--maveShadow);
+    text-align: right;
+    opacity: 80%;
+}
+
+.container:hover .description:hover,
+.container:hover .date:hover {
+    color: var(--lightWhite);  
+}

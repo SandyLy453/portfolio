@@ -4,11 +4,8 @@ import styles from './Footer.module.css'
 
 export default function Footer () {
     return (
-        <footer className={styles.footer}> 
+        <footer className={styles.footer}>
             <div className={styles.contactInfo}>
-
-                <p className={styles.greeting}>Let connect!</p>
-                
                 <div className={styles.infoBox}>
                     <Image src={'/mail.png'} width={25} height={17.5} className={styles.icon}/>
                     <p className={styles.pageName}>sandy.lyth453@gmail.com</p>
@@ -21,10 +18,10 @@ export default function Footer () {
                     </div>
                 </Link>
 
-                <Link href={"https://www.linkedin.com/in/boisan-sandy-ly/"} className={styles.link}>
+                <Link href={""} className={styles.link}>
                     <div className={styles.infoBox}>
                         <Image src={'/linkedIn.png'} width={25} height={25} className={styles.icon}/>
-                        <p className={styles.pageName}>/boisan-sandy-ly/</p>
+                        <p className={styles.pageName}>/</p>
                     </div>
                 </Link>
             </div>

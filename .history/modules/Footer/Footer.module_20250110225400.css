@@ -14,14 +14,6 @@
     text-decoration: none;
 }
 
-.greeting {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-style: italic;
-    color: var(--mauveMorn);
-}
-
 .contactInfo {
     margin-left: 30px;
 }

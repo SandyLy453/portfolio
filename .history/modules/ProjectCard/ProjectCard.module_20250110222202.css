@@ -7,23 +7,13 @@
     padding-bottom: 25px;
     opacity: 0; /* Start fully hidden */
     transform: translateY(20px); /* Start slightly shifted down */
-    transition: opacity 1s ease, transform 1s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+    transition: opacity 1s ease, transform 1s ease, box-shadow 0.3s ease;
 }
 
 .container:hover {
     background-color: var(--moss); /* Change background color */
     transform: scale(1.05); /* Slightly grow */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
-}
-
-.container.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Reset position */
-}
-
-.container.hidden {
-    opacity: 0; /* Fully hidden */
-    transform: translateY(20px); /* Shift slightly down */
 }
 
 .cardInfo {

@@ -7,7 +7,7 @@
     padding-bottom: 25px;
     opacity: 0; /* Start fully hidden */
     transform: translateY(20px); /* Start slightly shifted down */
-    transition: opacity 1s ease, transform 1s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+    transition: opacity 1s ease, transform 1s ease, box-shadow 0.3s ease;
 }
 
 .container:hover {
