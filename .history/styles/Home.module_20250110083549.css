@@ -34,20 +34,11 @@
 .name {
   font-size: 48px;
   color: #C69491;
-  font-weight: 600;
 }
 
 .role {
   font-size: 24px;
   color: #7D9094;
-  font-weight: 500;
-  padding-top: 10px;
-}
-
-.loca {
-  font-size: 20px;
-  color: #7D9094;
-  padding-top: 10px;
 }
 
 

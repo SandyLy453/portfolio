@@ -1,0 +1,11 @@
+.main {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coverPhoto {
+    margin: auto;
+    border-radius: 150px;
+}

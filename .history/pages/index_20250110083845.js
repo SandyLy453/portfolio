@@ -17,8 +17,7 @@ export default function Home() {
 
           <div className={styles.info}>
             <p className={styles.name}>Boi San (Sandy) Ly</p>
-            <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
-            <p className={styles.loca}>Vancouver | BC</p>
+            <p className={styles.role}>UX/UI Designer | Graphic Designer | Web Developer</p>
           </div>
         </div>
 

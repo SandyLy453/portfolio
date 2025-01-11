@@ -1,0 +1,44 @@
+.main {
+    width: 70vw;
+    margin: auto;
+    margin-top: 0;
+
+}
+
+.top {
+    margin: 10px auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverPhoto {
+    margin: auto;
+    border-radius: 150px;
+}
+
+.sectionBreaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .sectionBreaker::before,
+  .sectionBreaker::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #d3d3d3; /* Adjust color as needed */
+    margin: 0;
+  }
+  
+  .sectionBreaker span {
+    color: #7D9094;
+    margin: 0 10px;
+    font-size: 20px;
+    font-style: italic;
+  }

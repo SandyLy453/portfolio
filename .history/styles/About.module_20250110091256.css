@@ -1,0 +1,15 @@
+.main {
+    min-height: 100vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 0;
+}
+
+.top {
+    margin: auto;
+}
+
+.coverPhoto {
+    margin: auto;
+    border-radius: 150px;
+}
