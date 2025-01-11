@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import styles from './ProjectCard.module.css'
+import { useEffect } from "react";
  
 export default function ProjectCard({
     photo,
@@ -36,10 +37,7 @@ export default function ProjectCard({
   }, []);
 
     return (
-      <div
-        className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
-        ref={cardRef}
-      >
+      <div className={styles.container}>
         <Link href={link} aria-label={`View project: ${title}`} className={styles.link} passHref>
           <div role="button" className={styles.card}>
             <Image
