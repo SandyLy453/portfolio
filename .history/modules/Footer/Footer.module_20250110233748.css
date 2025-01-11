@@ -23,7 +23,7 @@
 }
 
 .contactInfo {
-    margin: 0 120px 20px 120px;
+    margin-left: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +46,7 @@
 }
 
 .logo {
-    margin-right: 100px;
+    margin-right: 100;
 }
 
 .copyright {

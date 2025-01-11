@@ -23,7 +23,7 @@
 }
 
 .contactInfo {
-    margin: 0 120px 20px 120px;
+    margin: 0 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

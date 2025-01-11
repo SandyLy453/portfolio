@@ -31,7 +31,7 @@ export default function Footer () {
                 </div>
 
                 <div className={styles.right}>
-                    <Image src={'/logo-2.png'} alt="logo" className={styles.logo} width={200} height={75} />
+                    <Image src={'/logo-2.png'} alt="logo" className={styles.logo} width={100} height={37.5} />
                 </div>
 
             </div>
