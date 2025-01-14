@@ -67,6 +67,7 @@
     transition: color 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
 }
 
+/* Apply styles when the card is hovered */
 .container:hover .description,
 .container:hover .date {
     color: var(--brightWhite); /* Change color */
