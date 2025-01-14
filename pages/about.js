@@ -11,11 +11,13 @@ export default function About() {
         <main className={styles.main}>
             <div className={styles.top}>
             <div className={styles.image}>
-                <Image src={'/cover.jpeg'} alt="cover photo" className={styles.coverPhoto} width={300} height={420} />
+                <Image src={'/ava.png'} alt="cover photo" className={styles.coverPhoto} width={320} height={420} />
             </div>
 
             <div className={styles.info}>
                 <p className={styles.name}>Boi San (Sandy) Ly</p>
+                <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
+                <p className={styles.loca}>Vancouver | BC</p>
             </div>
             </div>
 
