@@ -66,12 +66,7 @@
     }
 
     .contactInfo {
-        margin: 0 20px;
-    }
-
-    .logo {
-        margin-right: 0;
-        margin-top: 10px;
+        margin: 0 10px 20px 10px;
     }
 }
 

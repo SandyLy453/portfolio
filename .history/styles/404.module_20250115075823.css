@@ -44,22 +44,3 @@
 .gif {
     padding-left: 5px;
 }
-
-@media screen and (max-width: 768px) {
-    .title,
-    .description {
-        width: 90vw;
-    }
-
-    .title {
-        font-size: 36px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .backLink {
-        font-size: 18px;
-    }
-}

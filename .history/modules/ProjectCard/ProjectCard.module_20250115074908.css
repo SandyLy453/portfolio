@@ -54,19 +54,24 @@
 .description {
     font-style: italic;
     font-size: 16px;
-    color: var(--stormCloud);
+    color: var(--stornClound);
     padding-bottom: 10px;
     transition: color 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
 }
 
 .date {
     font-size: 16px;
-    color: var(--stormCloud);
+    color: var(--moss);
     text-align: right;
     opacity: 100%;
     transition: color 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
     padding-top: 20px;
-    opacity: 75%;
+}
+
+.container:hover .description,
+.container:hover .date {
+    color: var(--brightWhite); /* Change color */
+    opacity: 80%; /* Reduce opacity */
 }
 
 

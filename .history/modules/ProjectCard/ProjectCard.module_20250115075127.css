@@ -69,4 +69,10 @@
     opacity: 75%;
 }
 
+.container:hover .description,
+.container:hover .date {
+    color: var(--stormCloud); /* Change color */
+    opacity: 80%; /* Reduce opacity */
+}
+
 
