@@ -88,36 +88,6 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .main {
-    width: 100vw; /* Adjust to full width for smaller screens */
-  }
-
-  .coverPhoto {
-    margin: 0 auto; /* Center the image for mobile */
-    bottom: -20px; /* Slight adjustment for spacing */
-  }
-
-  .info {
-    margin-top: 50px; /* Reduce margin for better spacing */
-  }
-
-  .name {
-    font-size: 36px; /* Adjust font size for smaller screens */
-  }
-
-  .role {
-    font-size: 20px;
-  }
-
-  .loca {
-    font-size: 18px;
-  }
-
-  .pjSection {
-    gap: 15px; /* Reduce spacing between items */
-  }
-}
 
 
 
