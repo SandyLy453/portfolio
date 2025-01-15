@@ -15,6 +15,13 @@
     row-gap: 50px;
 }
 
+.middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .span {
     color: var(--midnight);
     font-weight: 700;
@@ -22,12 +29,19 @@
 
 .content {
     font-family: "Sen", sans-serif;
-    margin-top: 20px;
-    max-width: 35vw;
+    margin-top: 10px;
+    max-width: 30vw;
     text-align: justify;
     font-size: 18px;
 }
 
+.space {
+    height: 40px;
+}
+
+.middle .text {
+    margin-top: 50px;
+}
 
 @media screen and (max-width: 768px) {
     .body {
@@ -41,12 +55,28 @@
 
     .content {
         max-width: 100vw;
-        min-height: 100vw;
         font-size: 16px;
+    }
+
+    .space {
+        height: 40;
     }
 
     .photoOne {
         width: 90vw;
         height: auto;
+    }
+
+    .gifOne {
+        width: 360px;
+        height: 255px;
+        margin: 20px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle .text {
+        margin-top: 0;
     }
 }
