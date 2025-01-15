@@ -19,7 +19,6 @@
   flex-direction: row;
   padding: 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .coverPhoto {

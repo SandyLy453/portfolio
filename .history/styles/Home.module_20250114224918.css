@@ -12,14 +12,12 @@
 
 .top {
   width: 100%;
-  min-height: 470px;
+  height: 470px;
   background-color: #FFF2DF;
   align-items: center;
   display: flex;
   flex-direction: row;
   padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .coverPhoto {
