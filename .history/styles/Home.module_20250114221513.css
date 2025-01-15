@@ -29,7 +29,6 @@
 
 .info {
   text-align: center;
-  margin-top: 143px;
 }
 
 .name {
@@ -49,6 +48,10 @@
   font-size: 20px;
   color: #7D9094;
   padding-top: 10px;
+}
+
+.gif {
+  
 }
 
 

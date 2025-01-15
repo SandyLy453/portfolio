@@ -19,7 +19,6 @@ export default function Home() {
             <p className={styles.name}>Boi San (Sandy) Ly</p>
             <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
             <p className={styles.loca}>Vancouver | BC</p>
-            <Image src={'/hi.GIF'} alt="greeting gif" className={styles.gif} width={342.5} height={205} />
           </div>
         </div>
 
@@ -33,7 +32,7 @@ export default function Home() {
             alt="Aether cover"
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
-            date="2024"
+            date="Time"
             link="/project-details" // Ensure the link is valid
           />
 

@@ -19,7 +19,7 @@ export default function Home() {
             <p className={styles.name}>Boi San (Sandy) Ly</p>
             <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
             <p className={styles.loca}>Vancouver | BC</p>
-            <Image src={'/hi.GIF'} alt="greeting gif" className={styles.gif} width={342.5} height={205} />
+            <Image src={'hi.GIF'} alt="greeting gif" className={styles.gif} width={68.5} height={41} />
           </div>
         </div>
 
