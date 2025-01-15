@@ -8,8 +8,8 @@ export default function PostHeader({
 }) {
     return (
         <>
-            <h1 className={styles.title}>{title || "Title of the project"}</h1>
-            <p className={styles.date}>{date || "Date"}</p>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.date}>{date}</p>
         </>
     )
 }

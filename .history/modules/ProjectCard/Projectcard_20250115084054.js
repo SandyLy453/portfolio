@@ -94,7 +94,7 @@ export default function ProjectCard({
             <p className={styles.date}>{date}</p>
           </div>
         </div>
-      
+      </Link>
     </div>
     );
   }

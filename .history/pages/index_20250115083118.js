@@ -2,9 +2,13 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
+import { useRouter } from "next/router";
 import ProjectCard from "@/modules/ProjectCard/Projectcard";
 
 export default function Home() {
+
+  const router = useRouter();
+  
   return (
     <>
       <Header/>
@@ -34,7 +38,7 @@ export default function Home() {
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
             date="2024"
-            link="/Aether" // Ensure the link is valid
+            link="/project-details" // Ensure the link is valid
           />
 
           <ProjectCard

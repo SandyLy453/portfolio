@@ -3,15 +3,14 @@
     text-wrap: wrap;
 
     margin-top: 50px;
+    margin-bottom: 50px;
     color: var(--mauveShadow)
 }
 
 .date {
     font-style: italic;
     color: var(--stormCloud);
-    margin-top: 10px;
-    margin-bottom: 50px;
-    text-align: right;
+    padding-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,9 +19,6 @@
         margin-left: 0;
         padding-left: 0;
         margin-top: 20px;
-    }
-
-    .date {
         margin-bottom: 30px;
     }
 }

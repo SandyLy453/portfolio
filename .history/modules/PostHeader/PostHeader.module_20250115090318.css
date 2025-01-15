@@ -9,7 +9,6 @@
 .date {
     font-style: italic;
     color: var(--stormCloud);
-    margin-top: 10px;
     margin-bottom: 50px;
     text-align: right;
 }

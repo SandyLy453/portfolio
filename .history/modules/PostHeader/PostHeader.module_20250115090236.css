@@ -9,9 +9,8 @@
 .date {
     font-style: italic;
     color: var(--stormCloud);
-    margin-top: 10px;
+    padding-left: 20px;
     margin-bottom: 50px;
-    text-align: right;
 }
 
 @media screen and (max-width: 768px) {

@@ -64,16 +64,8 @@ export default function ProjectCard({
       className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
       ref={cardRef}
     >
-      
-        <div 
-          role="button"
-          className={styles.card}
-          onClick={handleNavigation} // Handle click with useRouter
-          tabIndex={0} // Make it focusable
-          onKeyDown={(e) => {
-            if (e.key === "Enter") handleNavigation(); // Support Enter key for accessibility
-          }}
-        >
+      <Link href={link} aria-label={`View project: ${title}`} className={styles.link} passHref>
+        <div role="button" className={styles.card}>
           <div
             style={{
               opacity: opacity, // Apply fade effect
@@ -94,7 +86,7 @@ export default function ProjectCard({
             <p className={styles.date}>{date}</p>
           </div>
         </div>
-      
+      </Link>
     </div>
     );
   }

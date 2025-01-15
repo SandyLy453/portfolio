@@ -34,7 +34,7 @@ export default function Home() {
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
             date="2024"
-            link="/Aether" // Ensure the link is valid
+            link="/project-details" // Ensure the link is valid
           />
 
           <ProjectCard

@@ -1,0 +1,13 @@
+.title {
+    font-size: 48px;
+    text-wrap: wrap;
+
+    margin-top: 50px;
+    color: var(--mauveShadow)
+}
+
+.date {
+    font-style: italic;
+    color: var(--stormCloud);
+    padding-left: 20px;
+}

@@ -18,7 +18,6 @@ export default function ProjectCard({
   const [opacity, setOpacity] = useState(1); // Track opacity for fade effect
   const [isVisible, setIsVisible] = useState(false); // Track visibility
   const cardRef = useRef(null); // Reference to the card element
-  const router = useRouter();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -55,25 +54,13 @@ export default function ProjectCard({
     }
   }, [photos]);
 
-  const handleNavigation = () => {
-    router.push(link); // Use the provided link to navigate
-  };
-
     return (
       <div
       className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
       ref={cardRef}
     >
-      
-        <div 
-          role="button"
-          className={styles.card}
-          onClick={handleNavigation} // Handle click with useRouter
-          tabIndex={0} // Make it focusable
-          onKeyDown={(e) => {
-            if (e.key === "Enter") handleNavigation(); // Support Enter key for accessibility
-          }}
-        >
+      <Link href={link} aria-label={`View project: ${title}`} className={styles.link} passHref>
+        <div role="button" className={styles.card}>
           <div
             style={{
               opacity: opacity, // Apply fade effect
@@ -94,7 +81,7 @@ export default function ProjectCard({
             <p className={styles.date}>{date}</p>
           </div>
         </div>
-      
+      </Link>
     </div>
     );
   }

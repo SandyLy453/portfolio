@@ -59,44 +59,42 @@ export default function ProjectCard({
     router.push(link); // Use the provided link to navigate
   };
 
-    return (
-      <div
-      className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
+  return (
+    <div
+      className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`}
       ref={cardRef}
     >
-      
-        <div 
-          role="button"
-          className={styles.card}
-          onClick={handleNavigation} // Handle click with useRouter
-          tabIndex={0} // Make it focusable
-          onKeyDown={(e) => {
-            if (e.key === "Enter") handleNavigation(); // Support Enter key for accessibility
+      <div
+        role="button"
+        className={styles.card}
+        onClick={handleNavigation} // Handle click with useRouter
+        tabIndex={0} // Make it focusable
+        onKeyDown={(e) => {
+          if (e.key === "Enter") handleNavigation(); // Support Enter key for accessibility
+        }}
+      >
+        <div
+          style={{
+            opacity: opacity,
+            transition: "opacity 0.5s ease-in-out",
           }}
         >
-          <div
-            style={{
-              opacity: opacity, // Apply fade effect
-              transition: "opacity 0.5s ease-in-out", // Smooth fade-in and fade-out
-            }}
-          >
-            <Image
-              src={photos[currentPhotoIndex] || "/card-holder.png"} // Use current photo based on index
-              alt={alt}
-              className={styles.thumbnail}
-              width={330}
-              height={370}
-            />
-          </div>
-          <div className={styles.cardInfo}>
-            <p className={styles.cardTitle}>{title}</p>
-            <p className={styles.description}>{description}</p>
-            <p className={styles.date}>{date}</p>
-          </div>
+          <Image
+            src={currentPhotoIndex}
+            alt={alt}
+            className={styles.thumbnail}
+            width={330}
+            height={370}
+          />
         </div>
-      
+        <div className={styles.cardInfo}>
+          <p className={styles.cardTitle}>{title}</p>
+          <p className={styles.description}>{description}</p>
+          <p className={styles.date}>{date}</p>
+        </div>
+      </div>
     </div>
-    );
+  );
   }
 
   
