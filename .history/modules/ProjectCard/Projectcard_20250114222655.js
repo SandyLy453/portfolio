@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from './ProjectCard.module.css'
  
 export default function ProjectCard({
-  photos = [], // Default to an empty array if photos is undefined
+    photo,
     alt,
     title,
     description,
@@ -12,7 +12,7 @@ export default function ProjectCard({
     link,
   }) {
 
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Track the current photo index
+    const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Track the current photo index
   const [opacity, setOpacity] = useState(1); // Track opacity for fade effect
   const [isVisible, setIsVisible] = useState(false); // Track visibility
   const cardRef = useRef(null); // Reference to the card element
@@ -54,33 +54,26 @@ export default function ProjectCard({
 
     return (
       <div
-      className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
-      ref={cardRef}
-    >
-      <Link href={link} aria-label={`View project: ${title}`} className={styles.link} passHref>
-        <div role="button" className={styles.card}>
-          <div
-            style={{
-              opacity: opacity, // Apply fade effect
-              transition: "opacity 0.5s ease-in-out", // Smooth fade-in and fade-out
-            }}
-          >
+        className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`} // Add visibility classes
+        ref={cardRef}
+      >
+        <Link href={link} aria-label={`View project: ${title}`} className={styles.link} passHref>
+          <div role="button" className={styles.card}>
             <Image
-              src={photos[currentPhotoIndex] || "/card-holder.png"} // Use current photo based on index
+              src={photo || "/card-holder.png"} 
               alt={alt}
               className={styles.thumbnail}
               width={330}
               height={370}
             />
+            <div className={styles.cardInfo}>
+              <p className={styles.cardTitle}>{title}</p>
+              <p className={styles.description}>{description}</p>
+              <p className={styles.date}>{date}</p>
+            </div>
           </div>
-          <div className={styles.cardInfo}>
-            <p className={styles.cardTitle}>{title}</p>
-            <p className={styles.description}>{description}</p>
-            <p className={styles.date}>{date}</p>
-          </div>
-        </div>
-      </Link>
-    </div>
+        </Link>
+      </div>
     );
   }
 

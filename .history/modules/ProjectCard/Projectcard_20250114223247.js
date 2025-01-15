@@ -12,7 +12,7 @@ export default function ProjectCard({
     link,
   }) {
 
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Track the current photo index
+    const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Track the current photo index
   const [opacity, setOpacity] = useState(1); // Track opacity for fade effect
   const [isVisible, setIsVisible] = useState(false); // Track visibility
   const cardRef = useRef(null); // Reference to the card element

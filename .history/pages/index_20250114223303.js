@@ -29,7 +29,7 @@ export default function Home() {
 
         <div className={styles.pjSection}>
           <ProjectCard
-            photos={["/aether.png"]} // Use 'photos' instead of 'photo'
+            photo={["/aether.png"]}
             alt="Aether cover"
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
@@ -38,7 +38,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos="" 
+            photo="" 
             alt="Project cover"
             title="Project Name"
             description="What it is about"
@@ -47,7 +47,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos="" 
+            photo="" 
             alt="Project cover"
             title="Project Name"
             description="What it is about"
@@ -56,7 +56,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos="" 
+            photo="" 
             alt="Project cover"
             title="Project Name"
             description="What it is about"
@@ -65,7 +65,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos="" 
+            photo="" 
             alt="Project cover"
             title="Project Name"
             description="What it is about"
@@ -74,7 +74,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos="" 
+            photo="" 
             alt="Project cover"
             title="Project Name"
             description="What it is about"
