@@ -30,7 +30,7 @@ export default function About() {
                     Hi, welcome to my website! 
                 </p>
                 <p className={styles.introText}>
-                    My name is Boi San, or can also call me Sandy. I'm a Digital Designer and a Front-end Web developer as well. I e 
+                    My name is Boi San, or can also call me Sandy. I'm a Digital Designer and a Front-end Web developer as well. 
                 </p>
             </div>
         

@@ -26,12 +26,7 @@ export default function About() {
             </div>
 
             <div className={styles.intro}>
-                <p className={styles.introText}>
-                    Hi, welcome to my website! 
-                </p>
-                <p className={styles.introText}>
-                    My name is Boi San, or can also call me Sandy. I'm a Digital Designer and a Front-end Web developer as well. I e 
-                </p>
+                <p className={styles.introText}></p>
             </div>
         
         </main>

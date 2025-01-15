@@ -1,0 +1,44 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--moss);
+}
+
+.title {
+    color: var(--mauveMorn);
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.description {
+    color: var(--spaBlue);
+    font-family: "Sen", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.backLink {
+    background-color: var(--mauveMorn);
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--moss);
+}
+
+.backLink:hover {
+    background-color: var(--mauveShadow);
+}
+
+.backLink:hover .link:hover {
+    background-color: var(--spaBlue);
+}

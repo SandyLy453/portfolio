@@ -60,7 +60,7 @@ padding-top: 10px;
 content: "";
 flex: 1;
 height: 2px;
-background: #d3d3d3; 
+background: #d3d3d3; /* Adjust color as needed */
 margin: 0;
 }
 
@@ -73,11 +73,9 @@ font-style: italic;
 
 .intro {
     margin: 20px auto;
-    align-items: center;
-    width: 50vw;
 }
-
 .intoText {
+    width: 55vw;
     text-align: justify;
     font-family: "Sen", sans-serif;
 }

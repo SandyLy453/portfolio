@@ -1,0 +1,28 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--moss);
+}
+
+.title {
+    color: var(--mauveMorn);
+    font-size: 36px;
+}
+
+.description {
+
+}
+
+.linkback {
+
+}
+
+.link {
+    text-decoration: none;
+}
+
