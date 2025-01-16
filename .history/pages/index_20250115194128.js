@@ -56,7 +56,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos= {["/maga.png"]}
+            photos= {["mega.png"]}
             alt="Magazine cover"
             title="Magazine"
             description="Magazine design - A architectural magazine"
@@ -65,20 +65,20 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos= {["/menu.png"]}
-            alt="Menu image"
-            title="Menu Design"
-            description="Menu Design - Desgning menu use vector graphics"
-            date="may 2024"
+            photos="" 
+            alt="Project cover"
+            title="Project Name"
+            description="What it is about"
+            date="Time"
             link="/project-details" // Ensure the link is valid
           />
 
           <ProjectCard
-            photos= {["/cam.png"]}
-            alt="Camera vector graphic"
-            title="Mechanical Object Vector Graphic"
-            description="Using vector to draw mechanical object"
-            date="December 2023"
+            photos="" 
+            alt="Project cover"
+            title="Project Name"
+            description="What it is about"
+            date="Time"
             link="/project-details" // Ensure the link is valid
           />
         </div>

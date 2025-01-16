@@ -56,7 +56,7 @@ export default function Home() {
           />
 
           <ProjectCard
-            photos= {["/maga.png"]}
+            photos= {["/mega.png"]}
             alt="Magazine cover"
             title="Magazine"
             description="Magazine design - A architectural magazine"
