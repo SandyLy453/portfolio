@@ -48,7 +48,7 @@ export default function ProjectCard({
         setTimeout(() => {
           setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length); // Change photo
           setOpacity(1); // Fade in
-        }, 4); // Match fade duration
+        }, 10); // Match fade duration
       }, 4000); // Total interval (fade + display duration)
 
       return () => clearInterval(interval); // Cleanup interval on unmount
