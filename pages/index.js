@@ -33,26 +33,26 @@ export default function Home() {
             alt="Aether cover"
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
-            date="2024"
-            link="/Aether" // Ensure the link is valid
-          />
-
-          <ProjectCard
-            photos="" 
-            alt="Project cover"
-            title="Project Name"
-            description="What it is about"
-            date="Time"
+            date="Sep 2024 - Dec 2024"
             link="/posts/Aether" // Ensure the link is valid
           />
 
           <ProjectCard
             photos="" 
-            alt="Project cover"
-            title="Project Name"
-            description="What it is about"
-            date="Time"
-            link="/project-details" // Ensure the link is valid
+            alt="Poster slides show"
+            title="Poster design"
+            description="Product design - Series of posters based on the anime/ manga Detective Conan."
+            date="Dec 2024"
+            link="/posts/Poster" // Ensure the link is valid
+          />
+
+          <ProjectCard
+            photos={["/can1.png", "/can2.png", "/can3.png"]} 
+            alt="Can deasign slide show"
+            title="DiLo Tea Can"
+            description="Product design - Tea Can"
+            date="Nov 2024"
+            link="/posts/CanDesign" // Ensure the link is valid
           />
 
           <ProjectCard
