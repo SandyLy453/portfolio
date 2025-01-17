@@ -58,27 +58,11 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: [""],
-      alt: "CraterConnects",
-      title: "CrafterConnects",
-      description: "CrafterCponnects - A collaborative DIY app",
-      date: "May 2024",
-      link: "/project-details",
-    },
-    {
-      photos: [""],
-      alt: "Video thumbnails",
-      title: "How To Manage Your Time",
-      description: "After Effect - Vector based video",
-      date: "May 2024",
-      link: "/project-details",
-    },
-    {
-      photos: ["/film3.png", "/film4.png"],
-      alt: "Firm Rewards",
-      title: "Film Rewards",
-      description: "Making poster by using typography only",
-      date: "March 2024",
+      photos: ["/cam.png"],
+      alt: "Camera vector graphic",
+      title: "Mechanical Object Vector Graphic",
+      description: "Using vector to draw mechanical objects",
+      date: "December 2023",
       link: "/project-details",
     },
     {
@@ -89,7 +73,7 @@ export default function Home() {
       date: "December 2023",
       link: "/project-details",
     },
-
+    
     // Add more projects as needed
   ];
 

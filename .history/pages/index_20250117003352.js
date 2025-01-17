@@ -74,14 +74,6 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: ["/film3.png", "/film4.png"],
-      alt: "Firm Rewards",
-      title: "Film Rewards",
-      description: "Making poster by using typography only",
-      date: "March 2024",
-      link: "/project-details",
-    },
-    {
       photos: ["/cam.png"],
       alt: "Camera vector graphic",
       title: "Mechanical Object Vector Graphic",
