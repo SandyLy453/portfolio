@@ -18,34 +18,35 @@ export default function About() {
 
         <main className={styles.main}>
             <div className={styles.top}>
-                <div className={styles.image}>
-                    <Image src={'/ava.png'} alt="cover photo" className={styles.coverPhoto} width={320} height={420} />
-                </div>
-
-                <div className={styles.info}>
-                    <p className={styles.name}>Boi San (Sandy) Ly</p>
-                    <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
-                    <p className={styles.loca}>Vancouver | BC</p>
-                </div>
-            </div>
-
-            <div className={styles.sectionBreaker}>
-            <span> Who Am I? </span>
+            <div className={styles.image}>
+                <Image src={'/ava.png'} alt="cover photo" className={styles.coverPhoto} width={320} height={420} />
             </div>
 
             <div className={styles.languageToggle}>
                 <button
-                    className={language === "english" ? styles.active : styles.sleep}
+                    className={language === "english" ? styles.active : ""}
                     onClick={() => handleLanguageChange("english")}
                 >
                     English
                 </button>
                 <button
-                    className={language === "vietnamese" ? styles.active : styles.sleep}
+                    className={language === "vietnamese" ? styles.active : ""}
                     onClick={() => handleLanguageChange("vietnamese")}
                 >
                     Vietnamese
                 </button>
+            </div>
+
+
+            <div className={styles.info}>
+                <p className={styles.name}>Boi San (Sandy) Ly</p>
+                <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
+                <p className={styles.loca}>Vancouver | BC</p>
+            </div>
+            </div>
+
+            <div className={styles.sectionBreaker}>
+            <span> Who Am I? </span>
             </div>
 
             {language === "english" && (

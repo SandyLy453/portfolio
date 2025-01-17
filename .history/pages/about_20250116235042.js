@@ -41,7 +41,7 @@ export default function About() {
                     English
                 </button>
                 <button
-                    className={language === "vietnamese" ? styles.active : styles.sleep}
+                    className={language === "vietnamese" ? styles.active : ""}
                     onClick={() => handleLanguageChange("vietnamese")}
                 >
                     Vietnamese

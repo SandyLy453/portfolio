@@ -98,42 +98,14 @@ font-style: italic;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
-.sleep {
+.languageToggle button {
     height: 40px;
-    width: 150px;
+    width: 100px;
     background-color: var(--cream);
-    color: var(--forest);
+    color: #7D9094;
     border: none;
-    font-size: 18px;
-    align-items: center;
-}
-
-.sleep:first-child,
-.active:first-child {
-    border-radius: 10px 0 0 10px;
-}
-
-.sleep:last-child,
-.active:last-child  {
-    border-radius: 0 10px 10px 0;
-}
-
-.sleep:hover {
-    background-color: var(--forest);
-    color: var(--cream);
-}
-
-.active {
-    height: 40px;
-    width: 150px;
-    background-color: var(--midnight);
-    color: var(--cream);
-    border: none;
-    font-size: 18px;
-    align-items: center;
 }
 
 @media screen and (max-width: 768px) {

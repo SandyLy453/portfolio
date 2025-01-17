@@ -18,34 +18,35 @@ export default function About() {
 
         <main className={styles.main}>
             <div className={styles.top}>
-                <div className={styles.image}>
-                    <Image src={'/ava.png'} alt="cover photo" className={styles.coverPhoto} width={320} height={420} />
-                </div>
-
-                <div className={styles.info}>
-                    <p className={styles.name}>Boi San (Sandy) Ly</p>
-                    <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
-                    <p className={styles.loca}>Vancouver | BC</p>
-                </div>
-            </div>
-
-            <div className={styles.sectionBreaker}>
-            <span> Who Am I? </span>
+            <div className={styles.image}>
+                <Image src={'/ava.png'} alt="cover photo" className={styles.coverPhoto} width={320} height={420} />
             </div>
 
             <div className={styles.languageToggle}>
                 <button
-                    className={language === "english" ? styles.active : styles.sleep}
+                    className={language === "english" ? styles.active : ""}
                     onClick={() => handleLanguageChange("english")}
                 >
                     English
                 </button>
                 <button
-                    className={language === "vietnamese" ? styles.active : styles.sleep}
+                    className={language === "vietnamese" ? styles.active : ""}
                     onClick={() => handleLanguageChange("vietnamese")}
                 >
                     Vietnamese
                 </button>
+            </div>
+
+
+            <div className={styles.info}>
+                <p className={styles.name}>Boi San (Sandy) Ly</p>
+                <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
+                <p className={styles.loca}>Vancouver | BC</p>
+            </div>
+            </div>
+
+            <div className={styles.sectionBreaker}>
+            <span> Who Am I? </span>
             </div>
 
             {language === "english" && (
@@ -69,26 +70,6 @@ export default function About() {
                     Let's create something amazing together—I'd love to hear from you!
                 </p>
             </div>
-        )}
-
-{language === "vietnamese" && (
-          <div className={styles.intro}>
-            <p className={styles.introText}>Chào bạn, chào mừng đến với website của mình!</p>
-            <p className={styles.introText}>
-              Mình là <span className={styles.lilName}>Bội San</span>, bạn cũng có thể gọi mình là <span className={styles.lilName}>Sandy</span> hoặc <span className={styles.lilName}>San</span> tùy theo bạn thích! Mình là một Nhà Thiết Kế Kỹ Thuật Số kiêm Lập Trình Viên Front-end. Mình yêu thích việc tạo ra các thiết kế bắt mắt, thân thiện với người dùng và mang lại sự cân bằng giữa sáng tạo và thực tiễn.
-            </p>
-
-            <p className={styles.introText}>
-              Trong quá trình học ngành Digital Design and Devilopment tại BCIT, mình đã khám phá những lĩnh vực thú vị như xây dựng thương hiệu, tạo wireframe, phát triển front-end và cả một chút tiếp thị kỹ thuật số. Mình luôn cố gắng tạo ra những thiết kế không chỉ đẹp mà còn có ý nghĩa, giúp giải quyết vấn đề và để lại dấu ấn tích cực.
-            </p>
-
-            <p className={styles.introText}>
-              Khi không làm việc, mình thích làm DIY, nấu ăn, hoặc tận hưởng anime, phim điện ảnh, hoặc Cdrama. Mình rất thích đọc manga, manhwa, và cả manhua — đây là cách mình thư giãn và khám phá các phong cách vẽ khác nhau. Tôi cũng thích tạo tranh minh họa kỹ thuật số trên Procreate nữa.
-            </p>
-            <p className={styles.introText}>
-              Hãy cùng nhau tạo nên điều tuyệt vời nhé — Mình rất mong đợi được làm việc cùng bạn!
-            </p>
-          </div>
         )}
         
         </main>

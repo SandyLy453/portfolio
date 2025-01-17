@@ -35,13 +35,13 @@ export default function About() {
 
             <div className={styles.languageToggle}>
                 <button
-                    className={language === "english" ? styles.active : styles.sleep}
+                    className={language === "english" ? styles.active : ""}
                     onClick={() => handleLanguageChange("english")}
                 >
                     English
                 </button>
                 <button
-                    className={language === "vietnamese" ? styles.active : styles.sleep}
+                    className={language === "vietnamese" ? styles.active : ""}
                     onClick={() => handleLanguageChange("vietnamese")}
                 >
                     Vietnamese
