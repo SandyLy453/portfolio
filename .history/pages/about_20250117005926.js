@@ -77,7 +77,7 @@ export default function About() {
                 Xin chào mọi người!
             </p>
             <p className={styles.introText}>
-              Mình là <span className={styles.lilName}>Bội San</span> và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
+              Mình là <span className={styles.lilName}>Bội San</span>và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
             </p>
 
             <p className={styles.introText}>

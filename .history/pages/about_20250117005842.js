@@ -77,15 +77,15 @@ export default function About() {
                 Xin chào mọi người!
             </p>
             <p className={styles.introText}>
-              Mình là <span className={styles.lilName}>Bội San</span> và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
+              Mình là <span className={styles.lilName}>Bội San</span>và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
             </p>
 
             <p className={styles.introText}>
-              Mình theo học ngành Digital Déign and Development của BCIT từ năm 2023, trong quãng thời gian theo học, mình đã được tạo cơ hội để phát triển và có những trãi nghiệm về xây dựng thương hiệu, thiết kế và phát triển wireframe từ lo-fi đến hi-fi; mình cũng lập trình trang web cũng như mobile app bằng những kỹ năng và kiến thức của front-end developer; và mình còn được trôi dào kiến thức về digital marketing.
+              Trong quá trình học ngành Digital Design and Devilopment tại BCIT, mình đã khám phá những lĩnh vực thú vị như xây dựng thương hiệu, tạo wireframe, phát triển front-end và cả một chút tiếp thị kỹ thuật số. Mình luôn cố gắng tạo ra những thiết kế không chỉ đẹp mà còn có ý nghĩa, giúp giải quyết vấn đề và để lại dấu ấn tích cực.
             </p>
 
             <p className={styles.introText}>
-              Những lúc rãnh rỗi, mình thích làm DIY, nấu ăn, và coi phim (anime, movies, Cdrama và vân vân mây mây những thứ thú đáng yêu vui nhộn nữa). Bên cạnh đó, mình còn có thú vui đọc truyện tranh - cả manga, manhwa, và manhua - để thư giản, tìm hiểu, và khám phá những phong cách vẽ tranh khác nhau.
+              Khi không làm việc, mình thích làm DIY, nấu ăn, hoặc tận hưởng anime, phim điện ảnh, hoặc Cdrama. Mình rất thích đọc manga, manhwa, và cả manhua — đây là cách mình thư giãn và khám phá các phong cách vẽ khác nhau. Tôi cũng thích tạo tranh minh họa kỹ thuật số trên Procreate nữa.
             </p>
             <p className={styles.introText}>
               Hãy cùng nhau tạo nên điều tuyệt vời nhé — Mình rất mong đợi được làm việc cùng bạn!

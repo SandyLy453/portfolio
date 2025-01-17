@@ -77,7 +77,7 @@ export default function About() {
                 Xin chào mọi người!
             </p>
             <p className={styles.introText}>
-              Mình là <span className={styles.lilName}>Bội San</span> và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
+              Mình là <span className={styles.lilName}>Bội San</span>và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
             </p>
 
             <p className={styles.introText}>
@@ -85,7 +85,7 @@ export default function About() {
             </p>
 
             <p className={styles.introText}>
-              Những lúc rãnh rỗi, mình thích làm DIY, nấu ăn, và coi phim (anime, movies, Cdrama và vân vân mây mây những thứ thú đáng yêu vui nhộn nữa). Bên cạnh đó, mình còn có thú vui đọc truyện tranh - cả manga, manhwa, và manhua - để thư giản, tìm hiểu, và khám phá những phong cách vẽ tranh khác nhau.
+              KProcreate nữa.
             </p>
             <p className={styles.introText}>
               Hãy cùng nhau tạo nên điều tuyệt vời nhé — Mình rất mong đợi được làm việc cùng bạn!
