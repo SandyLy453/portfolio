@@ -97,26 +97,96 @@ export default function Home() {
         </div>
 
         <div className={styles.pjSection}>
-          {projects.slice(0, visibleProjects).map((project, index) => (
-            <ProjectCard
-              key={index}
-              photos={project.photos}
-              alt={project.alt}
-              title={project.title}
-              description={project.description}
-              date={project.date}
-              link={project.link}
-            />
-          ))}
-        </div>
+          <ProjectCard
+            photos= {["/perfume1.png", "/perfume2.png", "/perfume3.png"]}
+            alt="Perfume Advertisement Posters"
+            title="Perfume Advertisement Posters"
+            description="Product design - Perfume series advertisement poster"
+            date="Jan 2025"
+            link="/project-details" 
+          />
 
-        {visibleProjects < projects.length && (
-          <div className={styles.loadMoreContainer}>
-            <button onClick={loadMoreProjects} className={styles.loadMoreButton}>
-              More Projects
-            </button>
-          </div>
-        )}
+          <ProjectCard
+            photos={["/aether.png"]} 
+            alt="Aether cover"
+            title="Aether"
+            description="Case Study - A AI-powered form-filling app"
+            date="Sep 2024 - Dec 2024"
+            link="/posts/Aether" 
+          />
+
+          <ProjectCard
+            photos= {["/poster1.png", "/poster2.png", "/poster3.png"]}
+            alt="Poster slides show"
+            title="Poster design"
+            description="Product design - Series of posters based on the anime/ manga Detective Conan."
+            date="Dec 2024"
+            link="/posts/Poster" 
+          />
+
+          <ProjectCard
+            photos={["/can1.png", "/can2.png", "/can3.png"]} 
+            alt="Can deasign slide show"
+            title="DiLo Tea Can"
+            description="Product design - Tea Can"
+            date="Nov 2024"
+            link="/posts/CanDesign" 
+          />
+
+          <ProjectCard
+            photos= {["/maga.png"]}
+            alt="Magazine cover"
+            title="Magazine"
+            description="Magazine design - A architectural magazine"
+            date="November 2024"
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {["/menu.png"]}
+            alt="Menu image"
+            title="Menu Design"
+            description="Menu Design - Desgning menu use vector graphics"
+            date="may 2024"
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {["/cam.png"]}
+            alt="Camera vector graphic"
+            title="Mechanical Object Vector Graphic"
+            description="Using vector to draw mechanical object"
+            date="December 2023"
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
+          />
+        </div>
       </main>
 
       <Footer/>

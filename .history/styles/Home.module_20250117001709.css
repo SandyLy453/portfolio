@@ -99,7 +99,7 @@
   width: 150px;
   background-color: var(--cream);
   color: var(--forest);
-  border: 1px solid var(--forest);
+  border: none;
   font-size: 18px;
   align-items: center;
   border-radius: 10px;

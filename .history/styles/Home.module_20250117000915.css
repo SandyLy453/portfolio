@@ -87,30 +87,6 @@
   margin-bottom: 50px;
 }
 
-.loadMoreContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.loadMoreButton {
-  height: 40px;
-  width: 150px;
-  background-color: var(--cream);
-  color: var(--forest);
-  border: 1px solid var(--forest);
-  font-size: 18px;
-  align-items: center;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.loadMoreButton:hover {
-  background-color: var(--forest);
-  color: var(--cream);
-}
-
 
 @media screen and (max-width: 768px) {
   .main {
