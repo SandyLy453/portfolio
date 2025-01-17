@@ -29,12 +29,12 @@ export default function Home() {
 
         <div className={styles.pjSection}>
           <ProjectCard
-            photos={["/aether.png"]} // Use 'photos' instead of 'photo'
+            photos={["/aether.png"]} 
             alt="Aether cover"
             title="Aether"
             description="Case Study - A AI-powered form-filling app"
             date="Sep 2024 - Dec 2024"
-            link="/posts/Aether" // Ensure the link is valid
+            link="/posts/Aether" 
           />
 
           <ProjectCard
@@ -43,7 +43,7 @@ export default function Home() {
             title="Poster design"
             description="Product design - Series of posters based on the anime/ manga Detective Conan."
             date="Dec 2024"
-            link="/posts/Poster" // Ensure the link is valid
+            link="/posts/Poster" 
           />
 
           <ProjectCard
@@ -52,7 +52,7 @@ export default function Home() {
             title="DiLo Tea Can"
             description="Product design - Tea Can"
             date="Nov 2024"
-            link="/posts/CanDesign" // Ensure the link is valid
+            link="/posts/CanDesign" 
           />
 
           <ProjectCard
@@ -61,7 +61,7 @@ export default function Home() {
             title="Magazine"
             description="Magazine design - A architectural magazine"
             date="November 2024"
-            link="/project-details" // Ensure the link is valid
+            link="/project-details" 
           />
 
           <ProjectCard
@@ -70,7 +70,7 @@ export default function Home() {
             title="Menu Design"
             description="Menu Design - Desgning menu use vector graphics"
             date="may 2024"
-            link="/project-details" // Ensure the link is valid
+            link="/project-details" 
           />
 
           <ProjectCard
@@ -79,7 +79,34 @@ export default function Home() {
             title="Mechanical Object Vector Graphic"
             description="Using vector to draw mechanical object"
             date="December 2023"
-            link="/project-details" // Ensure the link is valid
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
+          />
+
+          <ProjectCard
+            photos= {[""]}
+            alt=""
+            title="Project Name"
+            description=""
+            date=""
+            link="/project-details" 
           />
         </div>
       </main>
