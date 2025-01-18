@@ -63,7 +63,7 @@ export default function Home() {
       title: "Clotho",
       description: "Clotho - A closet organize app",
       date: "March 2024 -May 2024",
-      link: "/project-details",
+      link: "/projects/Clotho",
     },
     {
       photos: ["/cc-cover.png"],
