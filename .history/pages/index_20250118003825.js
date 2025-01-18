@@ -98,7 +98,7 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: ["/404.png"],
+      photos: [""],
       alt: "404 page",
       title: "404 - Page Not Found",
       description: "Customized 404 page",
