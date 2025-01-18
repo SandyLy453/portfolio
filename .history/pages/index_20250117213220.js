@@ -22,7 +22,7 @@ export default function Home() {
       title: "Aether",
       description: "Case Study - A AI-powered form-filling app",
       date: "Sep 2024 - Dec 2024",
-      link: "/projects/Aether",
+      link: "/posts/Aether",
     },
     {
       photos: ["/post1.png", "/post2.png", "/post3.png"],
@@ -31,7 +31,7 @@ export default function Home() {
       description:
         "Product design - Series of posters based on the anime/ manga Detective Conan.",
       date: "Dec 2024",
-      link: "/projects/Poster",
+      link: "/posts/Poster",
     },
     {
       photos: ["/can1.png", "/can2.png", "/can3.png"],
