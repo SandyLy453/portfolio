@@ -10,7 +10,7 @@ export default function Header () {
             </div>
 
             <div className={styles.menu}>
-                <p className={styles.menuOption}><Link href={'/'} className={styles.link}>Project</Link></p>
+                <p className={styles.menuOption}><Link href={'/'} className={styles.link}>Home</Link></p>
                 <p className={styles.menuOption}><Link href={'/about'} className={styles.link}>About me</Link></p>
             </div>
         </header>

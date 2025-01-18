@@ -88,6 +88,10 @@ export default function Aether() {
                     </p>
                 </div>
             </div>
+            
+            <div className={styles.sectionBreaker}>
+                <span> Research </span>
+            </div>
 
             <div className={styles.infoSection}>
                 <h2 className="subHeading">
@@ -122,6 +126,10 @@ export default function Aether() {
                     &#8594;
                     </button>
                 </div>
+            </div>
+
+            <div className={styles.sectionBreaker}>
+                <span> About the App </span>
             </div>
 
             <div className={styles.feature}>
@@ -191,6 +199,10 @@ export default function Aether() {
                         </p>
                     </div>
                 )}
+            </div>
+
+            <div className={styles.sectionBreaker}>
+                <span> Commercial </span>
             </div>
             
             <div className={styles.video}>

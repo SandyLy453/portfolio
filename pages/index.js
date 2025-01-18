@@ -17,7 +17,7 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: ["/aether.png"],
+      photos: ["/aether-cover.png"],
       alt: "Aether cover",
       title: "Aether",
       description: "Case Study - A AI-powered form-filling app",
@@ -58,11 +58,19 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: [""],
+      photos: ["/clotho.png"],
+      alt: "Clotho app",
+      title: "Clotho",
+      description: "Clotho - A closet organize app",
+      date: "March 2024 -May 2024",
+      link: "/project-details",
+    },
+    {
+      photos: ["/cc-cover.png"],
       alt: "CraterConnects",
       title: "CrafterConnects",
       description: "CrafterCponnects - A collaborative DIY app",
-      date: "May 2024",
+      date: "March 2024 - May 2024",
       link: "/project-details",
     },
     {
@@ -70,7 +78,7 @@ export default function Home() {
       alt: "Video thumbnails",
       title: "How To Manage Your Time",
       description: "After Effect - Vector based video",
-      date: "May 2024",
+      date: "April 2024 - May 2024",
       link: "/project-details",
     },
     {
@@ -89,8 +97,15 @@ export default function Home() {
       date: "December 2023",
       link: "/project-details",
     },
+    {
+      photos: [""],
+      alt: "404 page",
+      title: "404 - Page Not Found",
+      description: "Customized 404 page",
+      date: "Jan 2024",
+      link: "/project-details",
+    },
 
-    // Add more projects as needed
   ];
 
   const [visibleProjects, setVisibleProjects] = useState(6);
