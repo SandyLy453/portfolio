@@ -9,7 +9,7 @@ export default function Home() {
 
   const projects = [
     {
-      photos: ["/perfume1.png", "/perfume2.png", "/perfume3.png"],
+      photos: ["/post4.png", "/post5.png", "/post6.png"],
       alt: "Perfume Advertisement Posters",
       title: "Perfume Advertisement Posters",
       description: "Product design - Perfume series advertisement poster",
@@ -25,7 +25,7 @@ export default function Home() {
       link: "/posts/Aether",
     },
     {
-      photos: ["/poster1.png", "/poster2.png", "/poster3.png"],
+      photos: ["/post1.png", "/post2.png", "/post3.png"],
       alt: "Poster slides show",
       title: "Poster design",
       description:
@@ -42,7 +42,7 @@ export default function Home() {
       link: "/posts/CanDesign",
     },
     {
-      photos: ["/maga.png"],
+      photos: ["/mockup2.png"],
       alt: "Magazine cover",
       title: "Magazine",
       description: "Magazine design - An architectural magazine",
@@ -50,7 +50,7 @@ export default function Home() {
       link: "/project-details",
     },
     {
-      photos: ["/menu.png"],
+      photos: ["/mockup1.png"],
       alt: "Menu image",
       title: "Menu Design",
       description: "Menu Design - Designing menu using vector graphics",
