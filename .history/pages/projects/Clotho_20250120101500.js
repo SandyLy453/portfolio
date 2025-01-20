@@ -3,21 +3,23 @@ import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/Aether.module.css'
+import styles from '@/styles/Clotho.module.css'
+import Link from "next/link";
 
-export default function Aether() {
+export default function Clotho() {
 
     useEffect(() => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
     }, []);
 
     const personaImages = [
-        { src: "/persona1.png", alt: "Persona 1" },
-        { src: "/persona2.png", alt: "Persona 2" },
+        { src: "/persona3.png", alt: "Persona 1" },
+        { src: "/persona4.png", alt: "Persona 2" },
+        { src: "/persona5.png", alt: "Persona 3" },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [feature, setFeature] = useState("library")
+    const [feature, setFeature] = useState("inventory")
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) =>
@@ -41,18 +43,18 @@ export default function Aether() {
 
             <main className={styles.body}>
                 <PostHeader 
-                    title="Aether - Saving time for what matter the most"
-                    date="By Aether Team | 2024"
+                    title="Clotho"
+                    date="By Clotho Team | 2024"
                 />
 
             <div className={styles.intro}>
-                <Image src={'/aether.gif'} alt="aether logo" className={styles.gifOne} width={140*4} height={100*4}/>
+                <Image src={'/clotho.gif'} alt="aether logo" className={styles.gifOne} width={140*4} height={88*4}/>
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
                         Timeline
                     </h2>
                     <p className={styles.content}>
-                        September 2024 - December 2024
+                        Febuary 2024 - May 2024
                     </p>
                     <h2 className={styles.subHeading}>
                         Role
@@ -64,8 +66,19 @@ export default function Aether() {
                         Tools
                     </h2>
                     <p className={styles.content}>
-                        Figma, Adobe Illutrators, NextJS, React
+                        Figma, NextJS, React
                     </p>
+
+                    <Link 
+                        href="https://clotho-closetapp.vercel.app" 
+                        className={styles.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.button}>
+                            Live App
+                        </button>
+                    </Link>
                 </div>
             </div>
 
@@ -76,10 +89,10 @@ export default function Aether() {
             <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className="subHeading">
-                        What was the painpoint?
+                        What was the Painpoint?
                     </h2>
                     <p className={styles.content}>
-                        We discovered that completing paperwork can take an individual up to <span className={styles.span}>30 days</span> a year, and for caregivers, it often takes even longer. Most forms are highly stressful and challenging to fill out due to their complexity, lengthy content, and occasionally unclear instructions.
+                        It's not easy to keep track of all your clothes or organize them efficiently. Many people end up buying duplicates because they forget they already own a similar item. Additionally, mixing and matching outfits for daily wear can be time-consuming and frustrating.
                     </p>
                 </div>
 
@@ -88,7 +101,7 @@ export default function Aether() {
                         How did we solve this?
                     </h2>
                     <p className={styles.content}>
-                        To solve this problem, we created <span className={styles.span}>Aether</span>. With <span className={styles.span}>Aether</span>, filling out forms becomes easier, faster, and significantly less stressful.
+                        To address this issue, <span className={styles.span}>Clotho</span> was created. <span className={styles.span}>Clotho</span> is a closet app that allows users to save and catalog all their clothes and accessories in one place. With Clotho, users can effortlessly mix and match their outfits, making the process quick, simple, and stress-free.
                     </p>
                 </div>
             </div>
@@ -143,76 +156,51 @@ export default function Aether() {
 
                 <div className={styles.toggle}>
                     <button
-                        className={feature === "library" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("library")}
+                        className={feature === "inventory" ? styles.active : styles.sleep}
+                        onClick={() => handleFeatureChange("inventory")}
                     >
-                        Form Library
+                        Inventory
                     </button>
                     <button
-                        className={feature === "scan" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("scan")}
+                        className={feature === "calendar" ? styles.active : styles.sleep}
+                        onClick={() => handleFeatureChange("calendar")}
                     >
-                        Document Scanning
+                        Calendar
                     </button>
                     <button
-                        className={feature === "fill" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("fill")}
+                        className={feature === "trend" ? styles.active : styles.sleep}
+                        onClick={() => handleFeatureChange("trend")}
                     >
-                        Document Filling
-                    </button>
-                    <button
-                        className={feature === "accessibility" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("accessibility")}
-                    >
-                        Accessibility
+                        Trends Update
                     </button>
                 </div>
 
-                {feature === "library" && (
+                {feature === "inventory" && (
                     <div className={styles.box}>
-                        <Image src={'/library.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/inventory.png'} alt="inventory feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
-                            Simplify your caregiving tasks with Aether's Forms Library. Our collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
+                            The Inventory feature allows you to save all your clothes and accessories in one place, making it easier to mix and match outfits in the future.
                         </p>
                     </div>
                 )}
 
-                {feature === "scan" && (
+                {feature === "calendar" && (
                     <div className={styles.box}>
-                        <Image src={'/scan.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/calendar.png'} alt="calendar feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
-                            Aether is here to make life easier for caregivers. With our advanced scanning feature, simply scan any document, and our AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
+                            The Calendar feature helps users plan their future outfits and organize clothing selections for upcoming events seamlessly.
                         </p>
                     </div>
                 )}
 
-                {feature === "fill" && (
+                {feature === "trend" && (
                     <div className={styles.box}>
-                        <Image src={'/fill.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/trend.png'} alt="trend feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
-                            Aether makes filling out forms a breeze for caregivers. Use our autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
+                            The Trending Updates feature keeps you informed about the latest fashion trends and provides mix-and-match tips to help you create stylish and coordinated outfits effortlessly.
                         </p>
                     </div>
                 )}
-
-                {feature === "accessibility" && (
-                    <div className={styles.box}>
-                        <Image src={'/accessibility.png'} alt="accessibility feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            At Aether, we prioritize accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
-                        </p>
-                    </div>
-                )}
-            </div>
-
-            <div className={styles.sectionBreaker}>
-                <span> Commercial </span>
-            </div>
-            
-            <div className={styles.video}>
-                <h2 className="subHeading">
-                    Promote Video
-                </h2>
             </div>
             </main>
 
@@ -220,4 +208,6 @@ export default function Aether() {
         </>
     )
 }
+
+
 

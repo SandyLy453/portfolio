@@ -70,13 +70,13 @@ export default function Aether() {
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Challenge </span>
+                <span> Problem </span>
             </div>
 
             <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className="subHeading">
-                        What was the painpoint?
+                        What was the problem?
                     </h2>
                     <p className={styles.content}>
                         We discovered that completing paperwork can take an individual up to <span className={styles.span}>30 days</span> a year, and for caregivers, it often takes even longer. Most forms are highly stressful and challenging to fill out due to their complexity, lengthy content, and occasionally unclear instructions.
