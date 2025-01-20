@@ -67,9 +67,9 @@ export default function Home() {
     },
     {
       photos: ["/cc-cover.png"],
-      alt: "CratersConnect",
-      title: "CraftersConnect",
-      description: "CraftersCponnect - A collaborative DIY app",
+      alt: "CraterConnects",
+      title: "CrafterConnects",
+      description: "CrafterCponnects - A collaborative DIY app",
       date: "March 2024 - May 2024",
       link: "/projects/CraftersConnect",
     },

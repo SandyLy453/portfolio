@@ -1,0 +1,19 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
+import "@/styles/globals.css";
+
+export default function App({ Component, pageProps }) {
+
+  const router = useRouter();
+
+    useEffect(() => {
+        const handleRouteChange = () => {
+            window.scrollTo(0, 0); // Scroll to the top on route change
+        };
+
+        router.events.on("routeChangeComplete", handleRouteChange);
+
+  
+  return <Component {...pageProps} />;
+}

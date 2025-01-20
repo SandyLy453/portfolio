@@ -7,9 +7,7 @@ import styles from '@/styles/Aether.module.css'
 
 export default function Aether() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-    }, []);
+    
 
     const personaImages = [
         { src: "/persona1.png", alt: "Persona 1" },

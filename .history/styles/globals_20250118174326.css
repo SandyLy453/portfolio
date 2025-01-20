@@ -40,9 +40,6 @@ header {
   box-sizing: border-box; /* Reset styles for all elements */
 }
 
-h1, h2, h3, h4, h5, span {
-  font-family: "Playfair Display", serif;
-}
 
 
 

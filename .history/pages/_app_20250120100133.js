@@ -12,7 +12,7 @@ const playfairDisplay = Playfair_Display({
 const sen = Sen({
   weight: ['400', '700', '800'],
   subsets: ['latin'],
-});
+
 
 export default function App({ Component, pageProps }) {
 

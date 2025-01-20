@@ -1,15 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/Aether.module.css'
+import styles from '@/styles/CrafterConnect.module.css'
 
-export default function Aether() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-    }, []);
+export default function CrafterConnect() {
 
     const personaImages = [
         { src: "/persona1.png", alt: "Persona 1" },
@@ -41,8 +37,8 @@ export default function Aether() {
 
             <main className={styles.body}>
                 <PostHeader 
-                    title="Aether - Saving time for what matter the most"
-                    date="By Aether Team | 2024"
+                    title="CrafterConnect"
+                    date="By CrafterConnects Team | 2024"
                 />
 
             <div className={styles.intro}>
@@ -52,20 +48,31 @@ export default function Aether() {
                         Timeline
                     </h2>
                     <p className={styles.content}>
-                        September 2024 - December 2024
+                        Febyary 2024 - May 2024
                     </p>
                     <h2 className={styles.subHeading}>
                         Role
                     </h2>
                     <p className={styles.content}>
-                        UX/UI Designer | Front-end Developer | Researcher
+                        UX/UI Designer | Researcher
                     </p>
                     <h2 className={styles.subHeading}>
                         Tools
                     </h2>
                     <p className={styles.content}>
-                        Figma, Adobe Illutrators, NextJS, React
+                        Figma, Adobe Illutrators
                     </p>
+
+                    <Link 
+                        href="https://clotho-closetapp.vercel.app" 
+                        className={styles.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.button}>
+                            Figma
+                        </button>
+                    </Link>
                 </div>
             </div>
 

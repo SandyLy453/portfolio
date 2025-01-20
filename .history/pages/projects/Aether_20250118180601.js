@@ -8,7 +8,7 @@ import styles from '@/styles/Aether.module.css'
 export default function Aether() {
 
     useEffect(() => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
     }, []);
 
     const personaImages = [
@@ -97,40 +97,6 @@ export default function Aether() {
                 <span> Research </span>
             </div>
 
-            <div className={styles.infoSection}>
-                <h2 className="subHeading">
-                    Persona
-                </h2>
-
-                {/* Custom Slider */}
-                <div className={styles.slider}>
-                    <button
-                    className={styles.sliderButton}
-                    onClick={handlePrev}
-                    aria-label="Previous"
-                    >
-                    &#8592;
-                    </button>
-
-                    <div className={styles.imageContainer}>
-                    <Image
-                        src={personaImages[currentIndex].src}
-                        alt={personaImages[currentIndex].alt}
-                        width={850 / 1.5}
-                        height={1100 / 1.5}
-                        className={styles.persona}
-                    />
-                    </div>
-
-                    <button
-                    className={styles.sliderButton}
-                    onClick={handleNext}
-                    aria-label="Next"
-                    >
-                    &#8594;
-                    </button>
-                </div>
-            </div>
 
             <div className={styles.sectionBreaker}>
                 <span> About the App </span>

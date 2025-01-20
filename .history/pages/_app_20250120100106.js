@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Playfair_Display, Sen } from 'next/font/google';
-import '../styles/globals.css';
+import { Playfair_Display, Sen } from '@next/font/google';
+
+import "@/styles/globals.css";
+
 
 const playfairDisplay = Playfair_Display({
-  weight: ['400', '900'],
-  style: ['normal', 'italic'],
+  weight: ['400', '600', '900'],
+  style: ['normal', 'bold', 'italic'],
   subsets: ['latin'],
 });
 

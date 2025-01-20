@@ -1,15 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/Aether.module.css'
+import styles from '@/styles/CrafterConnect.module.css'
 
-export default function Aether() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-    }, []);
+export default function CrafterConnect() {
 
     const personaImages = [
         { src: "/persona1.png", alt: "Persona 1" },
