@@ -170,7 +170,9 @@ font-style: italic;
 }
 
 .video {
-    margin-bottom: 50px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 

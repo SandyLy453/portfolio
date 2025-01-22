@@ -213,6 +213,16 @@ export default function Aether() {
                 <h2 className="subHeading">
                     Promote Video
                 </h2>
+
+                <video 
+                    className={styles.video} 
+                    controls 
+                    width="100%" 
+                    height="auto"
+                >
+                    <source src="/aether.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
             </main>
 
