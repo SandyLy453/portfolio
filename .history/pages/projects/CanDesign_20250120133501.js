@@ -28,22 +28,16 @@ export default function CanDesign() {
                             Role
                         </h2>
                         <p className={styles.content}>
-                            Product Designer
+                            UX/UI Designer | Front-end Developer | Researcher
                         </p>
                         <h2 className={styles.subHeading}>
                             Tools
                         </h2>
                         <p className={styles.content}>
-                            Adobe Illutrators, Procreate
+                            Figma, Adobe Illutrators, NextJS, React
                         </p>
                     </div>
                 </div>
-
-                <div className={styles.sectionBreaker}>
-                    <span> Introduction </span>
-                </div>
-
-
             </main>
             <Footer />
         </>

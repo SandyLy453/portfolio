@@ -1,0 +1,50 @@
+.main {
+    width: 70vw;
+    margin: auto;
+    margin-top: 0;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.subHeading {
+    color: var(--forest);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.intro .content {
+    margin-bottom: 20px;
+}
+
+.span {
+    color: var(--midnight);
+    font-weight: 700;
+}
+
+.content {
+    font-family: "Sen", sans-serif;
+    margin-top: 5px;
+    max-width: 30vw;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90vw;
+    }
+}
