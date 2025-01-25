@@ -14,7 +14,7 @@ export default function Home() {
       title: "Perfume Advertisement Posters",
       description: "Product design - Perfume series advertisement poster",
       date: "Jan 2025",
-      link: "/project-details",
+      link: "/projects/PerfumeAdvertisementPosters",
     },
     {
       photos: ["/aether-cover.png"],
