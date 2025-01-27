@@ -113,11 +113,9 @@
   color: var(--cream);
 }
 
-@media screen and (max-width: 1366px) {
-  .pjSection {
-    gap: 20px;
-  }
-}
+
+
+@media screen and (max-width: 768px) {}
 
 
 
