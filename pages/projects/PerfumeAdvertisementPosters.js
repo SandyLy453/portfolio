@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/CanDesign.module.css'
+import styles from '@/styles/Poster.module.css'
 
 export default function Perfume() {
     return (
@@ -16,7 +16,7 @@ export default function Perfume() {
                 />
 
                 <div className={styles.intro}>
-                    <Image src={'/cancover.png'} alt="Can Cover" className={styles.cover} width={140*4} height={100*4}/>
+                    <Image src={'/postcover2.png'} alt="Poster mockup" className={styles.cover} width={140*4} height={100*4}/>
                     <div className={styles.text}>
                         <h2 className={styles.subHeading}>
                             Timeline
@@ -49,7 +49,7 @@ export default function Perfume() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
+                        This project features a series of conceptual product posters for a perfume collection inspired by  <span className={styles.span}>Detective Conan</span> , the renowned Japanese anime/ manga series. Each bottle is designed to embody a unique character from the series, with distinct visual themes and narratives tied to their backgrounds. The designs aim to capture the essence of each character while integrating storytelling elements into the branding.
                     </p>
                 </div>
             </div>
@@ -59,9 +59,9 @@ export default function Perfume() {
                 </div>
 
                 <div className={styles.showcase}>
-                    <Image src={'/post4.png'} alt="Can 1 dieline" className={styles.design} width={330*2} height={370*2}/>
-                    <Image src={'/post5.png'} alt="Can 1 dieline" className={styles.design} width={330*2} height={370*2}/>
-                    <Image src={'/post6.png'} alt="Can 1 dieline" className={styles.design} width={330*2} height={370*2}/>
+                    <Image src={'/perfume1.png'} alt="Poster 1" className={styles.design} width={330*2} height={370*2}/>
+                    <Image src={'/perfume2.png'} alt="Poster e" className={styles.design} width={330*2} height={370*2}/>
+                    <Image src={'/perfume3.png'} alt="Poster " className={styles.design} width={330*2} height={370*2}/>
                 </div>
 
 
