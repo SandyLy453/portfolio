@@ -2,9 +2,13 @@
     width: 70vw;
     margin: auto;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     margin: 0 auto;
     padding: 0 1rem;
-    max-width: 1500px;
+    max-width: 1200px;
     position: relative;
 
 }
@@ -116,7 +120,6 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
-    position: relative;
 }
 
 .book {
