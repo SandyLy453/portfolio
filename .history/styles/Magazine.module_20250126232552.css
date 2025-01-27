@@ -144,15 +144,6 @@ font-style: italic;
         font-size: 16px;
     }
     .cover {
-        width: 90%;
-    }
-
-    .book {
-        max-width: 90%; 
-    }
-
-    .page {
-        width: 90%; 
-        height: auto;
+        width: 100%;
     }
 }

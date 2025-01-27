@@ -144,15 +144,15 @@ font-style: italic;
         font-size: 16px;
     }
     .cover {
-        width: 90%;
+        width: 100%;
     }
 
     .book {
-        max-width: 90%; 
+        max-width: 100%; /* Full width for smaller screens */
     }
 
     .page {
-        width: 90%; 
+        width: 100%; /* Ensure page fits screen */
         height: auto;
     }
 }

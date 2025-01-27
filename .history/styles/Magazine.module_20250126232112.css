@@ -111,14 +111,12 @@ font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 100px;
 }
 
 .book {
     box-shadow: none;
     background-color: transparent;
-    width: 100%; 
-    max-width: 90vw; 
 }
 
 .page {
@@ -126,8 +124,6 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
 }
 
 
@@ -144,15 +140,6 @@ font-style: italic;
         font-size: 16px;
     }
     .cover {
-        width: 90%;
-    }
-
-    .book {
-        max-width: 90%; 
-    }
-
-    .page {
-        width: 90%; 
-        height: auto;
+        width: 100%;
     }
 }
