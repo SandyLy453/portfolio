@@ -61,13 +61,13 @@ export default function Magazine() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        A magazine exploring <span className={styles.span}>ancient architecture</span> from Egypt, Mesopotamia, Greece, and Rome, highlighting their engineering, cultural significance, and lasting influence. It features a <span className={styles.span}>print version</span> and an <span className={styles.span}>interactive digital edition</span> with expanded content and a navigable table of contents for an engaging reading experience.
+                        <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
                     </p>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Print Version </span>
+                <span> Physical Version </span>
             </div>
 
             <div className={styles.bookContainer}>

@@ -61,13 +61,13 @@ export default function Magazine() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        A magazine exploring <span className={styles.span}>ancient architecture</span> from Egypt, Mesopotamia, Greece, and Rome, highlighting their engineering, cultural significance, and lasting influence. It features a <span className={styles.span}>print version</span> and an <span className={styles.span}>interactive digital edition</span> with expanded content and a navigable table of contents for an engaging reading experience.
+                        A magazine exploring <span className={styles.span}>ancient architecture</span> from Egypt, Mesopotamia, Greece, and Rome, highlighting their engineering, cultural significance, and lasting influence. It features a print version and an interactive digital edition with expanded content and a navigable table of contents for an engaging reading experience.
                     </p>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Print Version </span>
+                <span> Physical Version </span>
             </div>
 
             <div className={styles.bookContainer}>
