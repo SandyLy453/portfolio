@@ -72,7 +72,7 @@ export default function MenuDesign() {
                     <h2 className="subHeading">
                         What is this product about?
                     </h2>
-                    <p className={styles.content}>
+                    <p className={styles.content}>\
                         A menu designed to reflect the family-friendly warmth of <span className={styles.span}>San San's Kitchen</span>. It features playful illustrations, clean typography, and an intuitive layout to highlight the restaurant's diverse brunch offerings while ensuring easy navigation and visual appeal.
                     </p>
                 </div>

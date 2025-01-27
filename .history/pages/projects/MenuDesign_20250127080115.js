@@ -45,7 +45,7 @@ export default function MenuDesign() {
                             Timeline
                         </h2>
                         <p className={styles.content}>
-                            May 2024
+                            November 2024
                         </p>
                         <h2 className={styles.subHeading}>
                             Role
@@ -73,13 +73,13 @@ export default function MenuDesign() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        A menu designed to reflect the family-friendly warmth of <span className={styles.span}>San San's Kitchen</span>. It features playful illustrations, clean typography, and an intuitive layout to highlight the restaurant's diverse brunch offerings while ensuring easy navigation and visual appeal.
+                        <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
                     </p>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Final Version </span>
+                <span> Physical Version </span>
             </div>
 
             <div className={styles.bookContainer}>
@@ -88,7 +88,6 @@ export default function MenuDesign() {
                         height={bookDimensions.height}
                         className={styles.book}
                         mobileScrollSupport={true}
-                        showCover={true}
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>
@@ -101,24 +100,18 @@ export default function MenuDesign() {
                             />
                         </div>
 
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu2.png`}
-                                alt="Menu second page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu3.png`}
-                                alt="Menu third page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
+                        {/* Middle pages */}
+                        {Array.from({ length: 2 }, (_, i) => (
+                            <div key={i + 2} className={styles.page}>
+                                <Image
+                                    src={`/menu${i + 2}.png`}
+                                    alt={`Magazine page ${i + 2}`}
+                                    width={1350}
+                                    height={2400}
+                                    layout="responsive"
+                                />
+                            </div>
+                        ))}
 
                     </HTMLFlipBook>
                 </div>

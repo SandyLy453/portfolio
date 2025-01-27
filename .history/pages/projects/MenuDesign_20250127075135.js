@@ -13,17 +13,12 @@ export default function MenuDesign() {
 
     useEffect(() => {
         const updateDimensions = () => {
-            const screenWidth = window.innerWidth;
-            const maxWidth = 500; 
-            const scaleFactor = screenWidth < 768 ? 0.4 : 0.5; 
-
-            setBookDimensions({
-                width: Math.min(maxWidth, screenWidth * scaleFactor),
-                height: Math.min(maxWidth, screenWidth * scaleFactor) * (2400 / 1350),
-            });
+            const width = window.innerWidth > 768 ? 450 : 300;
+            const height = width * 1.294; 
+            setBookDimensions({ width, height });
         };
 
-        updateDimensions(); 
+        updateDimensions();
         window.addEventListener("resize", updateDimensions); 
 
         return () => window.removeEventListener("resize", updateDimensions); 
@@ -39,13 +34,13 @@ export default function MenuDesign() {
                 />
 
                 <div className={styles.intro}>
-                    <Image src={'/mockup1.png'} alt="Menu mockup" className={styles.cover} width={330} height={370}/>
+                    <Image src={'/mockup2.png'} alt="Magazine mockup" className={styles.cover} width={330} height={370}/>
                     <div className={styles.topText}>
                         <h2 className={styles.subHeading}>
                             Timeline
                         </h2>
                         <p className={styles.content}>
-                            May 2024
+                            November 2024
                         </p>
                         <h2 className={styles.subHeading}>
                             Role
@@ -57,9 +52,19 @@ export default function MenuDesign() {
                             Tools
                         </h2>
                         <p className={styles.content}>
-                            inDesign, Illutrator, Photoshop, Procreate
+                            inDesign, Photoshop
                         </p>
 
+                        <Link 
+                        href="https://indd.adobe.com/view/a8cf389f-8d10-4715-8712-8ad888eb208a" 
+                        className={styles.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            <button className={styles.button}>
+                                Digital Version
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -73,53 +78,61 @@ export default function MenuDesign() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        A menu designed to reflect the family-friendly warmth of <span className={styles.span}>San San's Kitchen</span>. It features playful illustrations, clean typography, and an intuitive layout to highlight the restaurant's diverse brunch offerings while ensuring easy navigation and visual appeal.
+                        <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
                     </p>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Final Version </span>
+                <span> Physical Version </span>
             </div>
 
             <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        width={bookDimensions.width}
-                        height={bookDimensions.height}
+                        width={window.innerWidth > 768 ? 450 : 300} 
+                        height={
+                            window.innerWidth > 768 
+                                ? 450 * 1.294 
+                                : 300 * 1.294
+                        }
                         className={styles.book}
+                        showCover={true} 
                         mobileScrollSupport={true}
-                        showCover={true}
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>
                             <Image
-                                src={`/menu.png`}
-                                alt="Menu first page"
-                                width={1350}
-                                height={2400}
+                                src={`/maga1.png`}
+                                alt="Magazine Cover"
+                                width={850} 
+                                height={1100} 
                                 layout="responsive"
                             />
                         </div>
 
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu2.png`}
-                                alt="Menu second page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu3.png`}
-                                alt="Menu third page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
+                        {/* Middle pages */}
+                        {Array.from({ length: 10 }, (_, i) => (
+                            <div key={i + 2} className={styles.page}>
+                                <Image
+                                    src={`/maga${i + 2}.png`}
+                                    alt={`Magazine page ${i + 2}`}
+                                    width={850}
+                                    height={1100}
+                                    layout="responsive"
+                                />
+                            </div>
+                        ))}
 
+                        {/* Last page (standalone cover) */}
+                        <div className={styles.page}>
+                            <Image
+                                src={`/maga12.png`}
+                                alt="Back Cover"
+                                width={850}
+                                height={1100}
+                                layout="responsive"
+                            />
+                        </div>
                     </HTMLFlipBook>
                 </div>
 

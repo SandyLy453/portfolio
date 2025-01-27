@@ -73,13 +73,13 @@ export default function MenuDesign() {
                         What is this product about?
                     </h2>
                     <p className={styles.content}>
-                        A menu designed to reflect the family-friendly warmth of <span className={styles.span}>San San's Kitchen</span>. It features playful illustrations, clean typography, and an intuitive layout to highlight the restaurant's diverse brunch offerings while ensuring easy navigation and visual appeal.
+                        <span className={styles.span}>DiLo</span> 
                     </p>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Final Version </span>
+                <span> Physical Version </span>
             </div>
 
             <div className={styles.bookContainer}>
@@ -101,24 +101,17 @@ export default function MenuDesign() {
                             />
                         </div>
 
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu2.png`}
-                                alt="Menu second page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu3.png`}
-                                alt="Menu third page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
+                        {Array.from({ length: 3 }, (_, i) => (
+                            <div key={i} className={styles.page}>
+                                <Image
+                                    src={`/menu${i + 1}.png`}
+                                    alt={`Menu page ${i + 1}`}
+                                    width={1350}
+                                    height={2400}
+                                    layout="responsive"
+                                />
+                            </div>
+                        ))}
 
                     </HTMLFlipBook>
                 </div>
