@@ -96,8 +96,12 @@ font-style: italic;
     align-items: center;
 }
 
-.middle .content {
-    margin-bottom: 60px;
+.content {
+    margin-bottom: 20px;
+}
+
+.content:last-child {
+    align-items:
 }
 
 

@@ -19,6 +19,13 @@
     padding-bottom: 0;
 }
 
+.subHeadingTwo {
+    color: var(--forest);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: right;
+}
+
 .intro .content {
     margin-bottom: 20px;
 }
@@ -50,7 +57,7 @@
 content: "";
 flex: 1;
 height: 2px;
-background: #d3d3d3; /* Adjust color as needed */
+background: #d3d3d3; 
 margin: 0;
 }
 
@@ -96,8 +103,15 @@ font-style: italic;
     align-items: center;
 }
 
-.middle .content {
-    margin-bottom: 60px;
+.content {
+    margin-bottom: 20px;
+}
+
+
+.subHeadingTwo,
+.content:last-child {
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 

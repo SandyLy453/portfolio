@@ -64,7 +64,7 @@ export default function CanDesign() {
                             What was the design idea/ purposes?
                         </h2>
                         <p className={styles.content}>
-                            These can designs for <span className={styles.span}>DiLo</span>'s Vietnamese teas blend cultural authenticity with eye-catching visuals. Featuring a lady in traditional Ao Ngu Than attire, each design uses colors and patterns tied to the tea flavors—green for artichoke, pink for lotus, and yellow for corn silk. The traditional elements, like cloud patterns, highlight the product's heritage, appealing to tea lovers and those seeking an authentic cultural experience, while standing out on shelves.
+                            The Black Organization perfume line is designed as Detective Conan merchandise, capturing each character's essence through symbolic design. Sherry's DNA motif represents her work on experimental medicine, Scotchss phone reflects his silent yet courageous justice, and Bourbon's chain signifies his mystery and responsibility. These elements deepen the connection to the characters, making the perfumes both collectible and meaningful for Detective Conan fans.
                         </p>
                     </div>
                 </div>

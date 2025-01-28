@@ -3,26 +3,26 @@ import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/CanDesign.module.css'
+import styles from '@/styles/Poster.module.css'
 
-export default function CanDesign() {
+export default function Perfume() {
     return (
         <>
             <Header />
             <main className={styles.main}>
                 <PostHeader
-                    title="Dilo Can Design"
-                    date="November 2024"
+                    title="Perfume Advertisement Posters"
+                    date="Januay 2025"
                 />
 
                 <div className={styles.intro}>
-                    <Image src={'/cancover.png'} alt="Can Cover" className={styles.cover} width={140*4} height={100*4}/>
+                    <Image src={'/postcover2.png'} alt="Poster mockup" className={styles.cover} width={140*4} height={100*4}/>
                     <div className={styles.text}>
                         <h2 className={styles.subHeading}>
                             Timeline
                         </h2>
                         <p className={styles.content}>
-                            November 2024
+                            January 2025
                         </p>
                         <h2 className={styles.subHeading}>
                             Role
@@ -46,10 +46,10 @@ export default function CanDesign() {
                 <div className={styles.middle}>
                     <div className={styles.text}>
                         <h2 className="subHeading">
-                            What is DiLo?
+                            What is this product about?
                         </h2>
                         <p className={styles.content}>
-                            <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
+                            This project features a series of conceptual product posters for a perfume collection inspired by  <span className={styles.span}>Detective Conan</span> , the renowned Japanese anime/ manga series. Each bottle is designed to embody a unique character from the series, with distinct visual themes and narratives tied to their backgrounds. The designs aim to capture the essence of each character while integrating storytelling elements into the branding.
                         </p>
                     </div>
                 </div>
@@ -64,18 +64,9 @@ export default function CanDesign() {
                             What was the design idea/ purposes?
                         </h2>
                         <p className={styles.content}>
-                            These can designs for <span className={styles.span}>DiLo</span>'s Vietnamese teas blend cultural authenticity with eye-catching visuals. Featuring a lady in traditional Ao Ngu Than attire, each design uses colors and patterns tied to the tea flavors—green for artichoke, pink for lotus, and yellow for corn silk. The traditional elements, like cloud patterns, highlight the product's heritage, appealing to tea lovers and those seeking an authentic cultural experience, while standing out on shelves.
+                            The Black Organization perfume line is designed as Detective Conan merchandise, capturing each character's essence through symbolic design. Sherry's DNA motif represents her work on experimental medicine, Scotchss phone reflects his silent yet courageous justice, and Bourbon's chain signifies his mystery and responsibility. These elements deepen the connection to the characters, making the perfumes both collectible and meaningful for Detective Conan fans.
                         </p>
                     </div>
-                </div>
-
-                <div className={styles.sectionBreaker}>
-                    <span> Sketch </span>
-                </div>
-
-                <div className={styles.sketchSection}>
-                    <Image src={'/s1.png'} alt="Can 1 dieline" className={styles.idea} width={330*3} height={220*3}/>
-                    <Image src={'/s2.png'} alt="Can 1 dieline" className={styles.idea} width={330*3} height={220*3}/>
                 </div>
 
                 <div className={styles.sectionBreaker}>
@@ -83,9 +74,9 @@ export default function CanDesign() {
                 </div>
 
                 <div className={styles.showcase}>
-                    <Image src={'/design1.png'} alt="Can 1 dieline" className={styles.design} width={321*3} height={172*3}/>
-                    <Image src={'/design2.png'} alt="Can 1 dieline" className={styles.design} width={321*3} height={172*3}/>
-                    <Image src={'/design3.png'} alt="Can 1 dieline" className={styles.design} width={321*3} height={172*3}/>
+                    <Image src={'/perfume1.png'} alt="Poster 1" className={styles.design} width={330*2} height={370*2}/>
+                    <Image src={'/perfume2.png'} alt="Poster e" className={styles.design} width={330*2} height={370*2}/>
+                    <Image src={'/perfume3.png'} alt="Poster " className={styles.design} width={330*2} height={370*2}/>
                 </div>
 
 

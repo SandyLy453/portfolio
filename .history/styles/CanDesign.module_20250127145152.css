@@ -19,6 +19,14 @@
     padding-bottom: 0;
 }
 
+.subHeadingTwo {
+    color: var(--forest);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: right;
+    margin-left: auto;
+}
+
 .intro .content {
     margin-bottom: 20px;
 }
@@ -96,8 +104,15 @@ font-style: italic;
     align-items: center;
 }
 
-.middle .content {
-    margin-bottom: 60px;
+.content {
+    margin-bottom: 20px;
+}
+
+
+.subHeadingTwo,
+.content:last-child {
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 

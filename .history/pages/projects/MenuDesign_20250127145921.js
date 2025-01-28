@@ -96,7 +96,7 @@ export default function MenuDesign() {
                             What was the design idea/ purposes?
                         </h2>
                         <p className={styles.content}>
-                            The menu design is clean, inviting, and easy to navigate, making it perfect for families and casual diners. The hand-drawn logo and organic illustrations create a friendly vibe, while the green tones highlight freshness and quality ingredients. A clear layout helps customers quickly find what they need, enhancing their experience and reinforcing the restaurant’s branding.
+                            
                         </p>
                     </div>
                 </div>

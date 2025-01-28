@@ -44,30 +44,22 @@ export default function CanDesign() {
                 </div>
 
                 <div className={styles.middle}>
-                    <div className={styles.text}>
-                        <h2 className="subHeading">
-                            What is DiLo?
-                        </h2>
-                        <p className={styles.content}>
-                            <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
-                        </p>
-                    </div>
-                </div>
+                <div className={styles.text}>
+                    <h2 className="subHeading">
+                        What is DiLo?
+                    </h2>
+                    <p className={styles.content}>
+                        <span className={styles.span}>DiLo</span> is a unique tea brand that sets itself apart by celebrating Vietnam's rich tea heritage. Instead of focusing on popular teas like black or green tea, <span className={styles.span}>DiLo</span> highlights traditional Vietnamese teas such as artichoke tea, lotus tea, and corn silk tea - all known for their distinctive flavors and health benefits.
+                    </p>
 
-                <div className={styles.sectionBreaker}>
-                    <span> Design Idea </span>
+                    <h2 className="subHeadingTwo">
+                        What was the design idea/ purposes?
+                    </h2>
+                    <p className={styles.content}>
+                        This packaging highlights <span className={styles.span}>DiLo</span>'s Vietnamese heritage with an illustration of a lady in traditional Ao Ngu Than, symbolizing cultural identity and quality. Intricate colors of the attire contrast with minimalist backgrounds, while cloud patterns add a traditional touch. Each flavor—artichoke, lotus, and corn silk—features unique colors inspired by its ingredients, enhancing recognition. The design communicates authenticity, stands out on shelves, making it ideal for retail and social media campaigns focused on culturally inspired products.
+                    </p>
                 </div>
-
-                <div className={styles.middle}>
-                    <div className={styles.text}>
-                        <h2 className="subHeading">
-                            What was the design idea/ purposes?
-                        </h2>
-                        <p className={styles.content}>
-                            These can designs for <span className={styles.span}>DiLo</span>'s Vietnamese teas blend cultural authenticity with eye-catching visuals. Featuring a lady in traditional Ao Ngu Than attire, each design uses colors and patterns tied to the tea flavors—green for artichoke, pink for lotus, and yellow for corn silk. The traditional elements, like cloud patterns, highlight the product's heritage, appealing to tea lovers and those seeking an authentic cultural experience, while standing out on shelves.
-                        </p>
-                    </div>
-                </div>
+            </div>
 
                 <div className={styles.sectionBreaker}>
                     <span> Sketch </span>

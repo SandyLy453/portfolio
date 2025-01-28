@@ -76,7 +76,7 @@ export default function Magazine() {
                             What was the design idea/ purposes?
                         </h2>
                         <p className={styles.content}>
-                            The design for <span className={styles.span}>Annessia: The Marvels of Ancient Architecture</span> highlights the richness and significance of historical structures through a refined and immersive visual approach. Inspired by ancient aesthetics, the layout combines elegant typography, contrasting backgrounds, and carefully curated imagery to evoke a sense of timeless grandeur. The thematic use of cultural symbols and architectural motifs reinforces the magazine's focus on history, making it visually engaging for readers interested in architecture, history, and design.
+                            
                         </p>
                     </div>
                 </div>

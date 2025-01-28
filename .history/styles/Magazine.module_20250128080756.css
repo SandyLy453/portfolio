@@ -2,6 +2,10 @@
     width: 70vw;
     margin: auto;
     margin-top: 0;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1500px;
+    position: relative;
 
 }
 
@@ -11,6 +15,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+}
+
+.topText {
+    width: 40%;
 }
 
 .subHeading {
@@ -79,28 +87,54 @@ font-style: italic;
 }
 
 .cover {
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
-.idea {
-    width: 75%;
-    height: auto;
-    margin: 30px;
+.link {
+    text-decoration: none;
 }
 
-.sketchSection {
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: 1px solid var(--forest);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.bookContainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
-.middle .content {
-    margin-bottom: 60px;
+.book {
+    box-shadow: none;
+    background-color: transparent;
+    width: 100%; 
+    max-width: 90vw; 
 }
 
-
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -116,6 +150,15 @@ font-style: italic;
         font-size: 16px;
     }
     .cover {
-        width: 100%;
+        width: 90%;
+    }
+
+    .book {
+        max-width: 90%; 
+    }
+
+    .page {
+        width: 90%; 
+        height: auto;
     }
 }
