@@ -19,8 +19,8 @@ export default function MenuDesign() {
             let scaleFactor;
             if (screenWidth < 768) {
                 scaleFactor = 0.4; // Mobile
-            } else if (screenWidth < 1470) {
-                scaleFactor = 0.7; // Tablets and small desktops
+            } else if (screenWidth < 1366) {
+                scaleFactor = 0.6; // Tablets and small desktops
             } else {
                 scaleFactor = 0.5; // Large screens
             }
@@ -138,11 +138,11 @@ export default function MenuDesign() {
                         useMouseEvents={true} 
                         clickEventForward={true}
                         startPage={0}
-                        autoSize={false} /* Ensure strict control over width */
-                        singlePage={true} /* Forces only one page at a time */
-                        showCover={true}
+                        autoSize={true} 
+                        singlePage={true} /* Forces single-page view */
+                        showCover={true} /* Ensures the first page is a standalone cover */
                     >
-                        {/* First Page */}
+                        {/* First Page - Cover */}
                         <div className={styles.page}>
                             <Image
                                 src={`/menu.png`}

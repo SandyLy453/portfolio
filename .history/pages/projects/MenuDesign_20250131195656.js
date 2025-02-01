@@ -138,9 +138,9 @@ export default function MenuDesign() {
                         useMouseEvents={true} 
                         clickEventForward={true}
                         startPage={0}
-                        autoSize={false} /* Ensure strict control over width */
+                        autoSize={true} 
                         singlePage={true} /* Forces only one page at a time */
-                        showCover={true}
+                        showCover={false} /* Prevents two-page spread */
                     >
                         {/* First Page */}
                         <div className={styles.page}>
@@ -176,7 +176,7 @@ export default function MenuDesign() {
                         </div>
                     </HTMLFlipBook>
 
-                    <button className={styles.button} onClick={goToFirstPage}>
+                    <button className={styles.backButton} onClick={goToFirstPage}>
                         Back to First Page
                     </button>
                 </div>

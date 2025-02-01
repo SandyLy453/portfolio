@@ -140,7 +140,7 @@ export default function MenuDesign() {
                         startPage={0}
                         autoSize={false} /* Ensure strict control over width */
                         singlePage={true} /* Forces only one page at a time */
-                        showCover={true}
+                        showCover={false} /* Prevents two-page spread */
                     >
                         {/* First Page */}
                         <div className={styles.page}>
