@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    margin: 20px 0;
     position: relative;
 }
 
@@ -115,13 +115,10 @@ font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 0 0 100px 0 !important;
     width: 100%;
     padding: 0 !important; 
     height: auto;
-    overflow: hidden;
-    gap: 30px
 }
 
 .book {
@@ -129,19 +126,15 @@ font-style: italic;
     background-color: transparent;
     width: 100%; 
     max-width: 90vw; 
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 .page {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
-    max-width: 90vw; 
     overflow: hidden;
-    margin: 0 !important;
-    padding: 0 !important;
+    padding: 0;
+    margin: 0;
 }
 
 

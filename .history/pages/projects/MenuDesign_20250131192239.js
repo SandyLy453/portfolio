@@ -37,13 +37,6 @@ export default function MenuDesign() {
         );
     }
 
-    const goToFirstPage = () => {
-        if (flipBook.current && flipBook.current.pageFlip()) {
-            flipBook.current.pageFlip().flip(0);
-        }
-    };
-
-
     return (
         <>
             <Header />
@@ -114,7 +107,6 @@ export default function MenuDesign() {
 
                 <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
                         width={bookDimensions.width}
                         height={bookDimensions.height}
                         className={styles.book}
@@ -132,7 +124,7 @@ export default function MenuDesign() {
                         showCover={true} 
                         startPage={0}
                         autoSize={true} 
-                        usePortrait={true}
+                        singlePage={true} 
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>
@@ -165,10 +157,6 @@ export default function MenuDesign() {
                         </div>
 
                     </HTMLFlipBook>
-
-                    <button className={styles.button} onClick={goToFirstPage}>
-                        Back to First Page
-                    </button>
                 </div>
 
 

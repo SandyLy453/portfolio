@@ -21,7 +21,6 @@
     margin-bottom: 10px;
     font-style: italic;
     color: var(--cream);
-    font-family: "Playfair Display", serif;
 }
 
 .contactInfo {
@@ -59,7 +58,6 @@
     margin-top: 50px;
     width: 100%;
 }
-
 
 
 @media screen and (max-width: 1366px) {

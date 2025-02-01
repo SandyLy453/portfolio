@@ -9,7 +9,6 @@ import { useState, useEffect, useRef } from "react";
 export default function MenuDesign() {
 
     const [bookDimensions, setBookDimensions] = useState({ width: 450, height: 582 });
-    const flipBook = useRef(null);
 
     useEffect(() => {
         const updateDimensions = () => {
@@ -36,13 +35,6 @@ export default function MenuDesign() {
             </div>
         );
     }
-
-    const goToFirstPage = () => {
-        if (flipBook.current && flipBook.current.pageFlip()) {
-            flipBook.current.pageFlip().flip(0);
-        }
-    };
-
 
     return (
         <>
@@ -114,7 +106,6 @@ export default function MenuDesign() {
 
                 <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
                         width={bookDimensions.width}
                         height={bookDimensions.height}
                         className={styles.book}
@@ -132,7 +123,7 @@ export default function MenuDesign() {
                         showCover={true} 
                         startPage={0}
                         autoSize={true} 
-                        usePortrait={true}
+                        singlePage={true} 
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>
@@ -165,10 +156,6 @@ export default function MenuDesign() {
                         </div>
 
                     </HTMLFlipBook>
-
-                    <button className={styles.button} onClick={goToFirstPage}>
-                        Back to First Page
-                    </button>
                 </div>
 
 

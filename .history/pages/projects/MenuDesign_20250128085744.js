@@ -1,32 +1,32 @@
+import Link from "next/link";
 import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/Magazine.module.css'
 import HTMLFlipBook from "react-pageflip";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function MenuDesign() {
 
     const [bookDimensions, setBookDimensions] = useState({ width: 450, height: 582 });
-    const flipBook = useRef(null);
 
     useEffect(() => {
         const updateDimensions = () => {
             const screenWidth = window.innerWidth;
             const maxWidth = 500; 
-            const scaleFactor = screenWidth < 768 ? 0.4 : 0.5; 
-
-            setBookDimensions({
+            const scaleFactor = screenWidth < 768 ? 0.4 : 0.5;
+    
+            setBookDimensions((prev) => ({
                 width: Math.min(maxWidth, screenWidth * scaleFactor),
                 height: Math.min(maxWidth, screenWidth * scaleFactor) * (2400 / 1350),
-            });
+            }));
         };
-
+    
         updateDimensions(); 
-        window.addEventListener("resize", updateDimensions); 
-
-        return () => window.removeEventListener("resize", updateDimensions); 
+        window.addEventListener("resize", updateDimensions);
+    
+        return () => window.removeEventListener("resize", updateDimensions);
     }, []);
 
     if (!bookDimensions) {
@@ -36,13 +36,6 @@ export default function MenuDesign() {
             </div>
         );
     }
-
-    const goToFirstPage = () => {
-        if (flipBook.current && flipBook.current.pageFlip()) {
-            flipBook.current.pageFlip().flip(0);
-        }
-    };
-
 
     return (
         <>
@@ -114,61 +107,28 @@ export default function MenuDesign() {
 
                 <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
                         width={bookDimensions.width}
                         height={bookDimensions.height}
                         className={styles.book}
                         mobileScrollSupport={true}
-                        size="fixed" 
-                        minWidth={bookDimensions.width} 
-                        minHeight={bookDimensions.height}
-                        maxWidth={bookDimensions.width} 
-                        maxHeight={bookDimensions.height}
-                        maxShadowOpacity={0.2} 
-                        drawShadow={true}
-                        flippingTime={500} 
-                        useMouseEvents={true} 
-                        clickEventForward={true}
-                        showCover={true} 
-                        startPage={0}
-                        autoSize={true} 
-                        usePortrait={true}
+                        showCover={true}
                     >
-                        {/* First page (standalone cover) */}
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu.png`}
-                                alt="Menu first page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu2.png`}
-                                alt="Menu second page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-                        <div className={styles.page}>
-                            <Image
-                                src={`/menu3.png`}
-                                alt="Menu third page"
-                                width={1350}
-                                height={2400}
-                                layout="responsive"
-                            />
-                        </div>
-
+                        {[
+                            { src: "/menu.png", alt: "Menu first page" },
+                            { src: "/menu2.png", alt: "Menu second page" },
+                            { src: "/menu3.png", alt: "Menu third page" }
+                        ].map((page, index) => (
+                            <div key={index} className={styles.page}>
+                                <Image
+                                    src={page.src}
+                                    alt={page.alt}
+                                    width={1350}
+                                    height={2400}
+                                    layout="responsive"
+                                />
+                            </div>
+                        ))}
                     </HTMLFlipBook>
-
-                    <button className={styles.button} onClick={goToFirstPage}>
-                        Back to First Page
-                    </button>
                 </div>
 
 

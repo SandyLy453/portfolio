@@ -101,8 +101,8 @@ export default function Magazine() {
                             <Image
                                 src={`/maga1.png`}
                                 alt="Magazine Cover"
-                                width={1275}
-                                height={1650}
+                                width={850} 
+                                height={1100} 
                                 layout="responsive"
                             />
                         </div>
@@ -113,8 +113,8 @@ export default function Magazine() {
                                 <Image
                                     src={`/maga${i + 2}.png`}
                                     alt={`Magazine page ${i + 2}`}
-                                    width={1275}
-                                    height={1650}
+                                    width={850}
+                                    height={1100}
                                     layout="responsive"
                                 />
                             </div>
@@ -126,7 +126,7 @@ export default function Magazine() {
                                 src={`/maga12.png`}
                                 alt="Back Cover"
                                 width={1275}
-                                height={1650}
+                                height={}
                                 layout="responsive"
                             />
                         </div>

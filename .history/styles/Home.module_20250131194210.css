@@ -155,11 +155,6 @@
   .loca {
     font-size: 18px;
   }
-
-  .pjSection {
-    gap: 15px; 
-    justify-content: center;
-  }
 }
 
 
@@ -172,8 +167,6 @@
   .coverPhoto {
     margin: 0 auto; 
     bottom: -20px; 
-    width: 70vw;
-    height: auto;
   }
 
   .info {
@@ -200,8 +193,7 @@
 
   .gif {
     position: relative;
-    bottom: -2px;
-    margin-top: 10px;
+    bottom: -2;
   }
 }
 

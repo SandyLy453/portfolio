@@ -114,7 +114,6 @@ export default function MenuDesign() {
 
                 <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
                         width={bookDimensions.width}
                         height={bookDimensions.height}
                         className={styles.book}
@@ -132,7 +131,7 @@ export default function MenuDesign() {
                         showCover={true} 
                         startPage={0}
                         autoSize={true} 
-                        usePortrait={true}
+                        singlePage={true} 
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>

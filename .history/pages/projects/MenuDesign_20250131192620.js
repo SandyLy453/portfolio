@@ -165,11 +165,11 @@ export default function MenuDesign() {
                         </div>
 
                     </HTMLFlipBook>
-
-                    <button className={styles.button} onClick={goToFirstPage}>
-                        Back to First Page
-                    </button>
                 </div>
+
+                <button className={styles.button} onClick={goToFirstPage}>
+                    Back to First Page
+                </button>
 
 
             </main>

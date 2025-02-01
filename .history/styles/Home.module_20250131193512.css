@@ -128,12 +128,12 @@
   }
 
   .main {
-    width: 80vw; 
+    width: 100vw; 
   }
 
   .coverPhoto {
-    margin: 0 1rem; 
-    bottom: -26px; 
+    margin: 0 auto; 
+    bottom: -20px; 
   }
 
   .info {
@@ -141,24 +141,7 @@
   }
 
   .gif {
-    bottom: -4.8rem;
-  }
-
-  .name {
-    font-size: 36px; 
-  }
-
-  .role {
-    font-size: 20px;
-  }
-
-  .loca {
-    font-size: 18px;
-  }
-
-  .pjSection {
-    gap: 15px; 
-    justify-content: center;
+    bottom: -20rem;
   }
 }
 
@@ -172,13 +155,10 @@
   .coverPhoto {
     margin: 0 auto; 
     bottom: -20px; 
-    width: 70vw;
-    height: auto;
   }
 
   .info {
-    margin-top: 50px;
-    width: 90vw; 
+    margin-top: 50px; 
   }
 
   .name {
@@ -196,12 +176,6 @@
   .pjSection {
     gap: 15px; 
     justify-content: center;
-  }
-
-  .gif {
-    position: relative;
-    bottom: -2px;
-    margin-top: 10px;
   }
 }
 
