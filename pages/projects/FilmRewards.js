@@ -15,10 +15,8 @@ export default function FilmRewards() {
                     date="December 2024"
                 />
 
-                <p>Page in process....</p> <br/>
-
                 <div className={styles.intro}>
-                    <Image src={'/postcover.png'} alt="Posters mockup" className={styles.cover} width={140*4} height={100*4}/>
+                    <Image src={'/film.png'} alt="Film Reward Poster mockup" className={styles.cover} width={140*4} height={100*4}/>
                     <div className={styles.text}>
                         <h2 className={styles.subHeading}>
                             Timeline
@@ -36,7 +34,7 @@ export default function FilmRewards() {
                             Tools
                         </h2>
                         <p className={styles.content}>
-                            Illutrators, Photoshop, Procreate
+                            Illutrators
                         </p>
                     </div>
                 </div>
@@ -46,15 +44,30 @@ export default function FilmRewards() {
                 </div>
 
                 <div className={styles.middle}>
-                <div className={styles.text}>
-                    <h2 className="subHeading">
-                        What is this product about?
-                    </h2>
-                    <p className={styles.content}> 
-                        
-                    </p>
+                    <div className={styles.text}>
+                        <h2 className="subHeading">
+                            What is this product about?
+                        </h2>
+                        <p className={styles.content}> 
+                            This is a typographic poster designed for the <span className={styles.span}>Vancouver International Film Festival</span>'s (VIFF) 2012 Audience Choice Awards. It highlights the winning films and their categories using only typography, focusing on clarity and hierarchy to present key information.
+                        </p>
+                    </div>
                 </div>
-            </div>
+
+                <div className={styles.sectionBreaker}>
+                    <span> Design Idea </span>
+                </div>
+
+                <div className={styles.middle}>
+                    <div className={styles.text}>
+                        <h2 className="subHeading">
+                            What was the design idea/ purposes?
+                        </h2>
+                        <p className={styles.content}>
+                            The design relies on varying font weights, sizes, and styles to create visual separation between elements, making the information easy to navigate. This approach ensures a professional yet engaging look, appealing to film enthusiasts and festival attendees. The structured layout directs attention to film titles while maintaining a clean and modern aesthetic, effectively reinforcing VIFF’s branding and enhancing promotional visibility.
+                        </p>
+                    </div>
+                </div>
 
 
                 <div className={styles.sectionBreaker}>
@@ -62,11 +75,10 @@ export default function FilmRewards() {
                 </div>
 
                 <div className={styles.showcase}>
-                    
+                    <Image src={'/film1.png'} alt="Design 1" className={styles.design} width={600} height={600}/>
+                    <br />
+                    <Image src={'/film2.png'} alt="Design 2" className={styles.design} width={600} height={600}/>
                 </div>
-
-
-
 
             </main>
             <Footer />
