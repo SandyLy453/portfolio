@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/Poster.module.css'
+import styles from '@/styles/CanDesign.module.css'
 
 export default function HowToManageYourTime() {
     return (
@@ -15,10 +15,8 @@ export default function HowToManageYourTime() {
                     date="December 2024"
                 />
 
-                <p>Page in process....</p> <br/>
-
                 <div className={styles.intro}>
-                    <Image src={'/postcover.png'} alt="Posters mockup" className={styles.cover} width={140*4} height={100*4}/>
+                    <Image src={'/videoCover.png'} alt="Posters mockup" className={styles.cover} width={140*4} height={100*4}/>
                     <div className={styles.text}>
                         <h2 className={styles.subHeading}>
                             Timeline
@@ -36,7 +34,7 @@ export default function HowToManageYourTime() {
                             Tools
                         </h2>
                         <p className={styles.content}>
-                            Illutrators, Photoshop, Procreate
+                            Illutrators, Procreate, AfterEffect
                         </p>
                     </div>
                 </div>
@@ -44,17 +42,41 @@ export default function HowToManageYourTime() {
                 <div className={styles.sectionBreaker}>
                     <span> Introduction </span>
                 </div>
+                    
+                <div className={styles.middle}>
+                    <div className={styles.text}>
+                        <h2 className="subHeading">
+                            What is this product about?
+                        </h2>
+                        <p className={styles.content}> 
+                            This is a short animated video about time management tips, created entirely in After Effects using vector graphics. It delivers practical advice in an engaging and visually appealing way.
+                        </p>
+                    </div>
+                </div>
+
+                <div className={styles.sectionBreaker}>
+                    <span> Design Idea </span>
+                </div>
 
                 <div className={styles.middle}>
-                <div className={styles.text}>
-                    <h2 className="subHeading">
-                        What is this product about?
-                    </h2>
-                    <p className={styles.content}> 
-                        
-                    </p>
+                    <div className={styles.text}>
+                        <h2 className="subHeading">
+                            What was the design idea/ purposes?
+                        </h2>
+                        <p className={styles.content}>
+                            The simple and colorful vector style makes the content approachable, visually engaging, and easy to follow, supporting the video's goal of making productivity tips accessible. The design targets busy professionals, students, and anyone looking to improve time management without overwhelming complexity. The bright visuals help capture attention on digital platforms, increasing shareability and engagement, making it an effective tool for marketing educational content.
+                        </p>
+                    </div>
                 </div>
-            </div>
+
+                <div className={styles.sectionBreaker}>
+                    <span> Sketch </span>
+                </div>
+
+                <div className={styles.sketchSection}>
+                    <Image src={'/s6.png'} alt="sketch 1" className={styles.idea} width={330*3} height={220*3}/>
+                    <Image src={'/s7.png'} alt="sketch 2" className={styles.idea} width={330*3} height={220*3}/>
+                </div>
 
 
                 <div className={styles.sectionBreaker}>
@@ -62,11 +84,16 @@ export default function HowToManageYourTime() {
                 </div>
 
                 <div className={styles.showcase}>
-                    
+                    <video 
+                        className={styles.video} 
+                        controls 
+                        width="100%" 
+                        height="auto"
+                    >
+                        <source src="/Sandy_Ly.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-
-
-
 
             </main>
             <Footer />
