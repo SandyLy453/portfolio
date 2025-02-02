@@ -1,0 +1,39 @@
+.sliderContainer {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fullImage {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sliderHandle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: white;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    cursor: grab;
+}
+
+

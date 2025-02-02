@@ -1,0 +1,54 @@
+.sliderContainer {
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fullImage {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sliderHandle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    cursor: grab;
+    transition: background 0.2s ease-in-out;
+}
+
+.sliderHandle:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.handleIcon {
+    user-select: none;
+}
+
+
