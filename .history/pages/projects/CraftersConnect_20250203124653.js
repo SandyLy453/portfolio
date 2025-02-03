@@ -5,7 +5,6 @@ import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/CraftersConnect.module.css'
-import BeforeAfterSlider from "@/modules/BeforeAfterSlider/BeforeAfterSlider";
 
 export default function CraftersConnect() {
 
@@ -148,7 +147,7 @@ export default function CraftersConnect() {
                 <span> About the App </span>
             </div>
 
-            {/* <div className={styles.figma}>
+            <div className={styles.figma}>
                 <h2 className={styles.subHeading}>
                     Wireframe
                 </h2>
@@ -164,7 +163,7 @@ export default function CraftersConnect() {
                         height="800"
                     />
                 </div>
-            </div> */}
+            </div>
 
             <div className={styles.feature}>
                 <h2 className={styles.subHeading}>

@@ -148,7 +148,7 @@ export default function CraftersConnect() {
                 <span> About the App </span>
             </div>
 
-            {/* <div className={styles.figma}>
+            <div className={styles.figma}>
                 <h2 className={styles.subHeading}>
                     Wireframe
                 </h2>
@@ -161,10 +161,10 @@ export default function CraftersConnect() {
                         alt1="Lofi Wireframe"
                         alt2="Hifi Wireframe"
                         width="1000"
-                        height="800"
+                        height="692"
                     />
                 </div>
-            </div> */}
+            </div>
 
             <div className={styles.feature}>
                 <h2 className={styles.subHeading}>
