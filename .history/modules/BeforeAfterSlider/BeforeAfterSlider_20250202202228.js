@@ -31,11 +31,11 @@ export default function BeforeAfterSlider({
                 }
                 itemTwo={
                     <Image
-                        src={image2}
-                        alt={alt2}
+                        src="/camreal.png"
+                        alt="Real Camera"
                         layout="responsive"
-                        width={width}
-                        height={height}
+                        width={700}
+                        height={400}
                         priority
                         className={styles.sliderImage}
                     />

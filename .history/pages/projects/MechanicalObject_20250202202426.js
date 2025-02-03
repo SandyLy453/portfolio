@@ -77,7 +77,6 @@ export default function MechanicalObject() {
 
                 <div className={styles.showcase}>
                     <BeforeAfterSlider 
-                        ratio="1:2"
                         image1="/camillu.png"
                         image2="/camreal.png"
                         alt1="Vector graphic camera"
