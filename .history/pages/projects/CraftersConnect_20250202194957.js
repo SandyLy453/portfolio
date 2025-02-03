@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
-import styles from '@/styles/Aether.module.css'
+import styles from '@/styles/CraftersConnect.module.css'
 
-export default function Aether() {
+export default function CraftersConnect() {
 
     useEffect(() => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
     }, []);
 
     const personaImages = [
@@ -17,7 +18,7 @@ export default function Aether() {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [feature, setFeature] = useState("library")
+    const [feature, setFeature] = useState("detail")
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) =>
@@ -41,36 +42,47 @@ export default function Aether() {
 
             <main className={styles.body}>
                 <PostHeader 
-                    title="Aether - Saving time for what matter the most"
-                    date="By Aether Team | 2024"
+                    title="CraftersConnect"
+                    date="By CrafterConnects Team | 2024"
                 />
 
             <div className={styles.intro}>
-                <Image src={'/aether.gif'} alt="aether logo" className={styles.gifOne} width={140*4} height={100*4}/>
-                <div className={styles.topText}>
+                <Image src={'/cc.gif'} alt="aether logo" className={styles.gifOne} width={144*4} height={90*4}/>
+                <div className={styles.text}>
                     <h2 className={styles.subHeading}>
                         Timeline
                     </h2>
                     <p className={styles.content}>
-                        September 2024 - December 2024
+                        Febyary 2024 - May 2024
                     </p>
                     <h2 className={styles.subHeading}>
                         Role
                     </h2>
                     <p className={styles.content}>
-                        UX/UI Designer | Front-end Developer | Researcher
+                        UX/UI Designer | Researcher
                     </p>
                     <h2 className={styles.subHeading}>
                         Tools
                     </h2>
                     <p className={styles.content}>
-                        Figma, Adobe Illutrators, NextJS, React
+                        Figma, Adobe Illutrators
                     </p>
+
+                    <Link 
+                        href="https://www.figma.com/proto/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?page-id=0%3A1&node-id=1-3088&p=f&viewport=-1449%2C-216%2C0.31&t=AZDIWVeJBFLKDLVq-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3088" 
+                        className={styles.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <button className={styles.button}>
+                            Figma
+                        </button>
+                    </Link>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Challenge </span>
+                <span> challenging </span>
             </div>
 
             <div className={styles.middle}>
@@ -79,7 +91,7 @@ export default function Aether() {
                         What was the painpoint?
                     </h2>
                     <p className={styles.content}>
-                        We discovered that completing paperwork can take an individual up to <span className={styles.span}>30 days</span> a year, and for caregivers, it often takes even longer. Most forms are highly stressful and challenging to fill out due to their complexity, lengthy content, and occasionally unclear instructions.
+                        
                     </p>
                 </div>
 
@@ -88,7 +100,7 @@ export default function Aether() {
                         How did we solve this?
                     </h2>
                     <p className={styles.content}>
-                        To solve this problem, we created <span className={styles.span}>Aether</span>. With <span className={styles.span}>Aether</span>, filling out forms becomes easier, faster, and significantly less stressful.
+                        To solve this problem, <span className={styles.span}>CrafterConnect</span> was created.
                     </p>
                 </div>
             </div>
@@ -102,7 +114,6 @@ export default function Aether() {
                     Persona
                 </h2>
 
-                {/* Custom Slider */}
                 <div className={styles.slider}>
                     <button
                     className={styles.sliderButton}
@@ -143,63 +154,48 @@ export default function Aether() {
 
                 <div className={styles.toggle}>
                     <button
+                        className={feature === "detail" ? styles.active : styles.sleep}
+                        onClick={() => handleFeatureChange("detail")}
+                    >
+                        Prject Details
+                    </button>
+                    <button
+                        className={feature === "comm" ? styles.active : styles.sleep}
+                        onClick={() => handleFeatureChange("comm")}
+                    >
+                        Community
+                    </button>
+                    <button
                         className={feature === "library" ? styles.active : styles.sleep}
                         onClick={() => handleFeatureChange("library")}
                     >
-                        Form Library
-                    </button>
-                    <button
-                        className={feature === "scan" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("scan")}
-                    >
-                        Document Scanning
-                    </button>
-                    <button
-                        className={feature === "fill" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("fill")}
-                    >
-                        Document Filling
-                    </button>
-                    <button
-                        className={feature === "accessibility" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("accessibility")}
-                    >
-                        Accessibility
+                        Project Library
                     </button>
                 </div>
 
-                {feature === "library" && (
+                {feature === "detail" && (
                     <div className={styles.box}>
-                        <Image src={'/library.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/pj-info.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
                             Simplify your caregiving tasks with Aether's Forms Library. Our collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
                         </p>
                     </div>
                 )}
 
-                {feature === "scan" && (
+                {feature === "comm" && (
                     <div className={styles.box}>
-                        <Image src={'/scan.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/community.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
                             Aether is here to make life easier for caregivers. With our advanced scanning feature, simply scan any document, and our AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
                         </p>
                     </div>
                 )}
 
-                {feature === "fill" && (
+                {feature === "library" && (
                     <div className={styles.box}>
-                        <Image src={'/fill.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
+                        <Image src={'/library_1.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
                         <p className={styles.des}>
                             Aether makes filling out forms a breeze for caregivers. Use our autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
-                        </p>
-                    </div>
-                )}
-
-                {feature === "accessibility" && (
-                    <div className={styles.box}>
-                        <Image src={'/accessibility.png'} alt="accessibility feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            At Aether, we prioritize accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
                         </p>
                     </div>
                 )}
@@ -213,14 +209,13 @@ export default function Aether() {
                 <h2 className={styles.subHeading}>
                     Promote Video
                 </h2>
-
                 <video 
                     className={styles.video} 
                     controls 
                     width="100%" 
                     height="auto"
                 >
-                    <source src="/aether.mp4" type="video/mp4" />
+                    <source src="/cc.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
