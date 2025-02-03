@@ -37,12 +37,6 @@ export default function Aether() {
         setFeature(f)
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 100);
-    }, []);
-
     return (
         <>
             <Header />
@@ -243,7 +237,6 @@ export default function Aether() {
                     controls 
                     width="100%" 
                     height="auto"
-                    preload="none"
                 >
                     <source src="/aether.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

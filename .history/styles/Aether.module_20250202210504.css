@@ -83,7 +83,6 @@ font-style: italic;
 .infoSection,
 .feature {
     margin-bottom: 30px;
-    margin-top: 0;
 }
 
 .slider {
@@ -179,7 +178,6 @@ font-style: italic;
 
 .figma {
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .feaImage ,.subHeading {

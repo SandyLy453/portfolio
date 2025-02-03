@@ -243,7 +243,6 @@ export default function Aether() {
                     controls 
                     width="100%" 
                     height="auto"
-                    preload="none"
                 >
                     <source src="/aether.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

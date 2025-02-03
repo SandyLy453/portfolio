@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { useCallback } from "react";
 import Image from "next/image";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/Aether.module.css'
-import BeforeAfterSlider from "@/modules/BeforeAfterSlider/BeforeAfterSlider";
 
 export default function Aether() {
 
@@ -21,27 +19,21 @@ export default function Aether() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [feature, setFeature] = useState("library")
 
-    const handleNext = useCallback(() => {
+    const handleNext = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === personaImages.length - 1 ? 0 : prevIndex + 1
+        prevIndex === personaImages.length - 1 ? 0 : prevIndex + 1
         );
-    }, [personaImages]);
-    
-    const handlePrev = useCallback(() => {
+    };
+
+    const handlePrev = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? personaImages.length - 1 : prevIndex - 1
+        prevIndex === 0 ? personaImages.length - 1 : prevIndex - 1
         );
-    }, [personaImages]);
+    };
 
     const handleFeatureChange = (f) => {
         setFeature(f)
     }
-
-    useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 100);
-    }, []);
 
     return (
         <>
@@ -54,7 +46,7 @@ export default function Aether() {
                 />
 
             <div className={styles.intro}>
-                <Image src={'/aether.gif'} alt="aether logo" className={styles.gifOne} width={140*4} height={100*4} priority/>
+                <Image src={'/aether.gif'} alt="aether logo" className={styles.gifOne} width={140*4} height={100*4}/>
                 <div className={styles.topText}>
                     <h2 className={styles.subHeading}>
                         Timeline
@@ -87,7 +79,7 @@ export default function Aether() {
                         What is Aether?
                     </h2>
                     <p className={styles.content}>
-                        <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to enhance efficiency, usability, and reduce stress in completing paperwork. The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed.
+                        To solve this problem, we created <span className={styles.span}>Aether</span>. With <span className={styles.span}>Aether</span>, filling out forms becomes easier, faster, and significantly less stressful.
                     </p>
                 </div>
 
@@ -142,22 +134,6 @@ export default function Aether() {
 
             <div className={styles.sectionBreaker}>
                 <span> About the App </span>
-            </div>
-
-            <div className={styles.figma}>
-                <h2 className={styles.subHeading}>
-                    Wireframe
-                </h2>
-
-                <BeforeAfterSlider 
-                    ratio="10:7"
-                    image1="/lofi1.png"
-                    image2="/hifi1.png"
-                    alt1="Lofi Wireframe"
-                    alt2="Hifi Wireframe"
-                    width="900"
-                    height="700"
-                />
             </div>
 
             <div className={styles.feature}>
@@ -243,7 +219,6 @@ export default function Aether() {
                     controls 
                     width="100%" 
                     height="auto"
-                    preload="none"
                 >
                     <source src="/aether.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

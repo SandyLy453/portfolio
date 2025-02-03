@@ -21,27 +21,21 @@ export default function Aether() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [feature, setFeature] = useState("library")
 
-    const handleNext = useCallback(() => {
+    const handleNext = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === personaImages.length - 1 ? 0 : prevIndex + 1
+        prevIndex === personaImages.length - 1 ? 0 : prevIndex + 1
         );
-    }, [personaImages]);
-    
-    const handlePrev = useCallback(() => {
+    };
+
+    const handlePrev = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? personaImages.length - 1 : prevIndex - 1
+        prevIndex === 0 ? personaImages.length - 1 : prevIndex - 1
         );
-    }, [personaImages]);
+    };
 
     const handleFeatureChange = (f) => {
         setFeature(f)
     }
-
-    useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 100);
-    }, []);
 
     return (
         <>
@@ -243,7 +237,6 @@ export default function Aether() {
                     controls 
                     width="100%" 
                     height="auto"
-                    preload="none"
                 >
                     <source src="/aether.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

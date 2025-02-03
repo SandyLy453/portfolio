@@ -1,10 +1,9 @@
 .sliderContainer {
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .sliderImage {
     width: 100%;
-    height: 100%;
     object-fit: cover; /* Ensures images scale properly */
 }
 
