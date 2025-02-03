@@ -22,7 +22,6 @@ export default function BeforeAfterSlider({
                     <Image
                         src={image1}
                         alt={alt1}
-                        layout="responsive"
                         width={width} 
                         height={height} 
                         priority
@@ -33,7 +32,6 @@ export default function BeforeAfterSlider({
                     <Image
                         src={image2}
                         alt={alt2}
-                        layout="responsive"
                         width={width}
                         height={height}
                         priority

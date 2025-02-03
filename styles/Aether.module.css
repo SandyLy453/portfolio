@@ -180,6 +180,11 @@ font-style: italic;
 .figma {
     margin-bottom: 0;
     padding-bottom: 0;
+    width: 100%;
+}
+
+.com {
+    margin: auto;
 }
 
 .feaImage ,.subHeading {

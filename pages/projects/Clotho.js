@@ -5,6 +5,7 @@ import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/Clotho.module.css'
 import Link from "next/link";
+import BeforeAfterSlider from "@/modules/BeforeAfterSlider/BeforeAfterSlider";
 
 export default function Clotho() {
 
@@ -89,19 +90,19 @@ export default function Clotho() {
             <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
-                        What was the painpoint?
+                        What is Clotho?
                     </h2>
                     <p className={styles.content}>
-                        It's not easy to keep track of all your clothes or organize them efficiently. Many people end up buying duplicates because they forget they already own a similar item. Additionally, mixing and matching outfits for daily wear can be time-consuming and frustrating.
+                        <span className={styles.span}>Clotho</span> is a closet app that allows users to save and catalog all their clothes and accessories in one place. With Clotho, users can effortlessly mix and match their outfits, making the process quick, simple, and stress-free.
                     </p>
                 </div>
 
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
-                        How did we solve this?
+                        What was the painpoint?
                     </h2>
                     <p className={styles.content}>
-                        To address this issue, <span className={styles.span}>Clotho</span> was created. <span className={styles.span}>Clotho</span> is a closet app that allows users to save and catalog all their clothes and accessories in one place. With Clotho, users can effortlessly mix and match their outfits, making the process quick, simple, and stress-free.
+                        It's not easy to keep track of all your clothes or organize them efficiently. Many people end up buying duplicates because they forget they already own a similar item. Additionally, mixing and matching outfits for daily wear can be time-consuming and frustrating.
                     </p>
                 </div>
             </div>
@@ -147,6 +148,24 @@ export default function Clotho() {
 
             <div className={styles.sectionBreaker}>
                 <span> About the App </span>
+            </div>
+
+            <div className={styles.figma}>
+                <h2 className={styles.subHeading}>
+                    Wireframe
+                </h2>
+
+                <div className={styles.com}>
+                    <BeforeAfterSlider 
+                        ratio="10:7"
+                        image1="/lofi3.png"
+                        image2="/hifi3.png"
+                        alt1="Lofi Wireframe"
+                        alt2="Hifi Wireframe"
+                        width="1000"
+                        height="800"
+                    />
+                </div>
             </div>
 
             <div className={styles.feature}>

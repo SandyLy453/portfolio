@@ -1,5 +1,6 @@
 .sliderContainer {
     margin: 30px auto;
+    z-index: auto;
 }
 
 .sliderImage {

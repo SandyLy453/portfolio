@@ -149,15 +149,17 @@ export default function Aether() {
                     Wireframe
                 </h2>
 
-                <BeforeAfterSlider 
-                    ratio="10:7"
-                    image1="/lofi1.png"
-                    image2="/hifi1.png"
-                    alt1="Lofi Wireframe"
-                    alt2="Hifi Wireframe"
-                    width="900"
-                    height="700"
-                />
+                <div className={styles.com}>
+                    <BeforeAfterSlider 
+                        ratio="10:7"
+                        image1="/lofi1.png"
+                        image2="/hifi1.png"
+                        alt1="Lofi Wireframe"
+                        alt2="Hifi Wireframe"
+                        width="1000"
+                        height="800"
+                    />
+                </div>
             </div>
 
             <div className={styles.feature}>

@@ -1,10 +1,11 @@
 .body {
-    width: 70vw;
+    width: 70%;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro {
@@ -82,6 +83,7 @@ font-style: italic;
 .infoSection,
 .feature {
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .slider {
@@ -169,11 +171,24 @@ font-style: italic;
 }
 
 .video {
-    margin-bottom: 50px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.featureBox {
-    transition: opacity 0.3s ease-in-out;
+.figma {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.com {
+    margin: auto;
+}
+
+.feaImage ,.subHeading {
+    margin-bottom: 30px;
 }
 
 .link {
@@ -197,7 +212,6 @@ font-style: italic;
 }
 
 
-
 @media screen and (max-width: 1366px) {
     .topText,
     .des {
@@ -210,11 +224,10 @@ font-style: italic;
         height: auto;
     }
 
-    .body{
+    .body {
         width: 80vw;
     }
   }
-
 
 
 @media screen and (max-width: 768px) {
@@ -303,5 +316,4 @@ font-style: italic;
         max-width: 90vw;
     }
 }
-
 
