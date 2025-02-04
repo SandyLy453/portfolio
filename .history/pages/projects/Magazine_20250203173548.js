@@ -145,7 +145,7 @@ export default function Magazine() {
             </div>
 
             <p className={styles.lilnote}>
-                (Click on a page corner or arrow keyboard (← / →) to turn to the next or previous page.)
+                (Click on a page corner to turn to the next or previous page.)
             </p>
 
             <div className={styles.bookContainer}>

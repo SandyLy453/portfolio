@@ -8,64 +8,12 @@ import HTMLFlipBook from "react-pageflip";
 import { useState, useEffect, useRef } from "react";
 
 export default function Magazine() {
-    
-    const [bookDimensions, setBookDimensions] = useState({ width: 450, height: 582 });
-    const flipBook = useRef(null);
-
-    useEffect(() => {
-        const updateDimensions = () => {
-            const screenWidth = window.innerWidth;
-            const maxWidth = 500; 
-
-            let scaleFactor;
-            if (screenWidth < 768) {
-                scaleFactor = 0.4; // Mobile
-            } else if (screenWidth < 1470) {
-                scaleFactor = 0.7; // Tablets and small desktops
-            } else {
-                scaleFactor = 0.5; // Large screens
-            }
-
-            setBookDimensions({
-                width: Math.min(maxWidth, screenWidth * scaleFactor),
-                height: Math.min(maxWidth, screenWidth * scaleFactor) * (1650 / 1275),
-            });
-        };
-
-        updateDimensions(); 
-        window.addEventListener("resize", updateDimensions); 
-
-        return () => window.removeEventListener("resize", updateDimensions); 
-    }, []);
-
-    if (!bookDimensions) {
-        return (
-            <div style={{ textAlign: "center", padding: "2rem" }}>
-                Loading...
-            </div>
-        );
-    }
 
     const goToFirstPage = () => {
-        if (flipBook.current?.pageFlip()) {
+        if (flipBook.current && flipBook.current.pageFlip()) {
             flipBook.current.pageFlip().flip(0);
         }
     };
-
-    useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (event.key === ">" || event.key === "ArrowRight") {
-                flipBook.current?.pageFlip()?.flipNext();
-            } else if (event.key === "<" || event.key === "ArrowLeft") {
-                flipBook.current?.pageFlip()?.flipPrev();
-            }
-        };
-
-        window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown);
-    }, []);
-
-
     return (
         <>
             <Header />
@@ -132,7 +80,7 @@ export default function Magazine() {
                 <div className={styles.middle}>
                     <div className={styles.text}>
                         <h2 className={styles.subHeading}>
-                            What was the design idea/ purpose?
+                            What was the design idea/ purposes?
                         </h2>
                         <p className={styles.content}>
                             The design for <span className={styles.span}>Annessia: The Marvels of Ancient Architecture</span> highlights the richness and significance of historical structures through a refined and immersive visual approach. Inspired by ancient aesthetics, the layout combines elegant typography, contrasting backgrounds, and carefully curated imagery to evoke a sense of timeless grandeur. The thematic use of cultural symbols and architectural motifs reinforces the magazine's focus on history, making it visually engaging for readers interested in architecture, history, and design.
@@ -145,28 +93,20 @@ export default function Magazine() {
             </div>
 
             <p className={styles.lilnote}>
-                (Click on a page corner or arrow keyboard (← / →) to turn to the next or previous page.)
+                (Click on a page corner to turn to the next or previous page.)
             </p>
 
             <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
-                        width={bookDimensions.width}
-                        height={bookDimensions.height}
+                        width={425} 
+                        height={550} 
                         className={styles.book}
-                        mobileScrollSupport={true}
-                        minWidth={bookDimensions.width} 
-                        minHeight={bookDimensions.height}
-                        maxWidth={bookDimensions.width} 
-                        maxHeight={bookDimensions.height}
-                        maxShadowOpacity={0.2} 
+                        showCover={true} 
                         drawShadow={true}
                         flippingTime={500} 
                         useMouseEvents={true} 
                         clickEventForward={true}
-                        startPage={0}
-                        autoSize={false} 
-                        showCover={true}
+                        autoSize={false}
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>
@@ -203,10 +143,6 @@ export default function Magazine() {
                             />
                         </div>
                     </HTMLFlipBook>
-
-                    <button className={styles.button} onClick={goToFirstPage}>
-                        Back to First Page
-                    </button>
                 </div>
 
 

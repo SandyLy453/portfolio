@@ -8,43 +8,8 @@ import HTMLFlipBook from "react-pageflip";
 import { useState, useEffect, useRef } from "react";
 
 export default function Magazine() {
-    
-    const [bookDimensions, setBookDimensions] = useState({ width: 450, height: 582 });
     const flipBook = useRef(null);
-
-    useEffect(() => {
-        const updateDimensions = () => {
-            const screenWidth = window.innerWidth;
-            const maxWidth = 500; 
-
-            let scaleFactor;
-            if (screenWidth < 768) {
-                scaleFactor = 0.4; // Mobile
-            } else if (screenWidth < 1470) {
-                scaleFactor = 0.7; // Tablets and small desktops
-            } else {
-                scaleFactor = 0.5; // Large screens
-            }
-
-            setBookDimensions({
-                width: Math.min(maxWidth, screenWidth * scaleFactor),
-                height: Math.min(maxWidth, screenWidth * scaleFactor) * (1650 / 1275),
-            });
-        };
-
-        updateDimensions(); 
-        window.addEventListener("resize", updateDimensions); 
-
-        return () => window.removeEventListener("resize", updateDimensions); 
-    }, []);
-
-    if (!bookDimensions) {
-        return (
-            <div style={{ textAlign: "center", padding: "2rem" }}>
-                Loading...
-            </div>
-        );
-    }
+    const totalPages = 12;
 
     const goToFirstPage = () => {
         if (flipBook.current?.pageFlip()) {
@@ -52,19 +17,30 @@ export default function Magazine() {
         }
     };
 
+    const goToNextPage = () => {
+        if (flipBook.current?.pageFlip()) {
+            flipBook.current.pageFlip().flipNext();
+        }
+    };
+
+    const goToPrevPage = () => {
+        if (flipBook.current?.pageFlip()) {
+            flipBook.current.pageFlip().flipPrev();
+        }
+    };
+
     useEffect(() => {
         const handleKeyDown = (event) => {
-            if (event.key === ">" || event.key === "ArrowRight") {
-                flipBook.current?.pageFlip()?.flipNext();
-            } else if (event.key === "<" || event.key === "ArrowLeft") {
-                flipBook.current?.pageFlip()?.flipPrev();
+            if (event.key === "ArrowRight") {
+                goToNextPage();
+            } else if (event.key === "ArrowLeft") {
+                goToPrevPage();
             }
         };
 
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
-
 
     return (
         <>
@@ -145,28 +121,20 @@ export default function Magazine() {
             </div>
 
             <p className={styles.lilnote}>
-                (Click on a page corner or arrow keyboard (← / →) to turn to the next or previous page.)
+                (Click on a page corner to turn to the next or previous page.)
             </p>
 
             <div className={styles.bookContainer}>
                     <HTMLFlipBook 
-                        ref={flipBook}
-                        width={bookDimensions.width}
-                        height={bookDimensions.height}
+                        width={425} 
+                        height={550} 
                         className={styles.book}
-                        mobileScrollSupport={true}
-                        minWidth={bookDimensions.width} 
-                        minHeight={bookDimensions.height}
-                        maxWidth={bookDimensions.width} 
-                        maxHeight={bookDimensions.height}
-                        maxShadowOpacity={0.2} 
+                        showCover={true} 
                         drawShadow={true}
                         flippingTime={500} 
                         useMouseEvents={true} 
                         clickEventForward={true}
-                        startPage={0}
-                        autoSize={false} 
-                        showCover={true}
+                        autoSize={false}
                     >
                         {/* First page (standalone cover) */}
                         <div className={styles.page}>

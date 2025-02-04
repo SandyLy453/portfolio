@@ -52,20 +52,6 @@ export default function Magazine() {
         }
     };
 
-    useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (event.key === ">" || event.key === "ArrowRight") {
-                flipBook.current?.pageFlip()?.flipNext();
-            } else if (event.key === "<" || event.key === "ArrowLeft") {
-                flipBook.current?.pageFlip()?.flipPrev();
-            }
-        };
-
-        window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown);
-    }, []);
-
-
     return (
         <>
             <Header />
@@ -145,7 +131,7 @@ export default function Magazine() {
             </div>
 
             <p className={styles.lilnote}>
-                (Click on a page corner or arrow keyboard (← / →) to turn to the next or previous page.)
+                (Click on a page corner to turn to the next or previous page.)
             </p>
 
             <div className={styles.bookContainer}>
