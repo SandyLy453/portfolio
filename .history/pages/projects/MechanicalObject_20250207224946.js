@@ -4,7 +4,7 @@ import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/Poster.module.css'
-import BeforeAfterSlider2 from "@/modules/BeforeAfterSlider2/BeforeAfterSlider2";
+import BeforeAfterSlider from "@/modules/BeforeAfterSlider/BeforeAfterSlider";
 
 export default function MechanicalObject() {
     return (
@@ -76,7 +76,15 @@ export default function MechanicalObject() {
                 </div>
 
                 <div className={styles.showcase}>
-                    <BeforeAfterSlider2/>
+                    <BeforeAfterSlider 
+                        ratio="10:2"
+                        image1="/camillu.png"
+                        image2="/camreal.png"
+                        alt1="Vector graphic camera"
+                        alt2="real camera"
+                        width="700"
+                        height="400"
+                    />
                 </div>
 
 
