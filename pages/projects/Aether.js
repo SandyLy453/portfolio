@@ -6,6 +6,7 @@ import Footer from "@/modules/Footer/Footer";
 import PostHeader from "@/modules/PostHeader/PostHeader";
 import styles from '@/styles/Aether.module.css'
 import BeforeAfterSlider from "@/modules/BeforeAfterSlider/BeforeAfterSlider";
+import Link from "next/link";
 
 export default function Aether() {
 
@@ -18,8 +19,32 @@ export default function Aether() {
         { src: "/persona2.png", alt: "Persona 2" },
     ];
 
+    const styleGuide = [
+        { src: "/sg1.png", alt: "StyleGuide page 1" },
+        { src: "/sg2.png", alt: "StyleGuide page 2" },
+        { src: "/sg3.png", alt: "StyleGuide page 3" },
+        { src: "/sg4.png", alt: "StyleGuide page 4" },
+        { src: "/sg5.png", alt: "StyleGuide page 5" },
+        { src: "/sg6.png", alt: "StyleGuide page 6" },
+        { src: "/sg7.png", alt: "StyleGuide page 7" },
+        { src: "/sg8.png", alt: "StyleGuide page 8" },
+    ];
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [feature, setFeature] = useState("library")
+    const [styleGuideIndex, setStyleGuideIndex] = useState(0);
+
+    const handleNextStyleGuide = useCallback(() => {
+        setStyleGuideIndex((prevIndex) =>
+            prevIndex === styleGuide.length - 1 ? 0 : prevIndex + 1
+        );
+    }, [styleGuide]);
+
+    const handlePrevStyleGuide = useCallback(() => {
+        setStyleGuideIndex((prevIndex) =>
+            prevIndex === 0 ? styleGuide.length - 1 : prevIndex - 1
+        );
+    }, [styleGuide]);
 
     const handleNext = useCallback(() => {
         setCurrentIndex((prevIndex) =>
@@ -74,23 +99,37 @@ export default function Aether() {
                     <p className={styles.content}>
                         Figma, Adobe Illutrators, NextJS, React
                     </p>
+
+                    <div className={styles.btnBox}>
+                        <Link 
+                            href="https://www.aether-app.ca/index.html" 
+                            className={styles.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles.button}>
+                                Blog
+                            </button>
+                        </Link>
+                        <Link 
+                            href="https://www.figma.com/proto/cklaQQCKDxNAyWR1mXcU1g/Aether?page-id=0%3A1&node-id=1-1103&p=f&viewport=-722%2C-1035%2C0.16&t=BtvPgixpd1eyIsQA-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1373&show-proto-sidebar=1" 
+                            className={styles.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <button className={styles.button}>
+                                Hifi Prototype
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> Introduction </span>
+                <span> Problem Statement </span>
             </div>
 
             <div className={styles.middle}>
-                <div className={styles.text}>
-                    <h2 className={styles.subHeading}>
-                        What is Aether?
-                    </h2>
-                    <p className={styles.content}>
-                        <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to enhance efficiency, usability, and reduce stress in completing paperwork. The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed.
-                    </p>
-                </div>
-
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
                         What was the painpoint?
@@ -99,7 +138,111 @@ export default function Aether() {
                         Research revealed that individuals may spend up to <span className={styles.span}>30 days</span> per year completing paperwork, with caregivers experiencing even longer durations. The complexity, extensive content, and occasionally ambiguous instructions of most forms contribute to significant stress and difficulty in the completion process.
                     </p>
                 </div>
+
+                <div className={styles.text}>
+                    <h2 className={styles.subHeading}>
+                        Who is target audience?
+                    </h2>
+                    <p className={styles.content}>
+                        Caregivers managing multiple documents for different people.
+                    </p>
+                </div>
             </div>
+
+            <div className={styles.sectionBreaker}>
+                <span> Solution </span>
+            </div>
+
+            <div className={styles.middle}>
+                <div className={styles.text}>
+                    <h2 className={styles.subHeading}>
+                        What is Aether?
+                    </h2>
+                    <p className={styles.content}>
+                        {/* <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to enhance efficiency, usability, and reduce stress in completing paperwork. The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed. */}
+                        <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to reduce the stress and complexity associated with managing paperwork, particularly for caregivers.
+                    </p>
+                </div>
+
+                <div className={styles.text}>
+                    <h2 className={styles.subHeading}>
+                        How does Aether solve it?
+                    </h2>
+                    <p className={styles.content}>
+                        The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed
+                    </p>
+                </div>
+
+                <div className={styles.feature}>
+                    <h2 className={styles.subHeading}>
+                        Key Features
+                    </h2>
+
+                    <div className={styles.toggle}>
+                        <button
+                            className={feature === "library" ? styles.active : styles.sleep}
+                            onClick={() => handleFeatureChange("library")}
+                        >
+                            Form Library
+                        </button>
+                        <button
+                            className={feature === "scan" ? styles.active : styles.sleep}
+                            onClick={() => handleFeatureChange("scan")}
+                        >
+                            Document Scanning
+                        </button>
+                        <button
+                            className={feature === "fill" ? styles.active : styles.sleep}
+                            onClick={() => handleFeatureChange("fill")}
+                        >
+                            Document Filling
+                        </button>
+                        <button
+                            className={feature === "accessibility" ? styles.active : styles.sleep}
+                            onClick={() => handleFeatureChange("accessibility")}
+                        >
+                            Accessibility
+                        </button>
+                    </div>
+
+                    {feature === "library" && (
+                        <div className={styles.box}>
+                            <Image src={'/library.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
+                            <p className={styles.des}>
+                                Simplify your caregiving tasks with Aether's Forms Library. Our collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
+                            </p>
+                        </div>
+                    )}
+
+                    {feature === "scan" && (
+                        <div className={styles.box}>
+                            <Image src={'/scan.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
+                            <p className={styles.des}>
+                                Aether is here to make life easier for caregivers. With our advanced scanning feature, simply scan any document, and our AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
+                            </p>
+                        </div>
+                    )}
+
+                    {feature === "fill" && (
+                        <div className={styles.box}>
+                            <Image src={'/fill.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
+                            <p className={styles.des}>
+                                Aether makes filling out forms a breeze for caregivers. Use our autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
+                            </p>
+                        </div>
+                    )}
+
+                    {feature === "accessibility" && (
+                        <div className={styles.box}>
+                            <Image src={'/accessibility.png'} alt="accessibility feature" width={500} height={500} className={styles.feaImage} />
+                            <p className={styles.des}>
+                                At Aether, we prioritize accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
+                            </p>
+                        </div>
+                    )}
+                </div>
+            </div>
+
             
             <div className={styles.sectionBreaker}>
                 <span> Research </span>
@@ -141,12 +284,12 @@ export default function Aether() {
             </div>
 
             <div className={styles.sectionBreaker}>
-                <span> About the App </span>
+                <span> Design Process </span>
             </div>
 
             <div className={styles.figma}>
                 <h2 className={styles.subHeading}>
-                    Wireframe
+                    Wireframe (Lofi vs Hifi)
                 </h2>
 
                 <div className={styles.com}>
@@ -162,74 +305,42 @@ export default function Aether() {
                 </div>
             </div>
 
-            <div className={styles.feature}>
+            <div className={styles.infoSection}>
                 <h2 className={styles.subHeading}>
-                    Key Features
+                    Styleguide
                 </h2>
 
-                <div className={styles.toggle}>
+                {/* Custom Slider */}
+                <div className={styles.slider2}>
                     <button
-                        className={feature === "library" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("library")}
+                    className={styles.sliderButton2}
+                    onClick={handlePrevStyleGuide}
+                    aria-label="Previous"
                     >
-                        Form Library
+                    &#8592;
                     </button>
+
+                    <div className={styles.imageContainer2}>
+                        <Image
+                            src={styleGuide[styleGuideIndex].src}
+                            alt={styleGuide[styleGuideIndex].alt}
+                            width={432 *2}
+                            height={307 *2}
+                            className={styles.styleGuideImage}
+                        />
+                    </div>
+
                     <button
-                        className={feature === "scan" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("scan")}
+                    className={styles.sliderButton2}
+                    onClick={handleNextStyleGuide}
+                    aria-label="Next"
                     >
-                        Document Scanning
-                    </button>
-                    <button
-                        className={feature === "fill" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("fill")}
-                    >
-                        Document Filling
-                    </button>
-                    <button
-                        className={feature === "accessibility" ? styles.active : styles.sleep}
-                        onClick={() => handleFeatureChange("accessibility")}
-                    >
-                        Accessibility
+                    &#8594;
                     </button>
                 </div>
-
-                {feature === "library" && (
-                    <div className={styles.box}>
-                        <Image src={'/library.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            Simplify your caregiving tasks with Aether's Forms Library. Our collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
-                        </p>
-                    </div>
-                )}
-
-                {feature === "scan" && (
-                    <div className={styles.box}>
-                        <Image src={'/scan.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            Aether is here to make life easier for caregivers. With our advanced scanning feature, simply scan any document, and our AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
-                        </p>
-                    </div>
-                )}
-
-                {feature === "fill" && (
-                    <div className={styles.box}>
-                        <Image src={'/fill.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            Aether makes filling out forms a breeze for caregivers. Use our autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
-                        </p>
-                    </div>
-                )}
-
-                {feature === "accessibility" && (
-                    <div className={styles.box}>
-                        <Image src={'/accessibility.png'} alt="accessibility feature" width={500} height={500} className={styles.feaImage} />
-                        <p className={styles.des}>
-                            At Aether, we prioritize accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
-                        </p>
-                    </div>
-                )}
             </div>
+
+            
 
             <div className={styles.sectionBreaker}>
                 <span> Commercial </span>

@@ -80,8 +80,7 @@ font-style: italic;
     max-width: 33vw;
 }
 
-.infoSection,
-.feature {
+.infoSection {
     margin-bottom: 30px;
     margin-top: 0;
 }
@@ -190,6 +189,69 @@ font-style: italic;
 .feaImage ,.subHeading {
     margin-bottom: 30px;
 }
+
+.feature {
+    margin: 2.5rem 0 0 0;
+}
+
+.styleGuideImage {
+    max-width: 900px;
+    height: auto;
+    width: 65vw;
+}
+
+.slider2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sliderButton2 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cream);
+    color: var(--forest);
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sliderButton2:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: 1px solid var(--forest);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.btnBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 
 
 @media screen and (max-width: 1366px) {
