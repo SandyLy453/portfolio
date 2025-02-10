@@ -115,7 +115,7 @@ font-style: italic;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .sleep {
@@ -123,16 +123,6 @@ font-style: italic;
     width: 200px;
     background-color: var(--cream);
     color: var(--forest);
-    border: none;
-    font-size: 18px;
-    align-items: center;
-}
-
-.active {
-    height: 80px;
-    width: 200px;
-    background-color: var(--midnight);
-    color: var(--cream);
     border: none;
     font-size: 18px;
     align-items: center;
@@ -151,6 +141,16 @@ font-style: italic;
 .sleep:hover {
     background-color: var(--forest);
     color: var(--cream);
+}
+
+.active {
+    height: 80px;
+    width: 220px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    border: none;
+    font-size: 20px;
+    align-items: center;
 }
 
 .box {

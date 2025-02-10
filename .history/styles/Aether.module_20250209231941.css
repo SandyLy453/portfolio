@@ -128,16 +128,6 @@ font-style: italic;
     align-items: center;
 }
 
-.active {
-    height: 80px;
-    width: 200px;
-    background-color: var(--midnight);
-    color: var(--cream);
-    border: none;
-    font-size: 18px;
-    align-items: center;
-}
-
 .sleep:first-child,
 .active:first-child {
     border-radius: 10px 0 0 10px;
@@ -151,6 +141,16 @@ font-style: italic;
 .sleep:hover {
     background-color: var(--forest);
     color: var(--cream);
+}
+
+.active {
+    height: 80px;
+    width: 220px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    border: none;
+    font-size: 18px;
+    align-items: center;
 }
 
 .box {

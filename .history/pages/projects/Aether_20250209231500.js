@@ -129,7 +129,7 @@ export default function Aether() {
                 <span> Project background </span>
             </div>
 
-            <div className={styles.middlee}>
+            <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
                         What is Ather?

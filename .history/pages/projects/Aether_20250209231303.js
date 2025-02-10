@@ -129,13 +129,22 @@ export default function Aether() {
                 <span> Project background </span>
             </div>
 
-            <div className={styles.middlee}>
+            <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
                         What is Ather?
                     </h2>
                     <p className={styles.content}>
-                        <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to simplify paperwork management for caregivers. The project was developed to address the time-consuming and stressful process of handling complex documents, especially for those managing multiple profiles.
+                        Research revealed that individuals may spend up to <span className={styles.span}>30 days</span> per year completing paperwork, with caregivers experiencing even longer durations. The complexity, extensive content, and occasionally ambiguous instructions of most forms contribute to significant stress and difficulty in the completion process.
+                    </p>
+                </div>
+
+                <div className={styles.text}>
+                    <h2 className={styles.subHeading}>
+                        Who is target audience?
+                    </h2>
+                    <p className={styles.content}>
+                        Caregivers managing multiple documents for different people.
                     </p>
                 </div>
             </div>
@@ -168,10 +177,20 @@ export default function Aether() {
                 <span> Solution </span>
             </div>
 
-            <div className={styles.middlee}>
+            <div className={styles.middle}>
                 <div className={styles.text}>
                     <h2 className={styles.subHeading}>
-                        How does Aether make it easier?
+                        What is Aether?
+                    </h2>
+                    <p className={styles.content}>
+                        {/* <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to enhance efficiency, usability, and reduce stress in completing paperwork. The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed. */}
+                        <span className={styles.span}>Aether</span> is an AI-powered form-filling application designed to reduce the stress and complexity associated with managing paperwork, particularly for caregivers.
+                    </p>
+                </div>
+
+                <div className={styles.text}>
+                    <h2 className={styles.subHeading}>
+                        How does Aether solve it?
                     </h2>
                     <p className={styles.content}>
                         The app features a comprehensive form library containing commonly used documents, allowing users to access and fill out forms seamlessly. Additionally, a built-in scanning feature enables caregivers to digitize and process external or unprovided forms. Leveraging AI technology, scanned documents are automatically simplified and clarified for better understanding. <span className={styles.span}>Aether</span> also supports multi-profile management, enabling caregivers to quickly auto-fill forms while retaining the flexibility to manually edit details as needed
