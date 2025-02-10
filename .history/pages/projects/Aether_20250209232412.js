@@ -367,6 +367,10 @@ export default function Aether() {
                     </video>
                 </div>
 
+                <div className={styles.sectionBreaker}>
+                    <span> Future improvement </span>
+                </div>
+
             </main>
 
             <Footer />
