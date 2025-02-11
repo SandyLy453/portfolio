@@ -214,7 +214,7 @@ export default function Aether() {
                             <div className={styles.box}>
                                 <Image src={'/library.png'} alt="library feature" width={500} height={500} className={styles.feaImage} />
                                 <p className={styles.des}>
-                                    Simplify your caregiving tasks with Aether's Forms Library. Aether's collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
+                                    Simplify your caregiving tasks with Aether's Forms Library. Our collection of common forms is designed to help caregivers quickly find and start filling out essential documents, saving time and reducing stress.
                                 </p>
                             </div>
                         )}
@@ -223,7 +223,7 @@ export default function Aether() {
                             <div className={styles.box}>
                                 <Image src={'/scan.png'} alt="scan feature" width={500} height={500} className={styles.feaImage} />
                                 <p className={styles.des}>
-                                    Aether is here to make life easier for caregivers. With the app advanced scanning feature, simply scan any document, and the AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
+                                    Aether is here to make life easier for caregivers. With our advanced scanning feature, simply scan any document, and our AI (ChatOpen) will instantly simplify the content, breaking down complex language into clear, caregiver-friendly terms. Focus on care, not paperwork!
                                 </p>
                             </div>
                         )}
@@ -232,7 +232,7 @@ export default function Aether() {
                             <div className={styles.box}>
                                 <Image src={'/fill.png'} alt="fill feature" width={500} height={500} className={styles.feaImage} />
                                 <p className={styles.des}>
-                                    Aether makes filling out forms a breeze for caregivers. Use the app autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
+                                    Aether makes filling out forms a breeze for caregivers. Use our autofill feature to quickly populate forms with information from saved profiles. Need to make adjustments? Caregivers can manually edit or update details anytime, ensuring accuracy and flexibility for every document.
                                 </p>
                             </div>
                         )}
@@ -241,7 +241,7 @@ export default function Aether() {
                             <div className={styles.box}>
                                 <Image src={'/accessibility.png'} alt="accessibility feature" width={500} height={500} className={styles.feaImage} />
                                 <p className={styles.des}>
-                                    At Aether, prioritizing accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
+                                    At Aether, we prioritize accessibility to ensure every caregiver can comfortably use our app. Choose from various font size options for easy reading, and switch to dark mode for a more eye-friendly experience. Because everyone deserves a seamless and inclusive user experience.
                                 </p>
                             </div>
                         )}
@@ -258,12 +258,10 @@ export default function Aether() {
                         Persona
                     </h2>
 
-                    <div className={styles. middlee}>
-                        <p className={styles.content}>
-                            To gain a deeper understanding of caregivers and the target audience for <span className={styles.span}>Aether</span>, an interview with real caregivers was conducted. Primary research involved interviewing multiple caregivers, while secondary research consisted of online studies. Insights from both research methods were combined to develop the personas shown below, ensuring a more user-centered interface design for <span className={styles.span}>Aether</span>.
-                        </p>
-                    </div>
-                    
+                    <p className={styles.content}>
+                        To gain a deeper understanding of caregivers and the target audience for <span className={styles.span}>Aether</span>, an interview with real caregivers was conducted. Primary research involved interviewing multiple caregivers, while secondary research consisted of online studies. Insights from both research methods were combined to develop the personas shown below, ensuring a more user-centered interface design for <span className={styles.span}>Aether</span>.
+                    </p>
+
                     {/* Custom Slider */}
                     <div className={styles.slider}>
                         <button
@@ -298,34 +296,21 @@ export default function Aether() {
                     <span> Design Process </span>
                 </div>
 
-                <div className={styles.infoSection}>
+                <div className={styles.figma}>
                     <h2 className={styles.subHeading}>
-                        Workflow
+                        Wireframe (Lofi vs Hifi)
                     </h2>
 
-                    <div className={styles. middlee}>
-                        <p className={styles.content}>
-                            To streamline the design process and improve clarity, a customer journey map was created to illustrate how caregivers navigate through the app. This workflow outlines key interactions and user touchpoints, ensuring a more intuitive experience.
-                        </p>
-                    </div>
-
-                    <Image src={'/wf.png'} alt="Customer Journey Map" className={styles.wf} width={1000} height={400} />
-
-                </div>
-
-                <div className={styles.infoSection}>
-                    <h2 className={styles.subHeading}>
-                        Compertitive analysis
-                    </h2>
-
-                    <div className={styles. middlee}>
-                        <p className={styles.content}>
-                            A competitive analysis was conducted to refine insights and enhance design concepts, ensuring  <span className={styles.span}>Aether</span> stands out from other form-filling apps. This analysis helped identify strengths, weaknesses, and opportunities for a more user-friendly and distinctive experience.
-                        </p>
-                        <div className={styles.img}>
-                            <Image src={'/com.png'} alt="Customer Journey Map" className={styles.com} width={800} height={590} />
-                        </div>
-                        
+                    <div className={styles.com}>
+                        <BeforeAfterSlider 
+                            ratio="10:7"
+                            image1="/lofi1.png"
+                            image2="/hifi1.png"
+                            alt1="Lofi Wireframe"
+                            alt2="Hifi Wireframe"
+                            width="1000"
+                            height="800"
+                        />
                     </div>
                 </div>
 
@@ -364,23 +349,7 @@ export default function Aether() {
                     </div>
                 </div>
 
-                <div className={styles.figma}>
-                    <h2 className={styles.subHeading}>
-                        Wireframe (Lofi vs Hifi)
-                    </h2>
-
-                    <div className={styles.com}>
-                        <BeforeAfterSlider 
-                            ratio="10:7"
-                            image1="/lofi1.png"
-                            image2="/hifi1.png"
-                            alt1="Lofi Wireframe"
-                            alt2="Hifi Wireframe"
-                            width="1000"
-                            height="800"
-                        />
-                    </div>
-                </div>
+                
 
                 <div className={styles.sectionBreaker}>
                     <span> Commercial </span>
@@ -390,12 +359,6 @@ export default function Aether() {
                     <h2 className={styles.subHeading}>
                         Promote Video
                     </h2>
-
-                    <div className={styles. middlee}>
-                        <p className={styles.content}>
-                            To gain a deeper understanding of caregivers and the target audience for <span className={styles.span}>Aether</span>, an interview with real caregivers was conducted. Primary research involved interviewing multiple caregivers, while secondary research consisted of online studies. Insights from both research methods were combined to develop the personas shown below, ensuring a more user-centered interface design for <span className={styles.span}>Aether</span>.
-                        </p>
-                    </div>
 
                     <video 
                         className={styles.video} 

@@ -91,7 +91,6 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;
 }
 
 .sliderButton {
@@ -257,25 +256,6 @@ font-style: italic;
     max-width: 50vw;
 }
 
-.wf {
-    margin: 20px auto;
-    max-width: 1500px;
-    height: auto;
-    width: 100%;
-}
-
-.img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.com {
-    margin: auto;
-    max-width: 900px;
-    height: auto;
-}
 
 
 @media screen and (max-width: 1366px) {
@@ -296,32 +276,24 @@ font-style: italic;
   }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 844px) {
     .body {
         width: 90vw;
         flex-direction: column;
     }
 
-    .intro,
-    .intro .topText {
+    .intro {
         flex-direction: column;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .btnBox {
-        justify-content: center;
+        max-width: 90vw;
     }
 
     .content,
-    .middle .content,
-    .middlee .content {
+    .middle .content {
         max-width: 100vw;
         font-size: 16px;
     }
 
-    .middle .content,
-    .middlee .content {
+    .middle .content {
         margin-bottom: 30px;
     }
 
@@ -339,8 +311,8 @@ font-style: italic;
     }
 
     .gifOne {
-        width: 90vw;
-        height: auto;
+        width: 360px;
+        height: 255px;
         margin: 20px auto;
         align-items: center;
         display: flex;
@@ -363,26 +335,21 @@ font-style: italic;
     }
 
     .toggle {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .sleep:first-child,
     .active:first-child {
-        border-radius: 0 ;
+        border-radius: 10px 10px 0 0 ;
     }
 
     .sleep:last-child,
     .active:last-child  {
-        border-radius: 0;
+        border-radius: 0 0 10px 10px;
     }
 
-    .active,
-    .sleep {
-        width: 140px;
-        font-size: 16px;
-        text-wrap: wrap;
-        padding: 20px;
+    .active {
+        width: 200px;
     }
 
     .feaImage {
@@ -394,10 +361,5 @@ font-style: italic;
     .box p {
         font-size: 18px;
         max-width: 90vw;
-    }
-
-    .des {
-        width: 100%;
-        font-size: 16px;
     }
 }

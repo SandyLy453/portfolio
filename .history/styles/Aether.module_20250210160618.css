@@ -264,17 +264,8 @@ font-style: italic;
     width: 100%;
 }
 
-.img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .com {
     margin: auto;
-    max-width: 900px;
-    height: auto;
 }
 
 

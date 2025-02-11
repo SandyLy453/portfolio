@@ -305,27 +305,26 @@ export default function Aether() {
 
                     <div className={styles. middlee}>
                         <p className={styles.content}>
-                            To streamline the design process and improve clarity, a customer journey map was created to illustrate how caregivers navigate through the app. This workflow outlines key interactions and user touchpoints, ensuring a more intuitive experience.
+                            To gain a deeper understanding of caregivers and the target audience for <span className={styles.span}>Aether</span>, an interview with real caregivers was conducted. Primary research involved interviewing multiple caregivers, while secondary research consisted of online studies. Insights from both research methods were combined to develop the personas shown below, ensuring a more user-centered interface design for <span className={styles.span}>Aether</span>.
                         </p>
                     </div>
-
-                    <Image src={'/wf.png'} alt="Customer Journey Map" className={styles.wf} width={1000} height={400} />
-
                 </div>
 
-                <div className={styles.infoSection}>
+                <div className={styles.figma}>
                     <h2 className={styles.subHeading}>
-                        Compertitive analysis
+                        Wireframe (Lofi vs Hifi)
                     </h2>
 
-                    <div className={styles. middlee}>
-                        <p className={styles.content}>
-                            A competitive analysis was conducted to refine insights and enhance design concepts, ensuring  <span className={styles.span}>Aether</span> stands out from other form-filling apps. This analysis helped identify strengths, weaknesses, and opportunities for a more user-friendly and distinctive experience.
-                        </p>
-                        <div className={styles.img}>
-                            <Image src={'/com.png'} alt="Customer Journey Map" className={styles.com} width={800} height={590} />
-                        </div>
-                        
+                    <div className={styles.com}>
+                        <BeforeAfterSlider 
+                            ratio="10:7"
+                            image1="/lofi1.png"
+                            image2="/hifi1.png"
+                            alt1="Lofi Wireframe"
+                            alt2="Hifi Wireframe"
+                            width="1000"
+                            height="800"
+                        />
                     </div>
                 </div>
 
@@ -364,21 +363,15 @@ export default function Aether() {
                     </div>
                 </div>
 
-                <div className={styles.figma}>
+                <div className={styles.infoSection}>
                     <h2 className={styles.subHeading}>
-                        Wireframe (Lofi vs Hifi)
+                        Compertitive analysis
                     </h2>
 
-                    <div className={styles.com}>
-                        <BeforeAfterSlider 
-                            ratio="10:7"
-                            image1="/lofi1.png"
-                            image2="/hifi1.png"
-                            alt1="Lofi Wireframe"
-                            alt2="Hifi Wireframe"
-                            width="1000"
-                            height="800"
-                        />
+                    <div className={styles. middlee}>
+                        <p className={styles.content}>
+                            To gain a deeper understanding of caregivers and the target audience for <span className={styles.span}>Aether</span>, an interview with real caregivers was conducted. Primary research involved interviewing multiple caregivers, while secondary research consisted of online studies. Insights from both research methods were combined to develop the personas shown below, ensuring a more user-centered interface design for <span className={styles.span}>Aether</span>.
+                        </p>
                     </div>
                 </div>
 

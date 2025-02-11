@@ -91,7 +91,6 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;
 }
 
 .sliderButton {
@@ -257,25 +256,6 @@ font-style: italic;
     max-width: 50vw;
 }
 
-.wf {
-    margin: 20px auto;
-    max-width: 1500px;
-    height: auto;
-    width: 100%;
-}
-
-.img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.com {
-    margin: auto;
-    max-width: 900px;
-    height: auto;
-}
 
 
 @media screen and (max-width: 1366px) {
@@ -379,10 +359,8 @@ font-style: italic;
 
     .active,
     .sleep {
-        width: 140px;
+        width: 150px;
         font-size: 16px;
-        text-wrap: wrap;
-        padding: 20px;
     }
 
     .feaImage {

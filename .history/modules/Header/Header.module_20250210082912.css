@@ -2,10 +2,10 @@
     margin:0;
     margin-left: auto;
     margin-right: auto;
-    width: 70vw;
+    width: 100vw;
     height: 120px;
-    background-color: var(--mauveMorn);
-    padding: 20px;
+    background-color: var(--forest);
+    padding: 20px 50px ;
     padding-bottom: 30px;
 
     display: flex;
@@ -27,6 +27,24 @@
 
 .link {
     text-decoration: none;
-    color: #60665A;
-    
+    color: var(--cream);
+    font-family: "Playfair Display", serif;
 }
+
+.link:hover {
+    color: var(--midnight);
+}
+
+
+@media screen and (max-width: 1366px) {
+    .header {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100vw;
+    }
+}
+

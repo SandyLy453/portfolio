@@ -322,10 +322,8 @@ export default function Aether() {
                         <p className={styles.content}>
                             A competitive analysis was conducted to refine insights and enhance design concepts, ensuring  <span className={styles.span}>Aether</span> stands out from other form-filling apps. This analysis helped identify strengths, weaknesses, and opportunities for a more user-friendly and distinctive experience.
                         </p>
-                        <div className={styles.img}>
-                            <Image src={'/com.png'} alt="Customer Journey Map" className={styles.com} width={800} height={590} />
-                        </div>
-                        
+
+                        <Image src={'/com.png'} alt="Customer Journey Map" className={styles.wf} width={640} height={470} />
                     </div>
                 </div>
 

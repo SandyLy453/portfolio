@@ -264,7 +264,7 @@ font-style: italic;
     width: 100%;
 }
 
-.img {
+.IMG {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,7 +273,7 @@ font-style: italic;
 
 .com {
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
     height: auto;
 }
 
