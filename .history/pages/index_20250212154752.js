@@ -99,16 +99,9 @@ export default function Home() {
         </div>
           
         <div className={styles.loadMoreContainer}>
-          <Link 
-            href="/project" 
-            className={styles.loadMoreButton}
-            scroll={true}
-          >
-              <button className={styles.loadMoreButton}>
-                More Projects
-              </button>
-          </Link>
-        </div>
+  <Link href="/project" className={styles.loadMoreButton}>
+    More Projects
+  </Link>
 
       </main>
 

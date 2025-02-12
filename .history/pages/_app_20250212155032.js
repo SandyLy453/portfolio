@@ -22,8 +22,6 @@ export default function App({ Component, pageProps }) {
     const handleRouteChangeComplete = (url) => {
         if (url.startsWith("/projects")) {
             window.location.reload();
-        } else if (url.startsWith("/project")) {
-          window.location.reload();
         }
     };
 
@@ -33,6 +31,11 @@ export default function App({ Component, pageProps }) {
         router.events.off("routeChangeComplete", handleRouteChangeComplete);
     };
 }, [router]);
+
+useEffect(() => {
+  const handleRouteChange = () => {
+    window.scrollTo(0, 0);
+  };
 
 
   return (

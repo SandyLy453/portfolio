@@ -1,0 +1,118 @@
+.page {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-height: 100vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 0;
+}
+
+.sectionBreaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.sectionBreaker::before,
+.sectionBreaker::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #d3d3d3; 
+    margin: 0;
+}
+
+.sectionBreaker span {
+    color: #7D9094;
+    margin: 0 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.chipContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.sleep {
+    height: 40px;
+    min-width: 100px;
+    padding: 0 20px;
+    background-color: var(--cream);
+    color: var(--forest);
+    font-size: 18px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px var(--forest);
+}
+
+.active {
+    height: 40px;
+    min-width: 100px;
+    padding: 0 20px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    font-size: 18px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px var(--forest);
+}
+
+.pjSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    gap: 1rem;
+}
+  
+.loadMoreContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.loadMoreButton {
+    height: 40px;
+    width: 150px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: 1px solid var(--forest);
+    font-size: 18px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+  
+.loadMoreButton:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+
+
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+

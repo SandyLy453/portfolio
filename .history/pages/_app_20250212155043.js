@@ -22,8 +22,6 @@ export default function App({ Component, pageProps }) {
     const handleRouteChangeComplete = (url) => {
         if (url.startsWith("/projects")) {
             window.location.reload();
-        } else if (url.startsWith("/project")) {
-          window.location.reload();
         }
     };
 

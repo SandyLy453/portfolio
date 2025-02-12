@@ -102,7 +102,6 @@ export default function Home() {
           <Link 
             href="/project" 
             className={styles.loadMoreButton}
-            scroll={true}
           >
               <button className={styles.loadMoreButton}>
                 More Projects

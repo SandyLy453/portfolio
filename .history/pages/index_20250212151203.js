@@ -62,6 +62,10 @@ export default function Home() {
 
   const [visibleProjects, setVisibleProjects] = useState(6);
 
+  const loadMoreProjects = () => {
+    setVisibleProjects((prev) => Math.min(prev + 6, projects.length));
+  };
+
   return (
     <>
       <Header/>
@@ -102,7 +106,6 @@ export default function Home() {
           <Link 
             href="/project" 
             className={styles.loadMoreButton}
-            scroll={true}
           >
               <button className={styles.loadMoreButton}>
                 More Projects
