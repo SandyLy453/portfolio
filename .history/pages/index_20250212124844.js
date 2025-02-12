@@ -114,6 +114,10 @@ export default function Home() {
     setVisibleProjects((prev) => Math.min(prev + 6, projects.length));
   };
 
+  useEffect(() => {
+    document.body.style.cursor = "url('/cursor.png') 16 16, auto";
+  }, []);
+
   return (
     <>
       <Header/>

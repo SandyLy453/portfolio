@@ -26,13 +26,12 @@ body {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   color: var(--stormCloud);
-  cursor: url('/cursor.png') 16 16, auto;
 }
 
 header {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
 
 * {
@@ -45,8 +44,11 @@ h1, h2, h3, h4, h5, span {
   font-family: "Playfair Display", serif;
 }
 
+body {
+  cursor: url('/cursor.png'), auto;
+}
 a, button {
-  cursor: url('/pointer.png') 16 16, pointer;
+  cursor: url('/pointer.png'), pointer;
 }
 
 

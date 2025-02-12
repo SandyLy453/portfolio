@@ -2,9 +2,15 @@
   --mauveMorn: #ecd6d6;
   --mauveShadow: #B59BA6;
   --moss: #5E7975;
-  --spaBlue: #D3DEDF;
   --brightWhite: #f5f7f6;
   --white: #fff;
+
+  --spaBlue: #D3DEDF;
+  --forest: #5E685E;
+  --midnight: #3D4D55;
+  --stormCloud: #676767;
+  --cream: #f4EFE6;
+  --cloud: #FEFCF6;
 }
 
 html,
@@ -14,9 +20,13 @@ body {
   background-color: #f5f7f6;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: auto;
 
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+  color: var(--stormCloud);
+  cursor: url('/cursor.png') 16 16, auto;
 }
 
 header {
@@ -30,6 +40,15 @@ header {
   padding: 0;
   box-sizing: border-box; /* Reset styles for all elements */
 }
+
+h1, h2, h3, h4, h5, span {
+  font-family: "Playfair Display", serif;
+}
+
+a, button {
+  cursor: url('/pointer.png') 16 16, pointer;
+}
+
 
 
 
