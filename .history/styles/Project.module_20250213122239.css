@@ -118,14 +118,9 @@
         justify-content: center;
     }
 
-    .chipContainer {
-        width: 100%;
-    }
-
     .sleep,
     .active {
-        min-width: 70px;
-        padding: 0 10px;
+        min-width: 80px;
     }
 }
 

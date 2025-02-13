@@ -4,14 +4,18 @@
     margin-right: auto;
     width: 70vw;
     height: 120px;
-    background-color: var(--mauveMorn);
-    padding: 20px 50pxgit ;
+    background-color: var(--forest);
+    padding: 20px 50px ;
     padding-bottom: 30px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    z-index: 999;
 }
 
 .menu {
@@ -27,9 +31,24 @@
 
 .link {
     text-decoration: none;
-    color: var(--moss);
+    color: var(--cream);
+    font-family: "Playfair Display", serif;
 }
 
 .link:hover {
-    color: var(--mauveShadow);
+    color: var(--midnight);
 }
+
+
+@media screen and (max-width: 1366px) {
+    .header {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100vw;
+    }
+}
+

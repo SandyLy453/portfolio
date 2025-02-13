@@ -118,10 +118,6 @@
         justify-content: center;
     }
 
-    .chipContainer {
-        width: 100%;
-    }
-
     .sleep,
     .active {
         min-width: 70px;

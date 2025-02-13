@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1366px) {
     .header {
         width: 80vw;
         right: 10vw;
