@@ -103,7 +103,7 @@ font-style: italic;
     background-color: var(--cream);
     color: var(--forest);
     font-size: 24px;
-    cursor: url('/haha.webp') 16 16, pointer;
+    cursor: url('/hehe.webp') 16 16, auto;
 }
 
 .sliderButton:hover {
