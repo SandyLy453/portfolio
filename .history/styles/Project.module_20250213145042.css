@@ -10,14 +10,6 @@
     margin-top: 200px;
 }
 
-.pageTitle {
-    font-size: 48px;
-    text-wrap: wrap;
-
-    margin-top: 50px;
-    font-family: "Playfair Display", serif;
-}
-
 .sectionBreaker {
     display: flex;
     align-items: center;
@@ -48,7 +40,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 2rem auto;
+    margin: 1rem auto;
 }
 
 .sleep {

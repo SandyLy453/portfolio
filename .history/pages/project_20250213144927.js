@@ -141,7 +141,10 @@ export default function Project() {
             <Header/>
 
             <main className={styles.main}>
-                <h1 className={styles.pageTitle}>Project</h1>
+                <PostHeader
+                    title={'Project'}
+                    date={''}
+                />
 
                 <div className={styles.chipContainer}>
                     <button
