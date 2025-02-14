@@ -28,10 +28,17 @@ export default function Footer () {
                             <p className={styles.pageName}>/boisan-sandy-ly/</p>
                         </div>
                     </Link>
+
+                    <Link href={"https://www.linkedin.com/in/boisan-sandy-ly/"} className={styles.link}>
+                        <div className={styles.infoBox}>
+                            <Image src={'/resumeIcon.png'} width={17.5} height={25} className={styles.icon}/>
+                            <p className={styles.pageName}>Resume</p>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className={styles.right}>
-                    <Image
+                    <Image src={'/logo-2.png'} alt="logo" className={styles.logo} width={200} height={115} />
                 </div>
 
             </div>

@@ -28,10 +28,24 @@ export default function Footer () {
                             <p className={styles.pageName}>/boisan-sandy-ly/</p>
                         </div>
                     </Link>
+
+                    <Link href={"/Resume.pdf"} className={styles.link}>
+                        <div className={styles.infoBox}>
+                            <Image src={'/resumeIcon.png'} width={17.5} height={25} className={styles.iconR}/>
+                            <p className={styles.pageName}>Resume</p>
+                        </div>
+                    </Link>
+                    
+                    <iframe
+                        src="/Resume.pdf"
+                        width="100%"
+                        height="500px"
+                        style={{ border: "none", marginTop: "20px" }}
+                    ></iframe>
                 </div>
 
                 <div className={styles.right}>
-                    <Image src={'/logo-2.png'} alt="logo" className={styles.logo} width={200} height={125} />
+                    <Image src={'/logo-2.png'} alt="logo" className={styles.logo} width={200} height={115} />
                 </div>
 
             </div>

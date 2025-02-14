@@ -29,10 +29,16 @@ export default function Footer () {
                         </div>
                     </Link>
 
-                    <Link href={"/Sandy_Ly_Resume.pdf"} className={styles.link} target="_blank" rel="noopener noreferrer">
+                    <Link href={"/Resume.pdf"} className={styles.link}>
                         <div className={styles.infoBox}>
                             <Image src={'/resumeIcon.png'} width={17.5} height={25} className={styles.iconR}/>
                             <p className={styles.pageName}>Resume</p>
+                            <iframe
+                                src="/Resume.pdf"
+                                width="100%"
+                                height="500px"
+                                style={{ border: "none" }}
+                            ></iframe>
                         </div>
                     </Link>
                 </div>

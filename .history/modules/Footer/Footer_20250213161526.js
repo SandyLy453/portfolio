@@ -28,6 +28,13 @@ export default function Footer () {
                             <p className={styles.pageName}>/boisan-sandy-ly/</p>
                         </div>
                     </Link>
+
+                    <Link href={"/Resume.pdf"} className={styles.link}>
+                        <div className={styles.infoBox}>
+                            <Image src={'/resumeIcon.png'} width={17.5} height={25} className={styles.iconR}/>
+                            <p className={styles.pageName}>Resume</p>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className={styles.right}>
