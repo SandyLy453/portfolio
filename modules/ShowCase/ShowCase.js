@@ -4,12 +4,11 @@ import styles from './ShowCase.module.css';
 import Link from "next/link";
 
 export default function ShowCase() {
-    const tags = ["Me", "UX/UI", "Graphic", "Other"];
+    const tags = ["Me", "UX/UI", "Graphic"];
     const images = {
-        "Me": "/card-holder.png",
-        "UX/UI": "/ava.png",
-        "Graphic": "/card-holder.png",
-        "Other": "/ava.png",
+        "Me": "/me.png",
+        "UX/UI": "/uxui.png",
+        "Graphic": "/3can.png",
     };
 
     const [activeTag, setActiveTag] = useState(tags[0]);
@@ -27,7 +26,7 @@ export default function ShowCase() {
                     return tags[(currentIndex + 1) % tags.length];
                 });
                 setIsFading(false); 
-            }, 1000);
+            }, 500);
         }, 4000);
     };
 
