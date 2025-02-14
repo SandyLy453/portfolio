@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Header from "@/modules/Header/Header";
 import Footer from "@/modules/Footer/Footer";
 import ProjectCard from "@/modules/ProjectCard/Projectcard";
-import ShowCase from "@/modules/ShowCase/ShowCase";
 
 export default function Home() {
 
@@ -63,39 +62,6 @@ export default function Home() {
 
   const [visibleProjects, setVisibleProjects] = useState(6);
 
-  const roles = ["UX/UI Designer", "Digital Designer", "Web Developer"];
-  const [text, setText] = useState("");
-  const [index, setIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [deleting, setDeleting] = useState(false);
-
-  useEffect(() => {
-    const currentRole = roles[index];
-
-    let timeout;
-
-    if (deleting) {
-      timeout = setTimeout(() => {
-        setText(currentRole.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-      }, 50);
-    } else {
-      timeout = setTimeout(() => {
-        setText(currentRole.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-      }, 100);
-    }
-
-    if (!deleting && charIndex === currentRole.length) {
-      setTimeout(() => setDeleting(true), 1000);
-    } else if (deleting && charIndex === 0) {
-      setDeleting(false);
-      setIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }
-
-    return () => clearTimeout(timeout);
-  }, [charIndex, deleting, index, roles]);
-
   return (
     <>
       <Header/>
@@ -108,56 +74,55 @@ export default function Home() {
 
           <div className={styles.info}>
             <p className={styles.role}>Hello!</p>
-            <p className={styles.role}>I am <span className={styles.name}>Sandy</span>, a</p>
-            <p className={styles.role}>
-              {text}
-              <span className={styles.cursor}>|</span> 
-            </p>
+            <p className={styles.role}>I am <span className={styles.name}>Sandy</span>,</p>
+            <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
+            <p className={styles.loca}>Vancouver | BC</p>
             <Image src={'/hi.GIF'} alt="greeting gif" className={styles.gif} width={294} height={129} />
           </div>
         </div>
 
-        <ShowCase/>
+        <div className={styles.sectionBreaker}>
+          <span> Highlight </span>
+        </div>
+
+        <div className={styles.pjSection}>
+          {projects.slice(0, visibleProjects).map((project, index) => (
+            <ProjectCard
+              key={index}
+              photos={project.photos}
+              alt={project.alt}
+              title={project.title}
+              description={project.description}
+              date={project.date}
+              link={project.link}
+            />
+          ))}
+        </div>
+          
+        <div className={styles.loadMoreContainer}>
+          <Link 
+            href="/project" 
+            className={styles.loadMoreButton}
+            scroll={true}
+          >
+              <button className={styles.loadMoreButton}>
+                More Projects
+              </button>
+          </Link>
+        </div>
 
         <div className={styles.sectionBreaker}>
-          <span> Let's connect! </span>
+          <span> Contact </span>
         </div>
 
-        <div className={styles.connect}>
-          <Link 
-            className={styles.link}
-            href={"mailto:sandy.lyth453@gmail.com"}
-            target="_blank"
-          >
-            <p className={styles.connectInfo}>Email</p>
-          </Link>
-          <Link 
-            className={styles.link}
-            href={"https://www.instagram.com/sansan_lyth?igsh=MThxOTR1ZTlyY3R1dw%3D%3D&utm_source=qr"}
-            target="_blank"
-          >
-            <p className={styles.connectInfo}>Instagram</p>
-          </Link>
-          <Link 
-            className={styles.link}
-            href={"https://www.linkedin.com/in/boisan-sandy-ly/"}
-            target="_blank"
-          >
-            <p className={styles.connectInfo}>LinkedIn</p>
-          </Link>
-          <Link 
-            className={styles.link}
-            href={"/Sandy_Ly_Resume.pdf"}
-            target="_blank"
-          >
-            <p className={styles.connectInfo}>Resume</p>
-          </Link>
+        <div className={styles.bottom}>
+
         </div>
+
+
+        <br/>
+
       </main>
-
-      <footer className={styles.footer}>
-        <p className={styles.copyright}>© Made by Sandy Ly • 2025</p>
-      </footer>
     </>
   );
 }

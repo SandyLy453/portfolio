@@ -1,0 +1,25 @@
+.container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tagBox {
+
+}
+
+.tag {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+

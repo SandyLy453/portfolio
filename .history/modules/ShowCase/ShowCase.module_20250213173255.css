@@ -1,0 +1,13 @@
+.tagBox {
+
+}
+
+.tag {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    
+}
+
+

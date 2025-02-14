@@ -1,0 +1,54 @@
+.container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tagBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tag {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.tag:hover,
+.tag:focus {
+    background-color: var(--forest);
+}
+
+.tag:hover p,
+.tag:focus p {
+    color: var(--mauveMorn);
+    opacity: 100%;
+}
+
+.tag p {
+    color: var(--mauveShadow);
+    opacity: 80%;
+}
+
+.photo {
+    width: 50vw;
+    max-width: 800px;
+    height: 460px;
+    margin: 10px;
+    background-color: var(--cream);
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+

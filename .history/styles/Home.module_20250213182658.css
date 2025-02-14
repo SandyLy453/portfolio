@@ -97,38 +97,10 @@
   max-width: 1350px;
 }
 
-.connect {
-  margin-bottom: 200px;
-}
-
 .link {
   text-decoration: none;
-  color: var(--mauveShadow);
-  width: 100%;
-  font-weight: 500;
 }
 
-.link:hover {
-  color: var(--forest);
-  font-weight: 900;
-}
-
-.connectInfo {
-  font-size: 54px;
-  margin: 20px 0;
-  font-family: "Playfair Display", serif;
-}
-
-.footer {
-  margin-bottom: 20px;
-}
-
-.copyright {
-  text-align: center;
-  font-style: italic;
-  color: var(--forest);
-  width: 100%;
-}
 
 
 

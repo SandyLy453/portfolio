@@ -46,7 +46,7 @@ export default function Footer () {
 
             </div>
 
-            <p className={styles.copyright}>© Made by Sandy Ly • 2025</p>
+            <p className={styles.copyright}>© Made by Sandy Ly</p>
         </footer>
     )
 }

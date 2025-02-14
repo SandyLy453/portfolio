@@ -140,24 +140,28 @@ export default function Home() {
           </Link>
           <Link 
             className={styles.link}
-            href={"https://www.linkedin.com/in/boisan-sandy-ly/"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>LinkedIn</p>
           </Link>
           <Link 
             className={styles.link}
-            href={"/Sandy_Ly_Resume.pdf"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>Resume</p>
           </Link>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <p className={styles.copyright}>© Made by Sandy Ly • 2025</p>
-      </footer>
+        <div className={styles.bottom}>
+
+        </div>
+
+
+        <br/>
+
+      </main>
     </>
   );
 }

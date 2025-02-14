@@ -97,10 +97,6 @@
   max-width: 1350px;
 }
 
-.connect {
-  margin-bottom: 200px;
-}
-
 .link {
   text-decoration: none;
   color: var(--mauveShadow);
@@ -117,17 +113,6 @@
   font-size: 54px;
   margin: 20px 0;
   font-family: "Playfair Display", serif;
-}
-
-.footer {
-  margin-bottom: 20px;
-}
-
-.copyright {
-  text-align: center;
-  font-style: italic;
-  color: var(--forest);
-  width: 100%;
 }
 
 

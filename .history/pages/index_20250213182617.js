@@ -126,38 +126,42 @@ export default function Home() {
         <div className={styles.connect}>
           <Link 
             className={styles.link}
-            href={"mailto:sandy.lyth453@gmail.com"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>Email</p>
           </Link>
           <Link 
             className={styles.link}
-            href={"https://www.instagram.com/sansan_lyth?igsh=MThxOTR1ZTlyY3R1dw%3D%3D&utm_source=qr"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>Instagram</p>
           </Link>
           <Link 
             className={styles.link}
-            href={"https://www.linkedin.com/in/boisan-sandy-ly/"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>LinkedIn</p>
           </Link>
           <Link 
             className={styles.link}
-            href={"/Sandy_Ly_Resume.pdf"}
+            href={"/"}
             target="_blank"
           >
             <p className={styles.connectInfo}>Resume</p>
           </Link>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <p className={styles.copyright}>© Made by Sandy Ly • 2025</p>
-      </footer>
+        <div className={styles.bottom}>
+
+        </div>
+
+
+        <br/>
+
+      </main>
     </>
   );
 }

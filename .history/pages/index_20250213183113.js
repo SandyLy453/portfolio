@@ -153,11 +153,15 @@ export default function Home() {
             <p className={styles.connectInfo}>Resume</p>
           </Link>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <p className={styles.copyright}>© Made by Sandy Ly • 2025</p>
-      </footer>
+        <div className={styles.bottom}>
+
+        </div>
+
+
+        <br/>
+
+      </main>
     </>
   );
 }

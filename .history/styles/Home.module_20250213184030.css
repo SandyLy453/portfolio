@@ -119,14 +119,11 @@
   font-family: "Playfair Display", serif;
 }
 
-.footer {
-  margin-bottom: 20px;
-}
-
 .copyright {
   text-align: center;
   font-style: italic;
-  color: var(--forest);
+  color: var(--spaBlue);
+  margin-top: 50px;
   width: 100%;
 }
 
