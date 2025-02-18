@@ -1,9 +1,13 @@
 .header {
-    margin: 0 auto;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
     width: 70vw;
-    height: 120px; 
+    height: 120px;
     background-color: var(--forest);
-    padding: 20px 50px;
+    padding: 20px 50px ;
+    padding-bottom: 30px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,19 +16,16 @@
     right: 15vw;
     top: 0;
     z-index: 999;
-    transition: height 0.3s ease-in-out; 
 }
 
 .headerExpanded {
-    min-height: 250px; 
+    height: 250px; /* Adjust this height based on menu content */
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
 }
 
 .menuExpanded {
@@ -34,7 +35,6 @@
     gap: 10px;
     width: 100%;
 }
-
 
 .menuOption {
     font-size: 20px;
@@ -69,46 +69,36 @@
 @media screen and (max-width: 768px) {
     .header {
         width: 100vw;
-        min-height: 100px;
         right: 0;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        height: auto;
+        align-items: center;
     }
 
     .hamburger {
         display: block;
-        position: absolute;
-        right: 20px;
-        top: 40px;
-        z-index: 10;
-    }
-
-    .logo {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 20px;
         z-index: 10;
     }
 
     .menu {
         display: none;
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        background: white;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         opacity: 0;
-        transform: scaleY(0);
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     .menuExpanded {
         display: flex;
-        opacity: 1;
-        transform: scaleY(1);
     }
-
 }
 

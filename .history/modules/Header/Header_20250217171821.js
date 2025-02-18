@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header className={`${styles.header} ${menuOpen ? styles.headerExpanded : ""}`}>
             {/* Logo */}
-            <div className={styles.logoBox}>
+            <div className={styles.logo}>
                 <Link href={'/'}>
                     <Image 
                         src={'/logo.png'} 

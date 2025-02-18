@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header className={`${styles.header} ${menuOpen ? styles.headerExpanded : ""}`}>
             {/* Logo */}
-            <div className={styles.logoBox}>
+            <div className={styles.logo}>
                 <Link href={'/'}>
                     <Image 
                         src={'/logo.png'} 
@@ -30,6 +30,7 @@ export default function Header() {
                 </Link>
             </div>
 
+            {/* Hamburger / Arrow Toggle */}
             <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
                 <Image 
                     src={menuOpen ? "/menuOpen.png" : "/menuIcon.png"}
@@ -39,6 +40,7 @@ export default function Header() {
                 />
             </button>
 
+            {/* Menu Items (Expands inside header) */}
             <nav className={`${styles.menu} ${menuOpen ? styles.menuExpanded : ""}`}>
                 <p className={styles.menuOption}><Link href={'/'} className={styles.link}>Home</Link></p>
                 <p className={styles.menuOption}><Link href={'/project'} className={styles.link}>Projects</Link></p>

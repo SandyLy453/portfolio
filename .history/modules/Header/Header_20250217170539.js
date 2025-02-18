@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from './Header.module.css';
+import styles from './Header.module.css'
 import { useState, useRef } from "react";
 
-export default function Header() {
+export default function Header () {
     const audioRef = useRef(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -15,9 +15,8 @@ export default function Header() {
     };
 
     return (
-        <header className={`${styles.header} ${menuOpen ? styles.headerExpanded : ""}`}>
-            {/* Logo */}
-            <div className={styles.logoBox}>
+        <header className={styles.header}>
+            <div className={styles.logo}>
                 <Link href={'/'}>
                     <Image 
                         src={'/logo.png'} 
@@ -32,10 +31,10 @@ export default function Header() {
 
             <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
                 <Image 
-                    src={menuOpen ? "/menuOpen.png" : "/menuIcon.png"}
+                    src={menuOpen ? "/mnt/data/menuOpen.png" : "/mnt/data/menuIcon.png"}
                     alt="Menu Toggle" 
-                    width={30} 
-                    height={21} 
+                    width={50} 
+                    height={35} 
                 />
             </button>
 
@@ -47,7 +46,5 @@ export default function Header() {
 
             <audio ref={audioRef} src="/cat.wav" preload="auto"></audio>
         </header>
-    );
+    )
 }
-
-
