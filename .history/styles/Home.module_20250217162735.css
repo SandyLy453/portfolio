@@ -8,11 +8,12 @@
   width: 70vw;
   margin: auto;
   margin-top: 0;
+  margin-top: 120px;
 }
 
 .top {
   width: 100%;
-  min-height: 470px;
+  min-height: 480px;
   background-color: var(--cream);
   align-items: center;
   display: flex;
@@ -26,31 +27,37 @@
   border-radius: 47% 47% 0 0;
   margin: 0 6rem;
   position: relative;
-  bottom: -26px;
+  bottom: -30px;
 }
 
 .info {
   text-align: center;
   margin-top: 100px;
+  width: 30vw;
 }
 
 .name {
-  font-size: 48px;
+  font-size: 54px;
   color: #C69491;
   font-weight: 600;
+  font-family: "Playfair Display", serif;
 }
 
 .role {
-  font-size: 24px;
+  font-size: 44px;
   color: #7D9094;
   font-weight: 500;
-  padding-top: 10px;
 }
 
 .loca {
   font-size: 20px;
   color: #7D9094;
   padding-top: 10px;
+}
+
+.gif {
+  position: relative;
+  bottom: -36px;
 }
 
 
@@ -67,7 +74,7 @@
   content: "";
   flex: 1;
   height: 2px;
-  background: #d3d3d3; /* Adjust color as needed */
+  background: #d3d3d3;
   margin: 0;
 }
 
@@ -82,32 +89,65 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content:flex-start;
+  justify-content:space-between;
+  align-items: flex-start;
+  margin: 0 auto;
   margin-bottom: 50px;
+  gap: 1rem;
+  max-width: 1350px;
 }
 
-.loadMoreButton {
-  
+.connect {
+  margin-bottom: 200px;
+}
+
+s
+
+.connectInfo {
+  font-size: 54px;
+  margin: 20px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+  font-style: italic;
+  color: var(--forest);
+  width: 100%;
 }
 
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 1460px) {
+  .pjSection {
+    gap: 20px;
+  }
+
   .main {
-    width: 100vw; /* Adjust to full width for smaller screens */
+    width: 80vw; 
   }
 
   .coverPhoto {
-    margin: 0 auto; /* Center the image for mobile */
-    bottom: -20px; /* Slight adjustment for spacing */
+    margin: 0 1rem; 
+    bottom: -32px; 
   }
 
   .info {
-    margin-top: 50px; /* Reduce margin for better spacing */
+    margin-top: 50px; 
+  }
+
+  .gif {
+    bottom: -6.4rem;
   }
 
   .name {
-    font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 36px; 
   }
 
   .role {
@@ -121,6 +161,49 @@
   .pjSection {
     gap: 15px; 
     justify-content: center;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100vw; 
+  }
+
+  .coverPhoto {
+    margin: 0 auto; 
+    bottom: -20px; 
+    width: 70vw;
+    height: auto;
+  }
+
+  .info {
+    margin-top: 50px;
+    width: 90vw; 
+  }
+
+  .name {
+    font-size: 36px; 
+  }
+
+  .role {
+    font-size: 20px;
+  }
+
+  .loca {
+    font-size: 18px;
+  }
+
+  .pjSection {
+    gap: 15px; 
+    justify-content: center;
+  }
+
+  .gif {
+    position: relative;
+    bottom: -4px;
+    margin-top: 10px;
   }
 }
 
