@@ -13,8 +13,8 @@ export default function ShowCase() {
     const bigText = ["Sandy", "App Design", "Graphic Design"];
     const smallText = [
         "Passionate about creating designs that are both beautiful and easy to navigate.", 
-        "Focused on crafting seamless, user-friendly experiences that enhance digital interactions.", 
-        "Bringing ideas to life through bold visuals, color, and creativity."
+        "", 
+        ""
     ];
     const linkPath = ["/about", "/project", "/project"];
     const linkText = ["About Me →", "See More Project →", "See More Project →"];
