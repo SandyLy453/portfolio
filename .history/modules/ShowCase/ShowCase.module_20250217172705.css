@@ -144,42 +144,14 @@
     .container {
         flex-direction: column;
     }
-
     .tagBox {
         flex-direction: row;
-    }
-
-    .tag, .active {
-        width: 70px;
-        height: 70px;
-    }
-
-    .photoBox {
-        width: 70vw;
-    }
-
-    .big {
-        font-size: 16px;
-    }
-
-    .small, 
-    .littleLink {
-        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .photoBox {
-        width: 90vw;
-    }
-
-    .big {
-        font-size: 12px;
-    }
-
-    .small, 
-    .littleLink {
-        font-size: 10px;
+    .container {
+        flex-direction: column;
     }
 }
 

@@ -144,7 +144,7 @@
     .container {
         flex-direction: column;
     }
-
+    
     .tagBox {
         flex-direction: row;
     }
@@ -174,12 +174,12 @@
     }
 
     .big {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .small, 
     .littleLink {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
