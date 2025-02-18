@@ -126,11 +126,10 @@
     color: white;
     font-style: italic;
     margin: 20px 0;
-    opacity: 70%;
 }
 
 .littleLink:hover {
-    opacity: 100%;
+    opacity: 70%;
 }
 
 .big {
@@ -143,7 +142,6 @@
 .small {
     font-size: 15px;
     margin: 10px 0;
-    opacity: 80%;
 }
 
 @media screen and (max-width: 1460px) {
