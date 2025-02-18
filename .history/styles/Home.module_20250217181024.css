@@ -200,13 +200,12 @@
   .coverPhoto {
     width: 90%;
     height: auto;
-    margin: 0; 
-    bottom: -57px; 
+    margin: 0 0.5rem; 
+    bottom: -45px; 
   }
 
   .info {
     margin-top: 50px; 
-    width: 35vw;
   }
 
   .gif {
@@ -243,7 +242,7 @@
   .coverPhoto {
     margin: 0 auto; 
     bottom: -20px; 
-    width: 60vw;
+    width: 70vw;
     height: auto;
   }
 
@@ -253,11 +252,11 @@
   }
 
   .name {
-    font-size: 45px; 
+    font-size: 36px; 
   }
 
   .role {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .loca {
