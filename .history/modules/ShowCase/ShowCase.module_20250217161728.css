@@ -122,25 +122,17 @@
 }
 
 .littleLink {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
     font-style: italic;
     margin: 20px 0;
 }
 
-.big {
+.bigText {
     font-family: "Playfair Display", serif;
     font-size: 18px;
-    margin: 15px 0;
-    font-weight: 700;
+    margin: 20px 0;
 }
-
-.small {
-    font-size: 15px;
-    margin: 15px 0;
-}
-
-
 
 
 

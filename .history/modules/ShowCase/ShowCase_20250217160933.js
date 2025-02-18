@@ -11,11 +11,7 @@ export default function ShowCase() {
         "Graphic": "/3can.png",
     };
     const bigText = ["Sandy", "App Design", "Graphic Design"];
-    const smallText = [
-        "", 
-        "", 
-        ""
-    ];
+    const smallText = ["A passionate", "", ""];
     const linkPath = ["/about", "/project", "/project"];
     const linkText = ["About Me →", "See More Project →", "See More Project →"];
 
@@ -89,13 +85,13 @@ export default function ShowCase() {
                     </div>
                 </div>
 
-                {/* <div className={styles.loadMoreContainer}>
+                <div className={styles.loadMoreContainer}>
                     <Link href="/project" passHref>
                         <button className={styles.loadMoreButton}>
                             More Projects
                         </button>
                     </Link>
-                </div> */}
+                </div>
             </div>
         </div>
     );

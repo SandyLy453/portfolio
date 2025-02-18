@@ -11,11 +11,7 @@ export default function ShowCase() {
         "Graphic": "/3can.png",
     };
     const bigText = ["Sandy", "App Design", "Graphic Design"];
-    const smallText = [
-        "", 
-        "", 
-        ""
-    ];
+    const smallText = ["A passionate", "", ""];
     const linkPath = ["/about", "/project", "/project"];
     const linkText = ["About Me →", "See More Project →", "See More Project →"];
 

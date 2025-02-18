@@ -12,14 +12,22 @@ export default function ShowCase() {
     };
     const bigText = ["Sandy", "App Design", "Graphic Design"];
     const smallText = [
-        "", 
+        "A passionate", 
         "", 
         ""
     ];
-    const linkPath = ["/about", "/project", "/project"];
-    const linkText = ["About Me →", "See More Project →", "See More Project →"];
+    const linkPath = [
+        "/about", 
+        "/project", 
+        "/project"
+    ];
+    const linkText = [
+        "About Me →", 
+        "See More Project →", 
+        "See More Project →"
+    ];
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeTag, setActiveTag] = useState(tags[0]);
     const [isFading, setIsFading] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const intervalRef = useRef(null);
@@ -27,40 +35,48 @@ export default function ShowCase() {
     const startLoop = () => {
         clearInterval(intervalRef.current);
         intervalRef.current = setInterval(() => {
-            setIsFading(true);
+            setIsFading(true); 
             setTimeout(() => {
-                setActiveIndex((prevIndex) => (prevIndex + 1) % tags.length);
-                setIsFading(false);
+                setActiveTag((prevTag) => {
+                    const currentIndex = tags.indexOf(prevTag);
+                    return tags[(currentIndex + 1) % tags.length];
+                });
+                setIsFading(false); 
             }, 500);
         }, 4000);
     };
 
     useEffect(() => {
         if (!isPaused) startLoop();
-        return () => clearInterval(intervalRef.current);
+        return () => clearInterval(intervalRef.current); 
     }, [isPaused]);
 
-    const handlePause = (index) => {
-        clearInterval(intervalRef.current);
+    useEffect(() => {
+        startLoop();
+        return () => clearInterval(intervalRef.current);
+    }, []);
+
+    const handlePause = (tag) => {
+        clearInterval(intervalRef.current); 
         setIsPaused(true);
-        setActiveIndex(index);
+        setActiveTag(tag);
         setIsFading(false);
     };
 
     const handleResume = () => {
-        setIsPaused(false);
+        setIsPaused(false); 
     };
 
     return (
         <div className={styles.container}>
             <div className={styles.tagBox}>
-                {tags.map((tag, index) => (
+                {tags.map((tag) => (
                     <div
                         key={tag}
-                        className={`${styles.tag} ${activeIndex === index ? styles.active : ""}`}
-                        onMouseEnter={() => handlePause(index)}
+                        className={`${styles.tag} ${activeTag === tag ? styles.active : ""}`}
+                        onMouseEnter={() => handlePause(tag)}
                         onMouseLeave={handleResume}
-                        onTouchStart={() => handlePause(index)}
+                        onTouchStart={() => handlePause(tag)}
                         onTouchEnd={handleResume}
                     >
                         <p>{tag}</p>
@@ -71,9 +87,9 @@ export default function ShowCase() {
             <div className={styles.right}>
                 <div className={styles.photoBox}>
                     <Image
-                        key={tags[activeIndex]}
-                        src={images[tags[activeIndex]]}
-                        alt={tags[activeIndex]}
+                        key={activeTag} 
+                        src={images[activeTag]}
+                        alt={activeTag}
                         width={600}
                         height={460}
                         className={`${styles.photo} ${isFading ? styles.fadeOut : styles.fadeIn}`}
@@ -81,26 +97,25 @@ export default function ShowCase() {
 
                     <div className={styles.gradient}></div>
                     <div className={styles.text}>
-                        <p className={styles.big}>{bigText[activeIndex]}</p>
-                        <p className={styles.small}>{smallText[activeIndex]}</p>
-                        <Link href={linkPath[activeIndex]} className={styles.littleLink}>
-                            {linkText[activeIndex]}
-                        </Link>
+                        <p className={styles.big}>{bigText[activeTag]}</p>
+                        <p className={styles.small}>{smallText[activeTag]}</p>
+                        <Link href={linkPath[activeTag]} className={styles.littleLink}>{linkText[activeTag]}</Link>
                     </div>
                 </div>
 
-                {/* <div className={styles.loadMoreContainer}>
-                    <Link href="/project" passHref>
+                <div className={styles.loadMoreContainer}>
+                    <Link 
+                        href="/project" 
+                        className={styles.loadMoreButton}
+                        scroll={true}
+                    >
                         <button className={styles.loadMoreButton}>
                             More Projects
                         </button>
                     </Link>
-                </div> */}
+                </div>
             </div>
+            
         </div>
     );
 }
-
-
-
-

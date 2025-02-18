@@ -12,7 +12,7 @@ export default function ShowCase() {
     };
     const bigText = ["Sandy", "App Design", "Graphic Design"];
     const smallText = [
-        "", 
+        "A passionate", 
         "", 
         ""
     ];
