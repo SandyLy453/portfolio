@@ -19,8 +19,7 @@
 }
 
 .gifOne {
-    max-width: 600px;
-    min-height: auto;
+    max-width: 35vw;
 }
 
 .subHeading {
@@ -295,7 +294,7 @@ font-style: italic;
     
     .gifOne,
     .feaImage {
-        width: 50%;
+        max-width: 50%;
         height: auto;
     }
 
@@ -375,7 +374,7 @@ font-style: italic;
     }
 
     .gifOne {
-        width: 90vw;
+        max-width: 90vw;
         height: auto;
         margin: 20px auto;
         align-items: center;

@@ -23,6 +23,10 @@
     min-height: auto;
 }
 
+.text {
+    max-width: 40vw;
+}
+
 .subHeading {
     color: var(--forest);
     margin-bottom: 0;

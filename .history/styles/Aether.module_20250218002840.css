@@ -19,8 +19,8 @@
 }
 
 .gifOne {
-    max-width: 600px;
-    min-height: auto;
+    width: 35vw;
+    min-width: calc(144px*4);
 }
 
 .subHeading {

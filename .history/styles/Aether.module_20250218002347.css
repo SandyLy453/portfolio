@@ -15,12 +15,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    width: 100%;
-}
-
-.gifOne {
-    max-width: 600px;
-    min-height: auto;
 }
 
 .subHeading {
@@ -323,11 +317,8 @@ font-style: italic;
         border-radius: 0 10px 10px 0;
     }
 
-    .content,
-    .middle .content,
-    .middlee .content {
-        max-width: 100vw;
-        font-size: 18px;
+    .body p {
+        width: 100%;
     }
   }
 
