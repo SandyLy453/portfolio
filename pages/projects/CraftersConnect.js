@@ -92,7 +92,7 @@ export default function CraftersConnect() {
                         What is CraftersConnect?
                     </h2>
                     <p className={styles.content}>
-                        <span className={styles.span}>CrafterConnect</span> is a collaborative DIY app.
+                        <span className={styles.span}>CrafterConnect</span> is a DIY app where people can share and create projects together. It offers step-by-step guides and videos to help users complete projects while staying motivated through community interaction.
                     </p>
                 </div>
 
@@ -101,7 +101,7 @@ export default function CraftersConnect() {
                         What was the painpoint?
                     </h2>
                     <p className={styles.content}>
-                        
+                        Many people enjoy DIY projects, but some can be challenging without clear instructions or detailed guidance. Lack of motivation is another common hurdle, as some individuals struggle to complete projects on their own. 
                     </p>
                 </div>
             </div>
@@ -148,7 +148,7 @@ export default function CraftersConnect() {
                 <span> About the App </span>
             </div>
 
-            {/* <div className={styles.figma}>
+            <div className={styles.figma}>
                 <h2 className={styles.subHeading}>
                     Wireframe
                 </h2>
@@ -164,7 +164,7 @@ export default function CraftersConnect() {
                         height="800"
                     />
                 </div>
-            </div> */}
+            </div>
 
             <div className={styles.feature}>
                 <h2 className={styles.subHeading}>
@@ -219,6 +219,24 @@ export default function CraftersConnect() {
                     </div>
                 )}
             </div>
+
+            <div className={styles.infoSection}>
+                    <h2 className={styles.subHeading}>
+                        Styleguide
+                    </h2>
+
+                    <p className={styles.note}>Scroll the image to see more</p>
+
+                    <div className={styles.scrollBox}>
+                        <Image 
+                            src="/ccStyle.png" 
+                            alt="Style Guide" 
+                            width={880} 
+                            height={1800} 
+                            className={styles.longImage} 
+                        />
+                    </div>
+                </div>
 
             <div className={styles.sectionBreaker}>
                 <span> Commercial </span>
