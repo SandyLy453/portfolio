@@ -26,6 +26,10 @@ export default function About() {
                     <p className={styles.name}>Boi San (Sandy) Ly</p>
                     <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
                     <p className={styles.loca}>Vancouver | BC</p>
+
+                    <div className={styles.gifBox}>
+                        <Image src={'/yo.GIF'} alt="greeting gif" className={styles.gif} width={294} height={129} />
+                    </div>
                 </div>
             </div>
 
@@ -41,7 +45,7 @@ export default function About() {
                     English
                 </button>
                 <button
-                    className={language === "vietnamese" ? styles.active : ""}
+                    className={language === "vietnamese" ? styles.active : styles.sleep}
                     onClick={() => handleLanguageChange("vietnamese")}
                 >
                     Vietnamese
@@ -51,7 +55,7 @@ export default function About() {
             {language === "english" && (
                 <div className={styles.intro}>
                 <p className={styles.introText}>
-                    Hi, welcome to my website! 
+                    Xin chào mọi người!
                 </p>
                 <p className={styles.introText}>
                     I'm <span className={styles.lilName}>Boi San</span>, but feel free to call me <span className={styles.lilName}>Sandy</span> or <span className={styles.lilName}>San</span> - whichever you prefer! I'm a Digital Designer and Front-end Web Developer who loves crafting visually engaging, user-friendly designs that bring ideas to life with a perfect mix of creativity and practicality. 
@@ -73,17 +77,19 @@ export default function About() {
 
 {language === "vietnamese" && (
           <div className={styles.intro}>
-            <p className={styles.introText}>Chào bạn, chào mừng đến với website của mình!</p>
             <p className={styles.introText}>
-              Mình là <span className={styles.lilName}>Bội San</span>, bạn cũng có thể gọi mình là <span className={styles.lilName}>Sandy</span> hoặc <span className={styles.lilName}>San</span> tùy theo bạn thích! Mình là một Nhà Thiết Kế Kỹ Thuật Số kiêm Lập Trình Viên Front-end. Mình yêu thích việc tạo ra các thiết kế bắt mắt, thân thiện với người dùng và mang lại sự cân bằng giữa sáng tạo và thực tiễn.
+                Xin chào mọi người!
+            </p>
+            <p className={styles.introText}>
+              Mình là <span className={styles.lilName}>Bội San</span> và mình là một Digital Designer/ Front-end Developer đầy nhiệt huyết. Mình yếu thích và tận hưởng việc tạo ra những thiết kế đẹp mắt, thân thiện với người nhưng vẫn phần nào dấu ấn của bản thân.
             </p>
 
             <p className={styles.introText}>
-              Trong quá trình học ngành Digital Design and Devilopment tại BCIT, mình đã khám phá những lĩnh vực thú vị như xây dựng thương hiệu, tạo wireframe, phát triển front-end và cả một chút tiếp thị kỹ thuật số. Mình luôn cố gắng tạo ra những thiết kế không chỉ đẹp mà còn có ý nghĩa, giúp giải quyết vấn đề và để lại dấu ấn tích cực.
+              Mình theo học ngành Digital Design and Development của BCIT từ năm 2023, trong quãng thời gian theo học, mình đã được tạo cơ hội để phát triển và có những trãi nghiệm về xây dựng thương hiệu, thiết kế và phát triển wireframe từ lo-fi đến hi-fi; mình cũng lập trình trang web cũng như mobile app bằng những kỹ năng và kiến thức của front-end developer; và mình còn được trôi dào kiến thức về digital marketing.
             </p>
 
             <p className={styles.introText}>
-              Khi không làm việc, mình thích làm DIY, nấu ăn, hoặc tận hưởng anime, phim điện ảnh, hoặc Cdrama. Mình rất thích đọc manga, manhwa, và cả manhua — đây là cách mình thư giãn và khám phá các phong cách vẽ khác nhau. Tôi cũng thích tạo tranh minh họa kỹ thuật số trên Procreate nữa.
+              Những lúc rãnh rỗi, mình thích làm DIY, nấu ăn, và coi phim (anime, movies, Cdrama và vân vân mây mây những thứ thú đáng yêu vui nhộn nữa). Bên cạnh đó, mình còn có thú vui đọc truyện tranh - cả manga, manhwa, và manhua - để thư giản, tìm hiểu, và khám phá những phong cách vẽ tranh khác nhau.
             </p>
             <p className={styles.introText}>
               Hãy cùng nhau tạo nên điều tuyệt vời nhé — Mình rất mong đợi được làm việc cùng bạn!

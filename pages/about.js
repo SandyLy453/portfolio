@@ -26,6 +26,10 @@ export default function About() {
                     <p className={styles.name}>Boi San (Sandy) Ly</p>
                     <p className={styles.role}>UX/UI Designer | Digital Designer | Web Developer</p>
                     <p className={styles.loca}>Vancouver | BC</p>
+
+                    <div className={styles.gifBox}>
+                        <Image src={'/yo.GIF'} alt="greeting gif" className={styles.gif} width={294} height={129} />
+                    </div>
                 </div>
             </div>
 
