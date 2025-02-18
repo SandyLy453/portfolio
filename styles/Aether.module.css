@@ -186,6 +186,8 @@ font-style: italic;
 
 .com {
     margin: auto;
+    max-width: 1000px;
+    width: 80%;
 }
 
 .feaImage ,.subHeading {

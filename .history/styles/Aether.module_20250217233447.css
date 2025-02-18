@@ -1,10 +1,12 @@
 .body {
-    width: 70vw;
+    width: 70%;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
 }
 
 .intro {
@@ -79,9 +81,9 @@ font-style: italic;
     max-width: 33vw;
 }
 
-.infoSection,
-.feature {
+.infoSection {
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .slider {
@@ -90,6 +92,7 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 40px;
 }
 
 .sliderButton {
@@ -100,7 +103,7 @@ font-style: italic;
     background-color: var(--cream);
     color: var(--forest);
     font-size: 24px;
-    cursor: pointer;
+    cursor: url('/haha.webp') 16 16, pointer;
 }
 
 .sliderButton:hover {
@@ -127,6 +130,16 @@ font-style: italic;
     align-items: center;
 }
 
+.active {
+    height: 80px;
+    width: 200px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    border: none;
+    font-size: 18px;
+    align-items: center;
+}
+
 .sleep:first-child,
 .active:first-child {
     border-radius: 10px 0 0 10px;
@@ -140,16 +153,6 @@ font-style: italic;
 .sleep:hover {
     background-color: var(--forest);
     color: var(--cream);
-}
-
-.active {
-    height: 80px;
-    width: 220px;
-    background-color: var(--midnight);
-    color: var(--cream);
-    border: none;
-    font-size: 20px;
-    align-items: center;
 }
 
 .box {
@@ -169,30 +172,158 @@ font-style: italic;
 }
 
 .video {
-    margin-bottom: 50px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.figma {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.com {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.feaImage ,.subHeading {
+    margin-bottom: 30px;
+}
+
+.feature {
+    margin: 2.5rem 0 0 0;
+}
+
+.styleGuideImage {
+    max-width: 900px;
+    height: auto;
+    width: 65vw;
+}
+
+.slider2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sliderButton2 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cream);
+    color: var(--forest);
+    font-size: 24px;
+    cursor: url('/haha.webp') 16 16, pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sliderButton2:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: 1px solid var(--forest);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.btnBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.middlee .content {
+    max-width: 50vw;
+}
+
+.wf {
+    margin: 20px auto;
+    max-width: 1500px;
+    height: auto;
+    width: 100%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.com {
+    margin: auto;
+    max-width: 900px;
+    height: auto;
 }
 
 
+@media screen and (max-width: 1366px) {
+    .topText,
+    .des {
+        width: 40%;
+    }
+    
+    .gifOne,
+    .feaImage {
+        width: 50%;
+        height: auto;
+    }
+
+    .body {
+        width: 80vw;
+    }
+  }
 
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .body {
         width: 90vw;
         flex-direction: column;
     }
 
-    .intro {
+    .intro,
+    .intro .topText {
         flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btnBox {
+        justify-content: center;
     }
 
     .content,
-    .middle .content {
+    .middle .content,
+    .middlee .content {
         max-width: 100vw;
         font-size: 16px;
     }
 
-    .middle .content {
+    .middle .content,
+    .middlee .content {
         margin-bottom: 30px;
     }
 
@@ -210,8 +341,8 @@ font-style: italic;
     }
 
     .gifOne {
-        width: 360px;
-        height: 255px;
+        width: 90vw;
+        height: auto;
         margin: 20px auto;
         align-items: center;
         display: flex;
@@ -234,21 +365,26 @@ font-style: italic;
     }
 
     .toggle {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .sleep:first-child,
     .active:first-child {
-        border-radius: 10px 10px 0 0 ;
+        border-radius: 0 ;
     }
 
     .sleep:last-child,
     .active:last-child  {
-        border-radius: 0 0 10px 10px;
+        border-radius: 0;
     }
 
-    .active {
-        width: 200px;
+    .active,
+    .sleep {
+        width: 140px;
+        font-size: 16px;
+        text-wrap: wrap;
+        padding: 20px;
     }
 
     .feaImage {
@@ -260,5 +396,10 @@ font-style: italic;
     .box p {
         font-size: 18px;
         max-width: 90vw;
+    }
+
+    .des {
+        width: 100%;
+        font-size: 16px;
     }
 }
