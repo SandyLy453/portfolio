@@ -33,6 +33,7 @@
     align-items: flex-end;
     gap: 10px;
     width: 100%;
+    text-align: right;
 }
 
 

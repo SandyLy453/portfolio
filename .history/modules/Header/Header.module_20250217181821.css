@@ -33,12 +33,14 @@
     align-items: flex-end;
     gap: 10px;
     width: 100%;
+    text-align: right;
 }
 
 
 .menuOption {
     font-size: 20px;
     font-weight: 600;
+    text-align: right;
 }
 
 .link {

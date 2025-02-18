@@ -39,6 +39,7 @@
 .menuOption {
     font-size: 20px;
     font-weight: 600;
+    text-align: right;
 }
 
 .link {

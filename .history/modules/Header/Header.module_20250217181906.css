@@ -45,6 +45,7 @@
     text-decoration: none;
     color: var(--cream);
     font-family: "Playfair Display", serif;
+    text-align: right;
 }
 
 .link:hover {
