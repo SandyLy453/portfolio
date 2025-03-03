@@ -293,7 +293,7 @@ font-style: italic;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 30px;
+    gap: 30px
 }
 
 .bc img {
