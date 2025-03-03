@@ -286,6 +286,20 @@ font-style: italic;
     height: auto;
 }
 
+.bc,
+.brochure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.bc img {
+    width: 30vw;
+    height: auto;
+}
+
 
 @media screen and (max-width: 1366px) {
     .topText,

@@ -408,6 +408,34 @@ export default function Aether() {
                     </video>
                 </div>
 
+                <div className={styles.infoSection}>
+                    <h2 className={styles.subHeading}>
+                        Business Card
+                    </h2>
+
+                    <div className={styles. middlee}>
+                        <div className={styles.bc}>
+                            <Image src={'/BC1.png'} alt="business card" className={styles.com} width={700} height={400} />
+                            <Image src={'/BC2.png'} alt="business card" className={styles.com} width={700} height={400} />
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className={styles.infoSection}>
+                    <h2 className={styles.subHeading}>
+                        Brochure
+                    </h2>
+
+                    <div className={styles. middlee}>
+                        <div className={styles.brochure}>
+                            <Image src={'/b1.png'} alt="brochure" className={styles.com} width={700} height={350} />
+                            <Image src={'/b2.png'} alt="brochure" className={styles.com} width={700} height={350} />
+                        </div>
+                        
+                    </div>
+                </div>
+
             </main>
 
             <Footer />
