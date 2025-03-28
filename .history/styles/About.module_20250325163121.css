@@ -1,0 +1,191 @@
+.main {
+    width: 70vw;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.top {
+    margin: 10px auto;
+    min-height: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coverPhoto {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.info {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 48px;
+    color: #C69491;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+ }
+  
+.role {
+    font-size: 24px;
+    color: #7D9094;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.loca {
+    font-size: 20px;
+    color: #7D9094;
+    padding-top: 10px;
+}
+
+.gifBox {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+  
+.sectionBreaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.sectionBreaker::before,
+.sectionBreaker::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #d3d3d3; 
+    margin: 0;
+}
+
+.sectionBreaker span {
+    color: #7D9094;
+    margin: 0 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.intro {
+    margin: 20px auto;
+    align-items: center;
+    width: 50vw;
+}
+
+.introText {
+    text-align: justify;
+    font-family: "Sen", sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.introText:last-child {
+    margin-bottom: 50px;
+}
+
+.lilName {
+    font-weight: 700;
+    color: var(--forest);
+}
+
+.languageToggle {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sleep {
+    height: 40px;
+    width: 150px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+.sleep:first-child,
+.active:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.sleep:last-child,
+.active:last-child  {
+    border-radius: 0 10px 10px 0;
+}
+
+.sleep:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.active {
+    height: 40px;
+    width: 150px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    border: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+.bannerBG {
+    min-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.bannerBox {
+    max-width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    z-index: -2;
+}
+
+.textBox {
+    z-index: 90;
+    position: relative;
+    left: 25% ;
+    bottom: 35vw;
+    width: 40%;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1366px) {
+    .main, 
+    .intro {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main, 
+    .intro {
+        width: 90vw;
+    }
+    .introText {
+        font-size: 15px;
+    }
+}
+
+

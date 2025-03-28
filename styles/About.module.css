@@ -5,7 +5,7 @@
 }
 
 .top {
-    margin: 10px auto;
+    margin: 200px auto 150px auto;
     min-height: 480px;
     display: flex;
     flex-direction: row;
@@ -53,31 +53,39 @@
     margin: 20px 0;
 }
 
-  
-.sectionBreaker {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+
+.marqueeWrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 0px 0;
     position: relative;
 }
-
-.sectionBreaker::before,
-.sectionBreaker::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background: #d3d3d3; 
-    margin: 0;
+  
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollMarquee 15s linear infinite;
 }
-
-.sectionBreaker span {
-    color: #7D9094;
-    margin: 0 10px;
-    font-size: 20px;
+  
+.marquee span {
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 30px;
     font-style: italic;
+    color: #7D9094;
 }
-
+  
+@keyframes scrollMarquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+}
+  
 .intro {
     margin: 20px auto;
     align-items: center;
@@ -97,7 +105,7 @@
 
 .lilName {
     font-weight: 700;
-    color: var(--forest);
+    color: var(--mauveMorn);
 }
 
 .languageToggle {
@@ -141,6 +149,74 @@
     border: none;
     font-size: 18px;
     align-items: center;
+}
+
+.bannerBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bannerBox {
+    width: 100%;
+    max-width: 80vw;
+    height: auto;
+    aspect-ratio: 10 / 7; /* Keeps it responsive and proportional */
+    margin:2rem auto;
+    position: relative;
+    cursor: url('/haha.webp') 16 16, pointer;
+    z-index: 1;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
+
+.textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 55%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(245, 239, 232, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    cursor: url('/haha.webp') 16 16, pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+
+.textContentP {
+    color: var(--forest);
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
+}
+
+.textContentP span {
+    color: var(--midnight);
+    cursor: url('/haha.webp') 16 16, pointer;
+}
+
+.textContent {
+    color: var(--cream);
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
+}
+
+.textBox p {
+    text-align: justify;
+    font-family: "Sen", sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: opacity 0.5s ease-in-out;
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 1366px) {

@@ -1,0 +1,239 @@
+.main {
+    width: 70vw;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.top {
+    margin: 200px auto 150px auto;
+    min-height: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coverPhoto {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.info {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 48px;
+    color: #C69491;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+ }
+  
+.role {
+    font-size: 24px;
+    color: #7D9094;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.loca {
+    font-size: 20px;
+    color: #7D9094;
+    padding-top: 10px;
+}
+
+.gifBox {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+.marqueeWrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 0px 0;
+    position: relative;
+}
+  
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollMarquee 15s linear infinite;
+}
+  
+.marquee span {
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 30px;
+    font-style: italic;
+    color: #7D9094;
+}
+  
+@keyframes scrollMarquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+}
+  
+.intro {
+    margin: 20px auto;
+    align-items: center;
+    width: 50vw;
+}
+
+.introText {
+    text-align: justify;
+    font-family: "Sen", sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.introText:last-child {
+    margin-bottom: 50px;
+}
+
+.lilName {
+    font-weight: 700;
+    color: var(--mauveMorn);
+}
+
+.languageToggle {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sleep {
+    height: 40px;
+    width: 150px;
+    background-color: var(--cream);
+    color: var(--forest);
+    border: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+.sleep:first-child,
+.active:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.sleep:last-child,
+.active:last-child  {
+    border-radius: 0 10px 10px 0;
+}
+
+.sleep:hover {
+    background-color: var(--forest);
+    color: var(--cream);
+}
+
+.active {
+    height: 40px;
+    width: 150px;
+    background-color: var(--midnight);
+    color: var(--cream);
+    border: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+.bannerBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bannerBox {
+    width: 100%;
+    max-width: 80vw;
+    height: auto;
+    aspect-ratio: 10 / 7; /* Keeps it responsive and proportional */
+    margin:2rem auto;
+    position: relative;
+    cursor: url('/haha.webp') 16 16, pointer;
+    z-index: 1;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
+
+.textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 55%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(245, 239, 232, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    cursor: url('/haha.webp') 16 16, pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+
+.textContentP {
+    color: var(--forest);
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
+}
+
+.textContentP span {
+    color: var(--midnight);
+    cursor: url('/haha.webp') 16 16, pointer;
+}
+
+.textContent {
+    color: var(--cream);
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
+}
+
+.textBox p {
+    text-align: justify;
+    font-family: "Sen", sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: opacity 0.5s ease-in-out;
+    cursor: url('/haha.webp') 16 16, pointer;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1366px) {
+    .main, 
+    .intro {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main, 
+    .intro {
+        width: 90vw;
+    }
+    .introText {
+        font-size: 15px;
+    }
+}
+
+
